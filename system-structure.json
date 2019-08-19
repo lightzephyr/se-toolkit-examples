@@ -1,0 +1,84 @@
+{
+  "name": "madwabit",
+  "version": "0.3",
+  "elements": [
+    {
+      "name": "Data",
+      "type": "Data"
+    },
+    {
+      "name": "Hardware",
+      "type": "Hardware"
+    },
+    {
+      "name": "MAD wabiT",
+      "type": "System"
+    },
+    {
+      "name": "Service",
+      "type": "Service"
+    },
+    {
+      "name": "Software",
+      "type": "Software"
+    },
+    {
+      "name": "Subsystem",
+      "type": "System"
+    },
+    {
+      "name": "System",
+      "type": "System"
+    },
+    {
+      "name": "System Of Interest",
+      "type": "System"
+    },
+    {
+      "name": "System of Systems",
+      "type": "System"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "MAD wabiT",
+      "target": "System Of Interest",
+      "type": "built_from"
+    },
+    {
+      "source": "Subsystem",
+      "target": "Data",
+      "type": "built_from"
+    },
+    {
+      "source": "Subsystem",
+      "target": "Hardware",
+      "type": "built_from"
+    },
+    {
+      "source": "Subsystem",
+      "target": "Software",
+      "type": "built_from"
+    },
+    {
+      "source": "System",
+      "target": "Subsystem",
+      "type": "built_from"
+    },
+    {
+      "source": "System Of Interest",
+      "target": "System",
+      "type": "built_from"
+    },
+    {
+      "source": "System Of Interest",
+      "target": "System of Systems",
+      "type": "built_from"
+    },
+    {
+      "source": "System of Systems",
+      "target": "Service",
+      "type": "built_from"
+    }
+  ]
+}
