@@ -31,7 +31,7 @@
       "type": "System"
     },
     {
-      "name": "System Of Interest",
+      "name": "System of Interest",
       "type": "System"
     },
     {
@@ -42,7 +42,7 @@
   "relationships": [
     {
       "source": "MAD wabiT",
-      "target": "System Of Interest",
+      "target": "System of Interest",
       "type": "built_from"
     },
     {
@@ -66,12 +66,12 @@
       "type": "built_from"
     },
     {
-      "source": "System Of Interest",
+      "source": "System of Interest",
       "target": "System",
       "type": "built_from"
     },
     {
-      "source": "System Of Interest",
+      "source": "System of Interest",
       "target": "System of Systems",
       "type": "built_from"
     },
