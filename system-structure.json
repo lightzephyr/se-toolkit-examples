@@ -1,6 +1,6 @@
 {
   "name": "madwabit",
-  "version": "0.3",
+  "SCHEMA_VERSION": "0.0.0",
   "elements": [
     {
       "name": "Data",
