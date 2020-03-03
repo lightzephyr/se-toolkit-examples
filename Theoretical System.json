@@ -11,10 +11,6 @@
       "type": "Hardware"
     },
     {
-      "name": "MAD wabiT",
-      "type": "System"
-    },
-    {
       "name": "Service",
       "type": "Service"
     },
@@ -40,11 +36,6 @@
     }
   ],
   "relationships": [
-    {
-      "source": "MAD wabiT",
-      "target": "System of Interest",
-      "type": "built_from"
-    },
     {
       "source": "Subsystem",
       "target": "Data",
