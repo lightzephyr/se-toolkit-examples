@@ -3,12 +3,42 @@
   "SCHEMA_VERSION": "0.0.0",
   "elements": [
     {
+      "name": "Aborted",
+      "type": "Milestone",
+      "status": "Aborted"
+    },
+    {
+      "name": "Blocked",
+      "type": "Milestone",
+      "status": "Blocked"
+    },
+    {
       "name": "Data",
       "type": "Data"
     },
     {
+      "name": "Finished",
+      "type": "Milestone",
+      "status": "Finished"
+    },
+    {
       "name": "Hardware",
       "type": "Hardware"
+    },
+    {
+      "name": "In Progress",
+      "type": "Milestone",
+      "status": "InProgress"
+    },
+    {
+      "name": "Not Started",
+      "type": "Milestone",
+      "status": "NotStarted"
+    },
+    {
+      "name": "On Hold",
+      "type": "Milestone",
+      "status": "OnHold"
     },
     {
       "name": "Service",
@@ -33,9 +63,39 @@
     {
       "name": "System of Systems",
       "type": "System"
+    },
+    {
+      "name": "Undefined",
+      "type": "Milestone",
+      "status": "NotStarted"
     }
   ],
   "relationships": [
+    {
+      "source": "Aborted",
+      "target": "Undefined",
+      "type": "defined_by"
+    },
+    {
+      "source": "Blocked",
+      "target": "In Progress",
+      "type": "defined_by"
+    },
+    {
+      "source": "Finished",
+      "target": "In Progress",
+      "type": "defined_by"
+    },
+    {
+      "source": "In Progress",
+      "target": "Not Started",
+      "type": "defined_by"
+    },
+    {
+      "source": "On Hold",
+      "target": "In Progress",
+      "type": "defined_by"
+    },
     {
       "source": "Subsystem",
       "target": "Data",
