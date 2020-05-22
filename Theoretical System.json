@@ -13,8 +13,21 @@
       "status": "Blocked"
     },
     {
+      "name": "cb7e6d93b0db6230f8161d9a3112235c",
+      "type": "Description",
+      "description": "This is a description."
+    },
+    {
       "name": "Data",
       "type": "Data"
+    },
+    {
+      "name": "Element with description",
+      "type": "Undefined"
+    },
+    {
+      "name": "Element without description",
+      "type": "Undefined"
     },
     {
       "name": "Finished",
@@ -82,6 +95,16 @@
       "type": "defined_by"
     },
     {
+      "source": "Element with description",
+      "target": "cb7e6d93b0db6230f8161d9a3112235c",
+      "type": "described_by"
+    },
+    {
+      "source": "Element with description",
+      "target": "Element without description",
+      "type": "built_from"
+    },
+    {
       "source": "Finished",
       "target": "In Progress",
       "type": "defined_by"
@@ -114,6 +137,11 @@
     {
       "source": "System",
       "target": "Subsystem",
+      "type": "built_from"
+    },
+    {
+      "source": "System of Interest",
+      "target": "Element with description",
       "type": "built_from"
     },
     {
