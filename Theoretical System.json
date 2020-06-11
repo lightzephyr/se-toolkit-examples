@@ -3,9 +3,69 @@
   "SCHEMA_VERSION": "0.0.0",
   "elements": [
     {
+      "name": "4a3a1e18f9652b8325c2c31148d726cb",
+      "type": "Description",
+      "description": "Progress towards this milestone has not been started."
+    },
+    {
+      "name": "5b4879a245821356895eb05deef17a40",
+      "type": "Description",
+      "description": "The milestone has been reached."
+    },
+    {
+      "name": "5daaad102665a6ce5e70ae84a1e1f58b",
+      "type": "Description",
+      "description": "The milestone cannot be reached until whatever is blocking progress has been resolved."
+    },
+    {
+      "name": "9b50c0ab33c4eb394d58458ea04b6aad",
+      "type": "Description",
+      "description": "Progress towards this milestone has been temporarily stopped."
+    },
+    {
+      "name": "10f3d5fa87a16f59918ef67d3c270486",
+      "type": "Description",
+      "description": "A service provided by a service provider."
+    },
+    {
+      "name": "69a9a6cc5dde0efa0b565e09f6fa209a",
+      "type": "Description",
+      "description": "A software item."
+    },
+    {
+      "name": "720f23c798c9acd2914c6ce8cfd909d9",
+      "type": "Description",
+      "description": "Progress is being made towards this milestone."
+    },
+    {
+      "name": "786c20c916d1aa13b7b40621cb730b95",
+      "type": "Description",
+      "description": "The milestone will not be reached."
+    },
+    {
+      "name": "871ba0716b8bc977cc3b422ba26e1504",
+      "type": "Description",
+      "description": "A data item."
+    },
+    {
+      "name": "9382f74f251dc1e050536fe8d8f79c01",
+      "type": "Description",
+      "description": "A system (either a black box or built from other elements)."
+    },
+    {
+      "name": "3488903e90db9ae548bc69c38b3ffc4c",
+      "type": "Description",
+      "description": "A hardware item."
+    },
+    {
       "name": "Aborted",
       "type": "Milestone",
       "status": "Aborted"
+    },
+    {
+      "name": "b49e03297bf8772feffe782f28bd6e21",
+      "type": "Description",
+      "description": "The milestone status has not been defined."
     },
     {
       "name": "Blocked",
@@ -86,13 +146,28 @@
   "relationships": [
     {
       "source": "Aborted",
+      "target": "786c20c916d1aa13b7b40621cb730b95",
+      "type": "described_by"
+    },
+    {
+      "source": "Aborted",
       "target": "Undefined",
       "type": "defined_by"
     },
     {
       "source": "Blocked",
+      "target": "5daaad102665a6ce5e70ae84a1e1f58b",
+      "type": "described_by"
+    },
+    {
+      "source": "Blocked",
       "target": "In Progress",
       "type": "defined_by"
+    },
+    {
+      "source": "Data",
+      "target": "871ba0716b8bc977cc3b422ba26e1504",
+      "type": "described_by"
     },
     {
       "source": "Element with description",
@@ -106,8 +181,23 @@
     },
     {
       "source": "Finished",
+      "target": "5b4879a245821356895eb05deef17a40",
+      "type": "described_by"
+    },
+    {
+      "source": "Finished",
       "target": "In Progress",
       "type": "defined_by"
+    },
+    {
+      "source": "Hardware",
+      "target": "3488903e90db9ae548bc69c38b3ffc4c",
+      "type": "described_by"
+    },
+    {
+      "source": "In Progress",
+      "target": "720f23c798c9acd2914c6ce8cfd909d9",
+      "type": "described_by"
     },
     {
       "source": "In Progress",
@@ -115,9 +205,29 @@
       "type": "defined_by"
     },
     {
+      "source": "Not Started",
+      "target": "4a3a1e18f9652b8325c2c31148d726cb",
+      "type": "described_by"
+    },
+    {
+      "source": "On Hold",
+      "target": "9b50c0ab33c4eb394d58458ea04b6aad",
+      "type": "described_by"
+    },
+    {
       "source": "On Hold",
       "target": "In Progress",
       "type": "defined_by"
+    },
+    {
+      "source": "Service",
+      "target": "10f3d5fa87a16f59918ef67d3c270486",
+      "type": "described_by"
+    },
+    {
+      "source": "Software",
+      "target": "69a9a6cc5dde0efa0b565e09f6fa209a",
+      "type": "described_by"
     },
     {
       "source": "Subsystem",
@@ -133,6 +243,11 @@
       "source": "Subsystem",
       "target": "Software",
       "type": "built_from"
+    },
+    {
+      "source": "System",
+      "target": "9382f74f251dc1e050536fe8d8f79c01",
+      "type": "described_by"
     },
     {
       "source": "System",
@@ -158,6 +273,11 @@
       "source": "System of Systems",
       "target": "Service",
       "type": "built_from"
+    },
+    {
+      "source": "Undefined",
+      "target": "b49e03297bf8772feffe782f28bd6e21",
+      "type": "described_by"
     }
   ]
 }
