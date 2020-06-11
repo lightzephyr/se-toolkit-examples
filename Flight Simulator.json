@@ -1,0 +1,934 @@
+{
+  "name": "Flight Simulator",
+  "SCHEMA_VERSION": "0.0.0",
+  "elements": [
+    {
+      "name": "4ceae6838a8ccfb5a0ebaece9ec9b0ce",
+      "type": "Description",
+      "description": "ACARS: Aircraft Addressing And Reporting System"
+    },
+    {
+      "name": "6b447dc4e092f00e4feafedf2ace2d5a",
+      "type": "Description",
+      "description": "The flight controls computer is typically too complicated to be able to model all of its functionality from scratch. Therefore a rehost of the actual aircraft software is preferred. The engineering model used by the aircraft OEM may be sufficient if it can be proved to represent the actual aircraft with the required fidelity."
+    },
+    {
+      "name": "9e763540e5c5ecaab94f1f51e1ca3860",
+      "type": "Description",
+      "description": "The FADEC is typically too complicated to be able to model all of its functionality from scratch. Therefore a rehost of the actual engine software is required for higher fidelity simulators and is almost unavoidable for Level D."
+    },
+    {
+      "name": "39f3fb97cc8e232823cf9be3b402e3b4",
+      "type": "Description",
+      "description": "TCAS: Traffic Collision and Avoidance System"
+    },
+    {
+      "name": "50a54cae0911e7def0c96b4174a32bcd",
+      "type": "Description",
+      "description": "The navigation radio simulation does not include communication radios."
+    },
+    {
+      "name": "280deac26b7a60cedb0f3a109625b1a0",
+      "type": "Description",
+      "description": "IFF describes an electronic, radio based identification system - in this case used between aircraft and ground based radar stations."
+    },
+    {
+      "name": "609cad02e563e548378cbebbab6445fa",
+      "type": "Description",
+      "description": "The IFF simulation typically includes all transponder modes - including the civil modes 1, 2, and 3A/C and S."
+    },
+    {
+      "name": "6648f0fc45a196c5ea6747cfc2121577",
+      "type": "Description",
+      "description": "The navigation radio simulation does not include the database of navigation aids."
+    },
+    {
+      "name": "8865f02c75b3e911011ac3a601895f98",
+      "type": "Description",
+      "description": "The comms radio simulation does not include navigation radios."
+    },
+    {
+      "name": "Aerodynamics Model",
+      "type": "Software"
+    },
+    {
+      "name": "c3b2da7d5f65a0c8507b3eaf6270707a",
+      "type": "Description",
+      "description": "FADEC: Full Authority Digital Engine Control"
+    },
+    {
+      "name": "ca45d8371338617c09d29726460f05fa",
+      "type": "Description",
+      "description": "Simulated navigation radios typically include ADF and ILS."
+    },
+    {
+      "name": "Cockpit Controls Power Supply",
+      "type": "Hardware"
+    },
+    {
+      "name": "Cockpit Instruments",
+      "type": "Hardware"
+    },
+    {
+      "name": "Cockpit Instruments Data Interface",
+      "type": "Hardware"
+    },
+    {
+      "name": "Cockpit Instruments Power Supply",
+      "type": "Hardware",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Cockpit Instruments Structural Interface",
+      "type": "Hardware"
+    },
+    {
+      "name": "Cockpit Interface Computer",
+      "type": "System",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Cockpit Interface Computer Hardware",
+      "type": "Hardware"
+    },
+    {
+      "name": "Cockpit Interface Computer Operating System",
+      "type": "Software",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Cockpit Interface Hardware Drivers",
+      "type": "Software",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Cockpit Lighting",
+      "type": "Hardware"
+    },
+    {
+      "name": "Cockpit Lighting Power Supply",
+      "type": "Hardware",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Cockpit Power Supply",
+      "type": "Hardware"
+    },
+    {
+      "name": "Cockpit Structure",
+      "type": "Hardware"
+    },
+    {
+      "name": "Crew Seats",
+      "type": "Hardware"
+    },
+    {
+      "name": "Cruise",
+      "type": "Milestone",
+      "status": "NotStarted"
+    },
+    {
+      "name": "d0c31d60d63af5dd7d4eec807819e5c4",
+      "type": "Description",
+      "description": "IFF: Identification Friend Or Foe"
+    },
+    {
+      "name": "daa0d9233fed5ef92d3de242590a9d3f",
+      "type": "Description",
+      "description": "GPWS: Ground Proximity Warning System"
+    },
+    {
+      "name": "dd5a1a2e07fde2295101488ede989393",
+      "type": "Description",
+      "description": "Simulated communication radios typically include one or more HF, VHF and UHF radios."
+    },
+    {
+      "name": "Display System",
+      "type": "Hardware",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Emergencies in Flight",
+      "type": "Milestone",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Emergencies on Ground",
+      "type": "Milestone",
+      "status": "NotStarted"
+    },
+    {
+      "name": "f081e48a8963ff3d5ab2c45284b3ec48",
+      "type": "Description",
+      "description": "GPS: Global Positioning System"
+    },
+    {
+      "name": "Flight Control Hardware",
+      "type": "Hardware"
+    },
+    {
+      "name": "Flight Controls Model",
+      "type": "Software"
+    },
+    {
+      "name": "Flight Dynamics Model",
+      "type": "Software"
+    },
+    {
+      "name": "Flight Simulator",
+      "type": "System"
+    },
+    {
+      "name": "GPWS Database",
+      "type": "Data"
+    },
+    {
+      "name": "GPWS Simulation",
+      "type": "Software",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Host Computer",
+      "type": "System",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Host Computer Hardware",
+      "type": "Hardware",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Host Computer Hardware Drivers",
+      "type": "Software"
+    },
+    {
+      "name": "Host Computer Operating System",
+      "type": "Software",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Image Generation System",
+      "type": "System"
+    },
+    {
+      "name": "IT Infrastructure",
+      "type": "System",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Landing",
+      "type": "Milestone",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Landing Gear Model",
+      "type": "Software"
+    },
+    {
+      "name": "Motion Computer Hardware",
+      "type": "Hardware"
+    },
+    {
+      "name": "Motion Computer Operating System",
+      "type": "Software"
+    },
+    {
+      "name": "Motion Control Computer",
+      "type": "System",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Motion Hardware Drivers",
+      "type": "Software"
+    },
+    {
+      "name": "Motion Platform Hardware",
+      "type": "Hardware",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Motion System",
+      "type": "System"
+    },
+    {
+      "name": "Motion Washout Algorithms",
+      "type": "Software",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Navigation Aid Database",
+      "type": "Data",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Navigation Aid Simulation",
+      "type": "Software"
+    },
+    {
+      "name": "Ownship Simulation",
+      "type": "System"
+    },
+    {
+      "name": "Primary Flight Controls",
+      "type": "Hardware"
+    },
+    {
+      "name": "Projection System",
+      "type": "System"
+    },
+    {
+      "name": "Secondary Flight Controls",
+      "type": "Hardware"
+    },
+    {
+      "name": "Simulated ACARS",
+      "type": "Software"
+    },
+    {
+      "name": "Simulated Aircraft Ancillary Systems",
+      "type": "Software",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Simulated Aircraft Comms System",
+      "type": "Software",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Simulated Aircraft Engines",
+      "type": "Software",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Simulated Comms Radios",
+      "type": "Software"
+    },
+    {
+      "name": "Simulated Electrical System",
+      "type": "Software"
+    },
+    {
+      "name": "Simulated FADEC",
+      "type": "Software"
+    },
+    {
+      "name": "Simulated Flight Controls",
+      "type": "Software"
+    },
+    {
+      "name": "Simulated Flight Controls Computer",
+      "type": "Software"
+    },
+    {
+      "name": "Simulated Flight Dynamics",
+      "type": "Software"
+    },
+    {
+      "name": "Simulated Fuel System",
+      "type": "Software"
+    },
+    {
+      "name": "Simulated GPS",
+      "type": "Software"
+    },
+    {
+      "name": "Simulated GPWS",
+      "type": "System",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Simulated Hydraulic System",
+      "type": "Software"
+    },
+    {
+      "name": "Simulated IFF",
+      "type": "Software"
+    },
+    {
+      "name": "Simulated Navigation Aids",
+      "type": "System",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Simulated Navigation Systems",
+      "type": "Software",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Simulated Powerplant",
+      "type": "Software",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Simulated Radio Navigation Systems",
+      "type": "Software"
+    },
+    {
+      "name": "Simulated Sensor Systems",
+      "type": "System",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Simulated TCAS",
+      "type": "Software"
+    },
+    {
+      "name": "Simulator Cockpit",
+      "type": "System",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Simulator Comms System",
+      "type": "System"
+    },
+    {
+      "name": "Simulator Sound System",
+      "type": "System"
+    },
+    {
+      "name": "Stationary on Ground",
+      "type": "Milestone",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Takeoff",
+      "type": "Milestone",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Taxi",
+      "type": "Milestone",
+      "status": "NotStarted"
+    },
+    {
+      "name": "Visual System",
+      "type": "System"
+    },
+    {
+      "name": "World Simulation",
+      "type": "System"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Cockpit Interface Computer",
+      "target": "Cockpit Interface Computer Hardware",
+      "type": "built_from"
+    },
+    {
+      "source": "Cockpit Interface Computer",
+      "target": "Cockpit Interface Computer Operating System",
+      "type": "built_from"
+    },
+    {
+      "source": "Cockpit Interface Computer",
+      "target": "Cockpit Interface Hardware Drivers",
+      "type": "built_from"
+    },
+    {
+      "source": "Cockpit Power Supply",
+      "target": "Cockpit Controls Power Supply",
+      "type": "built_from"
+    },
+    {
+      "source": "Cockpit Power Supply",
+      "target": "Cockpit Instruments Power Supply",
+      "type": "built_from"
+    },
+    {
+      "source": "Cockpit Power Supply",
+      "target": "Cockpit Lighting Power Supply",
+      "type": "built_from"
+    },
+    {
+      "source": "Cruise",
+      "target": "Takeoff",
+      "type": "defined_by"
+    },
+    {
+      "source": "Emergencies in Flight",
+      "target": "Emergencies on Ground",
+      "type": "defined_by"
+    },
+    {
+      "source": "Emergencies on Ground",
+      "target": "Landing",
+      "type": "defined_by"
+    },
+    {
+      "source": "Flight Control Hardware",
+      "target": "Primary Flight Controls",
+      "type": "built_from"
+    },
+    {
+      "source": "Flight Control Hardware",
+      "target": "Secondary Flight Controls",
+      "type": "built_from"
+    },
+    {
+      "source": "Flight Simulator",
+      "target": "IT Infrastructure",
+      "type": "built_from"
+    },
+    {
+      "source": "Flight Simulator",
+      "target": "Motion System",
+      "type": "built_from"
+    },
+    {
+      "source": "Flight Simulator",
+      "target": "Ownship Simulation",
+      "type": "built_from"
+    },
+    {
+      "source": "Flight Simulator",
+      "target": "Simulator Cockpit",
+      "type": "built_from"
+    },
+    {
+      "source": "Flight Simulator",
+      "target": "Simulator Comms System",
+      "type": "built_from"
+    },
+    {
+      "source": "Flight Simulator",
+      "target": "Simulator Sound System",
+      "type": "built_from"
+    },
+    {
+      "source": "Flight Simulator",
+      "target": "Visual System",
+      "type": "built_from"
+    },
+    {
+      "source": "Flight Simulator",
+      "target": "World Simulation",
+      "type": "built_from"
+    },
+    {
+      "source": "Host Computer",
+      "target": "Host Computer Hardware",
+      "type": "built_from"
+    },
+    {
+      "source": "Host Computer",
+      "target": "Host Computer Hardware Drivers",
+      "type": "built_from"
+    },
+    {
+      "source": "Host Computer",
+      "target": "Host Computer Operating System",
+      "type": "built_from"
+    },
+    {
+      "source": "Image Generation System",
+      "target": "Host Computer",
+      "type": "input_from"
+    },
+    {
+      "source": "IT Infrastructure",
+      "target": "Host Computer",
+      "type": "built_from"
+    },
+    {
+      "source": "Landing",
+      "target": "Cruise",
+      "type": "defined_by"
+    },
+    {
+      "source": "Motion Control Computer",
+      "target": "Host Computer",
+      "type": "input_from"
+    },
+    {
+      "source": "Motion Control Computer",
+      "target": "Motion Computer Hardware",
+      "type": "built_from"
+    },
+    {
+      "source": "Motion Control Computer",
+      "target": "Motion Computer Operating System",
+      "type": "built_from"
+    },
+    {
+      "source": "Motion Control Computer",
+      "target": "Motion Hardware Drivers",
+      "type": "built_from"
+    },
+    {
+      "source": "Motion Control Computer",
+      "target": "Motion Washout Algorithms",
+      "type": "built_from"
+    },
+    {
+      "source": "Motion Platform Hardware",
+      "target": "Motion Control Computer",
+      "type": "input_from"
+    },
+    {
+      "source": "Motion System",
+      "target": "Motion Control Computer",
+      "type": "built_from"
+    },
+    {
+      "source": "Motion System",
+      "target": "Motion Platform Hardware",
+      "type": "built_from"
+    },
+    {
+      "source": "Ownship Simulation",
+      "target": "Simulated Aircraft Ancillary Systems",
+      "type": "built_from"
+    },
+    {
+      "source": "Ownship Simulation",
+      "target": "Simulated Aircraft Comms System",
+      "type": "built_from"
+    },
+    {
+      "source": "Ownship Simulation",
+      "target": "Simulated Aircraft Engines",
+      "type": "built_from"
+    },
+    {
+      "source": "Ownship Simulation",
+      "target": "Simulated Flight Dynamics",
+      "type": "built_from"
+    },
+    {
+      "source": "Ownship Simulation",
+      "target": "Simulated Navigation Systems",
+      "type": "built_from"
+    },
+    {
+      "source": "Ownship Simulation",
+      "target": "Simulated Sensor Systems",
+      "type": "built_from"
+    },
+    {
+      "source": "Projection System",
+      "target": "Image Generation System",
+      "type": "input_from"
+    },
+    {
+      "source": "Simulated ACARS",
+      "target": "4ceae6838a8ccfb5a0ebaece9ec9b0ce",
+      "type": "described_by"
+    },
+    {
+      "source": "Simulated Aircraft Ancillary Systems",
+      "target": "Simulated Aircraft Engines",
+      "type": "input_from"
+    },
+    {
+      "source": "Simulated Aircraft Ancillary Systems",
+      "target": "Simulated Electrical System",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Aircraft Ancillary Systems",
+      "target": "Simulated Fuel System",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Aircraft Ancillary Systems",
+      "target": "Simulated Hydraulic System",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Aircraft Comms System",
+      "target": "Simulated ACARS",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Aircraft Comms System",
+      "target": "Simulated Comms Radios",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Aircraft Comms System",
+      "target": "Simulated IFF",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Aircraft Engines",
+      "target": "Simulated FADEC",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Aircraft Engines",
+      "target": "Simulated Flight Dynamics",
+      "type": "input_from"
+    },
+    {
+      "source": "Simulated Aircraft Engines",
+      "target": "Simulated Powerplant",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Comms Radios",
+      "target": "8865f02c75b3e911011ac3a601895f98",
+      "type": "described_by"
+    },
+    {
+      "source": "Simulated Comms Radios",
+      "target": "dd5a1a2e07fde2295101488ede989393",
+      "type": "described_by"
+    },
+    {
+      "source": "Simulated FADEC",
+      "target": "9e763540e5c5ecaab94f1f51e1ca3860",
+      "type": "described_by"
+    },
+    {
+      "source": "Simulated FADEC",
+      "target": "c3b2da7d5f65a0c8507b3eaf6270707a",
+      "type": "described_by"
+    },
+    {
+      "source": "Simulated Flight Controls",
+      "target": "Flight Controls Model",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Flight Controls",
+      "target": "Simulated Flight Controls Computer",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Flight Controls Computer",
+      "target": "6b447dc4e092f00e4feafedf2ace2d5a",
+      "type": "described_by"
+    },
+    {
+      "source": "Simulated Flight Dynamics",
+      "target": "Aerodynamics Model",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Flight Dynamics",
+      "target": "Flight Dynamics Model",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Flight Dynamics",
+      "target": "Landing Gear Model",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Flight Dynamics",
+      "target": "Simulated Flight Controls",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated GPS",
+      "target": "f081e48a8963ff3d5ab2c45284b3ec48",
+      "type": "described_by"
+    },
+    {
+      "source": "Simulated GPWS",
+      "target": "daa0d9233fed5ef92d3de242590a9d3f",
+      "type": "described_by"
+    },
+    {
+      "source": "Simulated GPWS",
+      "target": "GPWS Database",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated GPWS",
+      "target": "GPWS Simulation",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated IFF",
+      "target": "280deac26b7a60cedb0f3a109625b1a0",
+      "type": "described_by"
+    },
+    {
+      "source": "Simulated IFF",
+      "target": "609cad02e563e548378cbebbab6445fa",
+      "type": "described_by"
+    },
+    {
+      "source": "Simulated IFF",
+      "target": "d0c31d60d63af5dd7d4eec807819e5c4",
+      "type": "described_by"
+    },
+    {
+      "source": "Simulated Navigation Aids",
+      "target": "Navigation Aid Database",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Navigation Aids",
+      "target": "Navigation Aid Simulation",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Navigation Systems",
+      "target": "Simulated Flight Dynamics",
+      "type": "input_from"
+    },
+    {
+      "source": "Simulated Navigation Systems",
+      "target": "Simulated GPS",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Navigation Systems",
+      "target": "Simulated Radio Navigation Systems",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Navigation Systems",
+      "target": "Simulated TCAS",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Radio Navigation Systems",
+      "target": "50a54cae0911e7def0c96b4174a32bcd",
+      "type": "described_by"
+    },
+    {
+      "source": "Simulated Radio Navigation Systems",
+      "target": "6648f0fc45a196c5ea6747cfc2121577",
+      "type": "described_by"
+    },
+    {
+      "source": "Simulated Radio Navigation Systems",
+      "target": "ca45d8371338617c09d29726460f05fa",
+      "type": "described_by"
+    },
+    {
+      "source": "Simulated Sensor Systems",
+      "target": "Simulated Flight Dynamics",
+      "type": "input_from"
+    },
+    {
+      "source": "Simulated Sensor Systems",
+      "target": "Simulated GPWS",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulated Sensor Systems",
+      "target": "Simulated Navigation Systems",
+      "type": "input_from"
+    },
+    {
+      "source": "Simulated TCAS",
+      "target": "39f3fb97cc8e232823cf9be3b402e3b4",
+      "type": "described_by"
+    },
+    {
+      "source": "Simulator Cockpit",
+      "target": "Cockpit Instruments",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulator Cockpit",
+      "target": "Cockpit Instruments Data Interface",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulator Cockpit",
+      "target": "Cockpit Instruments Structural Interface",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulator Cockpit",
+      "target": "Cockpit Interface Computer",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulator Cockpit",
+      "target": "Cockpit Lighting",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulator Cockpit",
+      "target": "Cockpit Power Supply",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulator Cockpit",
+      "target": "Cockpit Structure",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulator Cockpit",
+      "target": "Crew Seats",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulator Cockpit",
+      "target": "Flight Control Hardware",
+      "type": "built_from"
+    },
+    {
+      "source": "Simulator Cockpit",
+      "target": "Host Computer",
+      "type": "input_from"
+    },
+    {
+      "source": "Simulator Cockpit",
+      "target": "Simulated Aircraft Engines",
+      "type": "input_from"
+    },
+    {
+      "source": "Simulator Cockpit",
+      "target": "Simulated Flight Dynamics",
+      "type": "input_from"
+    },
+    {
+      "source": "Simulator Comms System",
+      "target": "Host Computer",
+      "type": "input_from"
+    },
+    {
+      "source": "Simulator Sound System",
+      "target": "Host Computer",
+      "type": "input_from"
+    },
+    {
+      "source": "Simulator Sound System",
+      "target": "Simulated Aircraft Engines",
+      "type": "input_from"
+    },
+    {
+      "source": "Simulator Sound System",
+      "target": "Simulated Flight Dynamics",
+      "type": "input_from"
+    },
+    {
+      "source": "Takeoff",
+      "target": "Taxi",
+      "type": "defined_by"
+    },
+    {
+      "source": "Taxi",
+      "target": "Stationary on Ground",
+      "type": "defined_by"
+    },
+    {
+      "source": "Visual System",
+      "target": "Display System",
+      "type": "built_from"
+    },
+    {
+      "source": "Visual System",
+      "target": "Image Generation System",
+      "type": "built_from"
+    },
+    {
+      "source": "Visual System",
+      "target": "Projection System",
+      "type": "built_from"
+    },
+    {
+      "source": "World Simulation",
+      "target": "Simulated Navigation Aids",
+      "type": "built_from"
+    }
+  ]
+}
