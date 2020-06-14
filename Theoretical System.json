@@ -1,6 +1,6 @@
 {
   "name": "Theoretical System",
-  "SCHEMA_VERSION": "0.0.0",
+  "SCHEMA_VERSION": "0.7.0",
   "elements": [
     {
       "name": "4a3a1e18f9652b8325c2c31148d726cb",
@@ -23,9 +23,27 @@
       "description": "Progress towards this milestone has been temporarily stopped."
     },
     {
+      "name": "9c4191a7ed3226473c23f7b07ff4dc4a",
+      "type": "Annotation",
+      "subtype": "Risk",
+      "description": "This is a risk annotation."
+    },
+    {
+      "name": "09de49a72ad59809657a54530a4547f4",
+      "type": "Annotation",
+      "subtype": "Concern",
+      "description": "This is a concern annotation."
+    },
+    {
       "name": "10f3d5fa87a16f59918ef67d3c270486",
       "type": "Description",
       "description": "A service provided by a service provider."
+    },
+    {
+      "name": "25d53c1bbcd68a04d2943fa5edc4b7f4",
+      "type": "Annotation",
+      "subtype": "Opportunity",
+      "description": "This is an opportunity annotation."
     },
     {
       "name": "69a9a6cc5dde0efa0b565e09f6fa209a",
@@ -51,6 +69,12 @@
       "name": "9382f74f251dc1e050536fe8d8f79c01",
       "type": "Description",
       "description": "A system (either a black box or built from other elements)."
+    },
+    {
+      "name": "81927c23250b3672c563787304455203",
+      "type": "Annotation",
+      "subtype": "Action",
+      "description": "This is an action annotation."
     },
     {
       "name": "3488903e90db9ae548bc69c38b3ffc4c",
@@ -82,7 +106,15 @@
       "type": "Data"
     },
     {
+      "name": "Element with annotation",
+      "type": "Undefined"
+    },
+    {
       "name": "Element with description",
+      "type": "Undefined"
+    },
+    {
+      "name": "Element without annotation",
       "type": "Undefined"
     },
     {
@@ -170,6 +202,31 @@
       "type": "described_by"
     },
     {
+      "source": "Element with annotation",
+      "target": "9c4191a7ed3226473c23f7b07ff4dc4a",
+      "type": "annotated_by"
+    },
+    {
+      "source": "Element with annotation",
+      "target": "09de49a72ad59809657a54530a4547f4",
+      "type": "annotated_by"
+    },
+    {
+      "source": "Element with annotation",
+      "target": "25d53c1bbcd68a04d2943fa5edc4b7f4",
+      "type": "annotated_by"
+    },
+    {
+      "source": "Element with annotation",
+      "target": "81927c23250b3672c563787304455203",
+      "type": "annotated_by"
+    },
+    {
+      "source": "Element with annotation",
+      "target": "Element without annotation",
+      "type": "built_from"
+    },
+    {
       "source": "Element with description",
       "target": "cb7e6d93b0db6230f8161d9a3112235c",
       "type": "described_by"
@@ -252,6 +309,11 @@
     {
       "source": "System",
       "target": "Subsystem",
+      "type": "built_from"
+    },
+    {
+      "source": "System of Interest",
+      "target": "Element with annotation",
       "type": "built_from"
     },
     {
