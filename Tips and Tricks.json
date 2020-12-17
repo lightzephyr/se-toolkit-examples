@@ -1,0 +1,129 @@
+{
+  "name": "Tips and Tricks",
+  "SCHEMA_VERSION": "0.7.0",
+  "elements": [
+    {
+      "name": "25ac92fde58b14e921c12bfe2b6419aa",
+      "type": "Annotation",
+      "subtype": "Action",
+      "description": "[2020-06-20] Somebody told me to take this action, but I don't really know what it means or when its due..."
+    },
+    {
+      "name": "043d10d5aa6f3fe61c1037b031853b72",
+      "type": "Description",
+      "description": "5. The SOI operates in the following environments..."
+    },
+    {
+      "name": "078c40a0fbff23d6e484fd5761f528b5",
+      "type": "Annotation",
+      "subtype": "Action",
+      "description": "[2020-06-15] \n- Perform this critical action...\n- This action is also critical..."
+    },
+    {
+      "name": "203a0c7320e370d27b110e97201dc269",
+      "type": "Description",
+      "description": "2. The SOI does not include..."
+    },
+    {
+      "name": "250b9d65f8a2b99bd8279d350180e080",
+      "type": "Annotation",
+      "subtype": "Action",
+      "description": "[2020-12-15] Get this done before the end of year Christmas party..."
+    },
+    {
+      "name": "6656a3c55ca19f819be6af77fffe14d8",
+      "type": "Description",
+      "description": "1. The system of interest (SOI) is defined as..."
+    },
+    {
+      "name": "33553df80918d5389186e09933b9663e",
+      "type": "Description",
+      "description": "3. The SOI has external interfaces with...\n3.1 The external interface with system A consists of...\n3.2 The external interface with system B consists of..."
+    },
+    {
+      "name": "da36e135e121aaaf27cf67ef8e8b721f",
+      "type": "Annotation",
+      "subtype": "Action",
+      "description": "[2020-06-30] This action is not so critical..."
+    },
+    {
+      "name": "ea8f63c2608e24dcf9d57eca8132c908",
+      "type": "Description",
+      "description": "4. The SOI needs to operate in compliance with..."
+    },
+    {
+      "name": "Goal",
+      "type": "Milestone"
+    },
+    {
+      "name": "Intermediary Goal",
+      "type": "Milestone",
+      "status": "InProgress"
+    },
+    {
+      "name": "Subsystem of Interest",
+      "type": "System"
+    },
+    {
+      "name": "System of Interest",
+      "type": "System"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Goal",
+      "target": "25ac92fde58b14e921c12bfe2b6419aa",
+      "type": "annotated_by"
+    },
+    {
+      "source": "Goal",
+      "target": "078c40a0fbff23d6e484fd5761f528b5",
+      "type": "annotated_by"
+    },
+    {
+      "source": "Goal",
+      "target": "250b9d65f8a2b99bd8279d350180e080",
+      "type": "annotated_by"
+    },
+    {
+      "source": "Goal",
+      "target": "da36e135e121aaaf27cf67ef8e8b721f",
+      "type": "annotated_by"
+    },
+    {
+      "source": "Goal",
+      "target": "Intermediary Goal",
+      "type": "defined_by"
+    },
+    {
+      "source": "System of Interest",
+      "target": "043d10d5aa6f3fe61c1037b031853b72",
+      "type": "described_by"
+    },
+    {
+      "source": "System of Interest",
+      "target": "203a0c7320e370d27b110e97201dc269",
+      "type": "described_by"
+    },
+    {
+      "source": "System of Interest",
+      "target": "6656a3c55ca19f819be6af77fffe14d8",
+      "type": "described_by"
+    },
+    {
+      "source": "System of Interest",
+      "target": "33553df80918d5389186e09933b9663e",
+      "type": "described_by"
+    },
+    {
+      "source": "System of Interest",
+      "target": "ea8f63c2608e24dcf9d57eca8132c908",
+      "type": "described_by"
+    },
+    {
+      "source": "System of Interest",
+      "target": "Subsystem of Interest",
+      "type": "built_from"
+    }
+  ]
+}
