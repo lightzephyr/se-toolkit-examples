@@ -1,2 +1,3 @@
-# wabit-examples
-Example models for wabiT
+# SE-Toolkit Examples
+
+This repository contains Systems Engineering Toolkit example models.
