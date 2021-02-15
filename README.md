@@ -1,3 +1,3 @@
 # SE-Toolkit Examples
 
-This repository contains Systems Engineering Toolkit example models.
+This repository contains example models for the Systems Engineering Toolkit.
