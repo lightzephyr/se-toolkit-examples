@@ -1,380 +1,474 @@
 {
   "name": "Bicycle",
-  "SCHEMA_VERSION": "0.0.0",
+  "SCHEMA_VERSION": "0.9.0",
   "elements": [
     {
-      "name": "43bae864cc63f2cb1147076726274af3",
+      "name": "5df118de9546a751d4e035971db38f58",
       "type": "Description",
-      "description": "Shifters could be further broken down into levers, cables, and the part that actually moves the chain."
+      "description": "Shifters could be further broken down into levers, cables, and the part that actually moves the chain.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954895305,
+          "operation": "create",
+          "description": null
+        }
+      ]
     },
     {
-      "name": "518664c66dddcab088c31ec85e40323a",
+      "name": "14aec83d4b7fde139273239b52235c54",
       "type": "Description",
-      "description": "Front and back hydraulic systems."
+      "description": "Front and back hydraulic systems.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954895305,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "20d285566a46af61045be650b35a8485",
+      "type": "Description",
+      "description": "Front and back brake handles.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954895305,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "7642fcbfacd421f4d0c9e20499d948d0",
+      "type": "Description",
+      "description": "Front and back shifters.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954895305,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "32726d9d7d45aadeb58b148454a60849",
+      "type": "Description",
+      "description": "Each wheel could be further broken down into hub, rims, spokes, and tyres.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954895305,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "29095736a86477d1836b0138429ebaba",
+      "type": "Description",
+      "description": "Front and back gear sprockets.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954895305,
+          "operation": "create",
+          "description": null
+        }
+      ]
     },
     {
       "name": "Back Wheel",
-      "type": "Hardware"
+      "type": "Hardware",
+      "relationships": [
+        {
+          "target": "Brake Disks / Pads / Mounts",
+          "type": "input_from"
+        },
+        {
+          "target": "Chain",
+          "type": "input_from"
+        },
+        {
+          "target": "Frame",
+          "type": "input_from"
+        }
+      ],
+      "changeLog": []
+    },
+    {
+      "name": "bd3d3d79f7e990208e95d2747fb79ca7",
+      "type": "Description",
+      "description": "Hydraulic systems could be further broken down into reservoir, cables, and fluid.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954895305,
+          "operation": "create",
+          "description": null
+        }
+      ]
     },
     {
       "name": "Bicycle",
-      "type": "System"
+      "type": "System",
+      "relationships": [
+        {
+          "target": "Brake System",
+          "type": "built_from"
+        },
+        {
+          "target": "Drive System",
+          "type": "built_from"
+        },
+        {
+          "target": "Structure",
+          "type": "built_from"
+        },
+        {
+          "target": "Wheels",
+          "type": "built_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Bike assembled",
-      "type": "Milestone"
+      "type": "Milestone",
+      "relationships": [
+        {
+          "target": "Frame painted",
+          "type": "defined_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Bike finished",
-      "type": "Milestone"
+      "type": "Milestone",
+      "relationships": [
+        {
+          "target": "Bike tuned",
+          "type": "defined_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Bike tuned",
-      "type": "Milestone"
+      "type": "Milestone",
+      "relationships": [
+        {
+          "target": "Bike assembled",
+          "type": "defined_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Brake Disks / Pads / Mounts",
       "type": "Hardware",
-      "status": "NotStarted"
+      "status": "NotStarted",
+      "relationships": [
+        {
+          "target": "Brake Hydraulic Systems",
+          "type": "input_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Brake Handles",
-      "type": "Hardware"
+      "type": "Hardware",
+      "relationships": [
+        {
+          "target": "20d285566a46af61045be650b35a8485",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Brake Hydraulic Systems",
       "type": "System",
-      "status": "NotStarted"
+      "status": "NotStarted",
+      "relationships": [
+        {
+          "target": "14aec83d4b7fde139273239b52235c54",
+          "type": "described_by"
+        },
+        {
+          "target": "bd3d3d79f7e990208e95d2747fb79ca7",
+          "type": "described_by"
+        },
+        {
+          "target": "Brake Handles",
+          "type": "input_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Brake System",
-      "type": "System"
-    },
-    {
-      "name": "caf3d1ea79f8773a2c5a5d175aa033b8",
-      "type": "Description",
-      "description": "Front and back gear sprockets."
+      "type": "System",
+      "relationships": [
+        {
+          "target": "Brake Disks / Pads / Mounts",
+          "type": "built_from"
+        },
+        {
+          "target": "Brake Handles",
+          "type": "built_from"
+        },
+        {
+          "target": "Brake Hydraulic Systems",
+          "type": "built_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Chain",
-      "type": "Hardware"
+      "type": "Hardware",
+      "relationships": [
+        {
+          "target": "Crank & Pedals",
+          "type": "input_from"
+        },
+        {
+          "target": "Gears",
+          "type": "input_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Crank & Pedals",
       "type": "Hardware",
-      "status": "NotStarted"
-    },
-    {
-      "name": "d3e15e149a5c2abe486a05b1d0746de7",
-      "type": "Description",
-      "description": "Front and back brake handles."
-    },
-    {
-      "name": "d15e3a73770af70d8da9262545df49bb",
-      "type": "Description",
-      "description": "Front and back shifters."
+      "status": "NotStarted",
+      "relationships": [],
+      "changeLog": []
     },
     {
       "name": "Drive System",
-      "type": "System"
+      "type": "System",
+      "relationships": [
+        {
+          "target": "Chain",
+          "type": "built_from"
+        },
+        {
+          "target": "Crank & Pedals",
+          "type": "built_from"
+        },
+        {
+          "target": "Gears",
+          "type": "built_from"
+        },
+        {
+          "target": "Shifters",
+          "type": "built_from"
+        }
+      ],
+      "changeLog": []
     },
     {
-      "name": "e4afe1ed1c3dd5f06e00f0ca8a39552f",
+      "name": "ee09e4d60c08ab551813252430ebda6d",
       "type": "Description",
-      "description": "Each wheel could be further broken down into hub, rims, spokes, and tyres."
-    },
-    {
-      "name": "fa0f01468e1845ac67526e4aaf78c605",
-      "type": "Description",
-      "description": "Forks can be plain forks or shock absorbers."
-    },
-    {
-      "name": "fd123b3574030053f940b0b0eab9522f",
-      "type": "Description",
-      "description": "Hydraulic systems could be further broken down into reservoir, cables, and fluid."
+      "description": "Forks can be plain forks or shock absorbers.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954895305,
+          "operation": "create",
+          "description": null
+        }
+      ]
     },
     {
       "name": "Forks",
-      "type": "Hardware"
+      "type": "Hardware",
+      "relationships": [
+        {
+          "target": "ee09e4d60c08ab551813252430ebda6d",
+          "type": "described_by"
+        },
+        {
+          "target": "Frame",
+          "type": "input_from"
+        },
+        {
+          "target": "Front Wheel",
+          "type": "input_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Frame",
-      "type": "Hardware"
+      "type": "Hardware",
+      "relationships": [
+        {
+          "target": "Back Wheel",
+          "type": "input_from"
+        },
+        {
+          "target": "Forks",
+          "type": "input_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Frame assembled",
-      "type": "Milestone"
+      "type": "Milestone",
+      "relationships": [
+        {
+          "target": "Parts available",
+          "type": "defined_by"
+        },
+        {
+          "target": "People available",
+          "type": "defined_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Frame painted",
-      "type": "Milestone"
+      "type": "Milestone",
+      "relationships": [
+        {
+          "target": "Frame assembled",
+          "type": "defined_by"
+        },
+        {
+          "target": "Paint available",
+          "type": "defined_by"
+        },
+        {
+          "target": "Paint booth available",
+          "type": "defined_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Front Wheel",
-      "type": "Hardware"
+      "type": "Hardware",
+      "relationships": [
+        {
+          "target": "Brake Disks / Pads / Mounts",
+          "type": "input_from"
+        },
+        {
+          "target": "Forks",
+          "type": "input_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Gears",
       "type": "Hardware",
-      "status": "NotStarted"
+      "status": "NotStarted",
+      "relationships": [
+        {
+          "target": "29095736a86477d1836b0138429ebaba",
+          "type": "described_by"
+        },
+        {
+          "target": "Shifters",
+          "type": "input_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Paint available",
-      "type": "Milestone"
+      "type": "Milestone",
+      "relationships": [],
+      "changeLog": []
     },
     {
       "name": "Paint booth available",
-      "type": "Milestone"
+      "type": "Milestone",
+      "relationships": [],
+      "changeLog": []
     },
     {
       "name": "Parts available",
-      "type": "Milestone"
+      "type": "Milestone",
+      "relationships": [],
+      "changeLog": []
     },
     {
       "name": "People available",
       "type": "Milestone",
-      "status": "NotStarted"
+      "status": "NotStarted",
+      "relationships": [],
+      "changeLog": []
     },
     {
       "name": "Shifters",
-      "type": "Hardware"
+      "type": "Hardware",
+      "relationships": [
+        {
+          "target": "5df118de9546a751d4e035971db38f58",
+          "type": "described_by"
+        },
+        {
+          "target": "7642fcbfacd421f4d0c9e20499d948d0",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Structure",
       "type": "Hardware",
-      "status": "NotStarted"
+      "status": "NotStarted",
+      "relationships": [
+        {
+          "target": "Forks",
+          "type": "built_from"
+        },
+        {
+          "target": "Frame",
+          "type": "built_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Wheels",
       "type": "Hardware",
-      "status": "NotStarted"
+      "status": "NotStarted",
+      "relationships": [
+        {
+          "target": "32726d9d7d45aadeb58b148454a60849",
+          "type": "described_by"
+        },
+        {
+          "target": "Back Wheel",
+          "type": "built_from"
+        },
+        {
+          "target": "Front Wheel",
+          "type": "built_from"
+        }
+      ],
+      "changeLog": []
     }
   ],
-  "relationships": [
+  "changeLog": [
     {
-      "source": "Back Wheel",
-      "target": "Brake Disks / Pads / Mounts",
-      "type": "input_from"
-    },
-    {
-      "source": "Back Wheel",
-      "target": "Chain",
-      "type": "input_from"
-    },
-    {
-      "source": "Back Wheel",
-      "target": "Frame",
-      "type": "input_from"
-    },
-    {
-      "source": "Bicycle",
-      "target": "Brake System",
-      "type": "built_from"
-    },
-    {
-      "source": "Bicycle",
-      "target": "Drive System",
-      "type": "built_from"
-    },
-    {
-      "source": "Bicycle",
-      "target": "Structure",
-      "type": "built_from"
-    },
-    {
-      "source": "Bicycle",
-      "target": "Wheels",
-      "type": "built_from"
-    },
-    {
-      "source": "Bike assembled",
-      "target": "Frame painted",
-      "type": "defined_by"
-    },
-    {
-      "source": "Bike finished",
-      "target": "Bike tuned",
-      "type": "defined_by"
-    },
-    {
-      "source": "Bike tuned",
-      "target": "Bike assembled",
-      "type": "defined_by"
-    },
-    {
-      "source": "Brake Disks / Pads / Mounts",
-      "target": "Brake Hydraulic Systems",
-      "type": "input_from"
-    },
-    {
-      "source": "Brake Handles",
-      "target": "d3e15e149a5c2abe486a05b1d0746de7",
-      "type": "described_by"
-    },
-    {
-      "source": "Brake Hydraulic Systems",
-      "target": "518664c66dddcab088c31ec85e40323a",
-      "type": "described_by"
-    },
-    {
-      "source": "Brake Hydraulic Systems",
-      "target": "Brake Handles",
-      "type": "input_from"
-    },
-    {
-      "source": "Brake Hydraulic Systems",
-      "target": "fd123b3574030053f940b0b0eab9522f",
-      "type": "described_by"
-    },
-    {
-      "source": "Brake System",
-      "target": "Brake Disks / Pads / Mounts",
-      "type": "built_from"
-    },
-    {
-      "source": "Brake System",
-      "target": "Brake Handles",
-      "type": "built_from"
-    },
-    {
-      "source": "Brake System",
-      "target": "Brake Hydraulic Systems",
-      "type": "built_from"
-    },
-    {
-      "source": "Chain",
-      "target": "Crank & Pedals",
-      "type": "input_from"
-    },
-    {
-      "source": "Chain",
-      "target": "Gears",
-      "type": "input_from"
-    },
-    {
-      "source": "Drive System",
-      "target": "Chain",
-      "type": "built_from"
-    },
-    {
-      "source": "Drive System",
-      "target": "Crank & Pedals",
-      "type": "built_from"
-    },
-    {
-      "source": "Drive System",
-      "target": "Gears",
-      "type": "built_from"
-    },
-    {
-      "source": "Drive System",
-      "target": "Shifters",
-      "type": "built_from"
-    },
-    {
-      "source": "Forks",
-      "target": "fa0f01468e1845ac67526e4aaf78c605",
-      "type": "described_by"
-    },
-    {
-      "source": "Forks",
-      "target": "Frame",
-      "type": "input_from"
-    },
-    {
-      "source": "Forks",
-      "target": "Front Wheel",
-      "type": "input_from"
-    },
-    {
-      "source": "Frame",
-      "target": "Back Wheel",
-      "type": "input_from"
-    },
-    {
-      "source": "Frame",
-      "target": "Forks",
-      "type": "input_from"
-    },
-    {
-      "source": "Frame assembled",
-      "target": "Parts available",
-      "type": "defined_by"
-    },
-    {
-      "source": "Frame assembled",
-      "target": "People available",
-      "type": "defined_by"
-    },
-    {
-      "source": "Frame painted",
-      "target": "Frame assembled",
-      "type": "defined_by"
-    },
-    {
-      "source": "Frame painted",
-      "target": "Paint available",
-      "type": "defined_by"
-    },
-    {
-      "source": "Frame painted",
-      "target": "Paint booth available",
-      "type": "defined_by"
-    },
-    {
-      "source": "Front Wheel",
-      "target": "Brake Disks / Pads / Mounts",
-      "type": "input_from"
-    },
-    {
-      "source": "Front Wheel",
-      "target": "Forks",
-      "type": "input_from"
-    },
-    {
-      "source": "Gears",
-      "target": "caf3d1ea79f8773a2c5a5d175aa033b8",
-      "type": "described_by"
-    },
-    {
-      "source": "Gears",
-      "target": "Shifters",
-      "type": "input_from"
-    },
-    {
-      "source": "Shifters",
-      "target": "43bae864cc63f2cb1147076726274af3",
-      "type": "described_by"
-    },
-    {
-      "source": "Shifters",
-      "target": "d15e3a73770af70d8da9262545df49bb",
-      "type": "described_by"
-    },
-    {
-      "source": "Structure",
-      "target": "Forks",
-      "type": "built_from"
-    },
-    {
-      "source": "Structure",
-      "target": "Frame",
-      "type": "built_from"
-    },
-    {
-      "source": "Wheels",
-      "target": "Back Wheel",
-      "type": "built_from"
-    },
-    {
-      "source": "Wheels",
-      "target": "e4afe1ed1c3dd5f06e00f0ca8a39552f",
-      "type": "described_by"
-    },
-    {
-      "source": "Wheels",
-      "target": "Front Wheel",
-      "type": "built_from"
+      "time": 1631954895303,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.0.0 to 0.9.0"
     }
   ]
 }

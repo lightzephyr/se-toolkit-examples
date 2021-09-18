@@ -1,175 +1,193 @@
 {
   "name": "Paraglider",
-  "SCHEMA_VERSION": "0.7.0",
+  "SCHEMA_VERSION": "0.9.0",
   "elements": [
     {
       "name": "Harness",
-      "type": "Hardware"
+      "type": "Hardware",
+      "relationships": [
+        {
+          "target": "Lines",
+          "type": "input_from"
+        },
+        {
+          "target": "Rescue Parachute",
+          "type": "input_from"
+        },
+        {
+          "target": "Risers",
+          "type": "input_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Harness assembled",
-      "type": "Milestone"
+      "type": "Milestone",
+      "relationships": [],
+      "changeLog": []
     },
     {
       "name": "Lines",
-      "type": "Hardware"
+      "type": "Hardware",
+      "relationships": [
+        {
+          "target": "Harness",
+          "type": "input_from"
+        },
+        {
+          "target": "Risers",
+          "type": "input_from"
+        },
+        {
+          "target": "Wing",
+          "type": "input_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Lines and risers assembled",
-      "type": "Milestone"
+      "type": "Milestone",
+      "relationships": [
+        {
+          "target": "Parts available",
+          "type": "defined_by"
+        },
+        {
+          "target": "People available",
+          "type": "defined_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Lines connected to wing",
-      "type": "Milestone"
+      "type": "Milestone",
+      "relationships": [
+        {
+          "target": "Lines and risers assembled",
+          "type": "defined_by"
+        },
+        {
+          "target": "Wing assembled",
+          "type": "defined_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Paraglider",
-      "type": "System"
+      "type": "System",
+      "relationships": [
+        {
+          "target": "Harness",
+          "type": "built_from"
+        },
+        {
+          "target": "Lines",
+          "type": "built_from"
+        },
+        {
+          "target": "Rescue Parachute",
+          "type": "built_from"
+        },
+        {
+          "target": "Risers",
+          "type": "built_from"
+        },
+        {
+          "target": "Wing",
+          "type": "built_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Paraglider finished",
-      "type": "Milestone"
+      "type": "Milestone",
+      "relationships": [
+        {
+          "target": "Harness assembled",
+          "type": "defined_by"
+        },
+        {
+          "target": "Lines connected to wing",
+          "type": "defined_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Parts available",
-      "type": "Milestone"
+      "type": "Milestone",
+      "relationships": [],
+      "changeLog": []
     },
     {
       "name": "People available",
-      "type": "Milestone"
+      "type": "Milestone",
+      "relationships": [],
+      "changeLog": []
     },
     {
       "name": "Rescue Parachute",
-      "type": "Hardware"
+      "type": "Hardware",
+      "relationships": [
+        {
+          "target": "Harness",
+          "type": "input_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Risers",
-      "type": "Hardware"
+      "type": "Hardware",
+      "relationships": [
+        {
+          "target": "Harness",
+          "type": "input_from"
+        },
+        {
+          "target": "Lines",
+          "type": "input_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Wing",
-      "type": "Hardware"
+      "type": "Hardware",
+      "relationships": [
+        {
+          "target": "Lines",
+          "type": "input_from"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Wing assembled",
-      "type": "Milestone"
+      "type": "Milestone",
+      "relationships": [
+        {
+          "target": "Parts available",
+          "type": "defined_by"
+        },
+        {
+          "target": "People available",
+          "type": "defined_by"
+        }
+      ],
+      "changeLog": []
     }
   ],
-  "relationships": [
+  "changeLog": [
     {
-      "source": "Harness",
-      "target": "Lines",
-      "type": "input_from"
-    },
-    {
-      "source": "Harness",
-      "target": "Rescue Parachute",
-      "type": "input_from"
-    },
-    {
-      "source": "Harness",
-      "target": "Risers",
-      "type": "input_from"
-    },
-    {
-      "source": "Lines",
-      "target": "Harness",
-      "type": "input_from"
-    },
-    {
-      "source": "Lines",
-      "target": "Risers",
-      "type": "input_from"
-    },
-    {
-      "source": "Lines",
-      "target": "Wing",
-      "type": "input_from"
-    },
-    {
-      "source": "Lines and risers assembled",
-      "target": "Parts available",
-      "type": "defined_by"
-    },
-    {
-      "source": "Lines and risers assembled",
-      "target": "People available",
-      "type": "defined_by"
-    },
-    {
-      "source": "Lines connected to wing",
-      "target": "Lines and risers assembled",
-      "type": "defined_by"
-    },
-    {
-      "source": "Lines connected to wing",
-      "target": "Wing assembled",
-      "type": "defined_by"
-    },
-    {
-      "source": "Paraglider",
-      "target": "Harness",
-      "type": "built_from"
-    },
-    {
-      "source": "Paraglider",
-      "target": "Lines",
-      "type": "built_from"
-    },
-    {
-      "source": "Paraglider",
-      "target": "Rescue Parachute",
-      "type": "built_from"
-    },
-    {
-      "source": "Paraglider",
-      "target": "Risers",
-      "type": "built_from"
-    },
-    {
-      "source": "Paraglider",
-      "target": "Wing",
-      "type": "built_from"
-    },
-    {
-      "source": "Paraglider finished",
-      "target": "Harness assembled",
-      "type": "defined_by"
-    },
-    {
-      "source": "Paraglider finished",
-      "target": "Lines connected to wing",
-      "type": "defined_by"
-    },
-    {
-      "source": "Rescue Parachute",
-      "target": "Harness",
-      "type": "input_from"
-    },
-    {
-      "source": "Risers",
-      "target": "Harness",
-      "type": "input_from"
-    },
-    {
-      "source": "Risers",
-      "target": "Lines",
-      "type": "input_from"
-    },
-    {
-      "source": "Wing",
-      "target": "Lines",
-      "type": "input_from"
-    },
-    {
-      "source": "Wing assembled",
-      "target": "Parts available",
-      "type": "defined_by"
-    },
-    {
-      "source": "Wing assembled",
-      "target": "People available",
-      "type": "defined_by"
+      "time": 1631954917280,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.7.0 to 0.9.0"
     }
   ]
 }
