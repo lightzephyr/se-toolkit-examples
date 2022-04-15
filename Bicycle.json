@@ -1,85 +1,7 @@
 {
   "name": "Bicycle",
-  "SCHEMA_VERSION": "0.9.0",
+  "SCHEMA_VERSION": "0.10.0",
   "elements": [
-    {
-      "name": "5df118de9546a751d4e035971db38f58",
-      "type": "Description",
-      "description": "Shifters could be further broken down into levers, cables, and the part that actually moves the chain.",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954895305,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
-      "name": "14aec83d4b7fde139273239b52235c54",
-      "type": "Description",
-      "description": "Front and back hydraulic systems.",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954895305,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
-      "name": "20d285566a46af61045be650b35a8485",
-      "type": "Description",
-      "description": "Front and back brake handles.",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954895305,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
-      "name": "7642fcbfacd421f4d0c9e20499d948d0",
-      "type": "Description",
-      "description": "Front and back shifters.",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954895305,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
-      "name": "32726d9d7d45aadeb58b148454a60849",
-      "type": "Description",
-      "description": "Each wheel could be further broken down into hub, rims, spokes, and tyres.",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954895305,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
-      "name": "29095736a86477d1836b0138429ebaba",
-      "type": "Description",
-      "description": "Front and back gear sprockets.",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954895305,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
     {
       "name": "Back Wheel",
       "type": "Hardware",
@@ -98,19 +20,6 @@
         }
       ],
       "changeLog": []
-    },
-    {
-      "name": "bd3d3d79f7e990208e95d2747fb79ca7",
-      "type": "Description",
-      "description": "Hydraulic systems could be further broken down into reservoir, cables, and fluid.",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954895305,
-          "operation": "create",
-          "description": null
-        }
-      ]
     },
     {
       "name": "Bicycle",
@@ -183,13 +92,9 @@
     {
       "name": "Brake Handles",
       "type": "Hardware",
-      "relationships": [
-        {
-          "target": "20d285566a46af61045be650b35a8485",
-          "type": "described_by"
-        }
-      ],
-      "changeLog": []
+      "relationships": [],
+      "changeLog": [],
+      "description": "Front and back brake handles."
     },
     {
       "name": "Brake Hydraulic Systems",
@@ -197,19 +102,12 @@
       "status": "NotStarted",
       "relationships": [
         {
-          "target": "14aec83d4b7fde139273239b52235c54",
-          "type": "described_by"
-        },
-        {
-          "target": "bd3d3d79f7e990208e95d2747fb79ca7",
-          "type": "described_by"
-        },
-        {
           "target": "Brake Handles",
           "type": "input_from"
         }
       ],
-      "changeLog": []
+      "changeLog": [],
+      "description": "Hydraulic systems could be further broken down into reservoir, cables, and fluid. Front and back hydraulic systems."
     },
     {
       "name": "Brake System",
@@ -276,26 +174,9 @@
       "changeLog": []
     },
     {
-      "name": "ee09e4d60c08ab551813252430ebda6d",
-      "type": "Description",
-      "description": "Forks can be plain forks or shock absorbers.",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954895305,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
       "name": "Forks",
       "type": "Hardware",
       "relationships": [
-        {
-          "target": "ee09e4d60c08ab551813252430ebda6d",
-          "type": "described_by"
-        },
         {
           "target": "Frame",
           "type": "input_from"
@@ -305,7 +186,8 @@
           "type": "input_from"
         }
       ],
-      "changeLog": []
+      "changeLog": [],
+      "description": "Forks can be plain forks or shock absorbers."
     },
     {
       "name": "Frame",
@@ -377,15 +259,12 @@
       "status": "NotStarted",
       "relationships": [
         {
-          "target": "29095736a86477d1836b0138429ebaba",
-          "type": "described_by"
-        },
-        {
           "target": "Shifters",
           "type": "input_from"
         }
       ],
-      "changeLog": []
+      "changeLog": [],
+      "description": "Front and back gear sprockets."
     },
     {
       "name": "Paint available",
@@ -415,17 +294,9 @@
     {
       "name": "Shifters",
       "type": "Hardware",
-      "relationships": [
-        {
-          "target": "5df118de9546a751d4e035971db38f58",
-          "type": "described_by"
-        },
-        {
-          "target": "7642fcbfacd421f4d0c9e20499d948d0",
-          "type": "described_by"
-        }
-      ],
-      "changeLog": []
+      "relationships": [],
+      "changeLog": [],
+      "description": "Front and back shifters. Shifters could be further broken down into levers, cables, and the part that actually moves the chain."
     },
     {
       "name": "Structure",
@@ -449,10 +320,6 @@
       "status": "NotStarted",
       "relationships": [
         {
-          "target": "32726d9d7d45aadeb58b148454a60849",
-          "type": "described_by"
-        },
-        {
           "target": "Back Wheel",
           "type": "built_from"
         },
@@ -461,7 +328,8 @@
           "type": "built_from"
         }
       ],
-      "changeLog": []
+      "changeLog": [],
+      "description": "Each wheel could be further broken down into hub, rims, spokes, and tyres."
     }
   ],
   "changeLog": [
@@ -469,6 +337,11 @@
       "time": 1631954895303,
       "operation": "update",
       "description": "Upgraded model schema from version 0.0.0 to 0.9.0"
+    },
+    {
+      "time": 1650017351815,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.9.0 to 0.10.0"
     }
   ]
 }
