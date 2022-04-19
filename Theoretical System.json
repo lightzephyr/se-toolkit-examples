@@ -1,19 +1,194 @@
 {
   "name": "Theoretical System",
-  "SCHEMA_VERSION": "0.10.0",
+  "SCHEMA_VERSION": "0.9.0",
   "elements": [
+    {
+      "name": "1cb4b83b22a3d09d739e82a517d2bcde",
+      "type": "Description",
+      "description": "A service provided by a service provider.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925954,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "2c71ce6d62aab448e990d9d5e3258408",
+      "type": "Description",
+      "description": "Progress is being made towards this milestone.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925955,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "3e4cf43d39eb4bc5dc8fa77045b72c14",
+      "type": "Description",
+      "description": "This is a description.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925955,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "4b6260dba4738ea8e52a8151332a068f",
+      "type": "Annotation",
+      "subtype": "Risk",
+      "description": "This is a risk annotation.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925954,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "9a703150e4671840b7f10247858198bb",
+      "type": "Description",
+      "description": "A hardware item.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925955,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "37af8091ddda37d38eb7a2ef5958d81a",
+      "type": "Annotation",
+      "subtype": "Concern",
+      "description": "This is a concern annotation.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925954,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "49d7c298152090f8480c03e50eb79231",
+      "type": "Annotation",
+      "subtype": "Opportunity",
+      "description": "This is an opportunity annotation.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925955,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "077ef13358d3e991b827a8c141831003",
+      "type": "Description",
+      "description": "Progress towards this milestone has been temporarily stopped.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925954,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "467a8b09825ee155a119d94103895d79",
+      "type": "Description",
+      "description": "The milestone will not be reached.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925955,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "591ff09e1a4d76329176488ee8eee202",
+      "type": "Description",
+      "description": "A system (either a black box or built from other elements).",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925955,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "0593a9e6d6eed12debbb17bd98e90d62",
+      "type": "Description",
+      "description": "The milestone has been reached.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925954,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "5521fcb7e388fd024946e0c291322bf5",
+      "type": "Description",
+      "description": "The milestone cannot be reached until whatever is blocking progress has been resolved.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925954,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "7365f7f9c9a0549d2e63700d7eb7b444",
+      "type": "Description",
+      "description": "A data item.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925955,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
     {
       "name": "Aborted",
       "type": "Milestone",
       "status": "Aborted",
       "relationships": [
         {
+          "target": "467a8b09825ee155a119d94103895d79",
+          "type": "described_by"
+        },
+        {
           "target": "Undefined",
           "type": "defined_by"
         }
       ],
-      "changeLog": [],
-      "description": "The milestone will not be reached."
+      "changeLog": []
     },
     {
       "name": "Blocked",
@@ -21,64 +196,95 @@
       "status": "Blocked",
       "relationships": [
         {
+          "target": "5521fcb7e388fd024946e0c291322bf5",
+          "type": "described_by"
+        },
+        {
           "target": "In Progress",
           "type": "defined_by"
         }
       ],
-      "changeLog": [],
-      "description": "The milestone cannot be reached until whatever is blocking progress has been resolved."
+      "changeLog": []
+    },
+    {
+      "name": "d89ff8eb0faee73c1b07f6f67b6c3874",
+      "type": "Annotation",
+      "subtype": "Action",
+      "description": "This is an action annotation.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925955,
+          "operation": "create",
+          "description": null
+        }
+      ]
     },
     {
       "name": "Data",
       "type": "Data",
+      "relationships": [
+        {
+          "target": "7365f7f9c9a0549d2e63700d7eb7b444",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
+    },
+    {
+      "name": "ea37e5ffb96e7c8463acf54716458955",
+      "type": "Description",
+      "description": "The milestone status has not been defined.",
       "relationships": [],
-      "changeLog": [],
-      "description": "A data item."
+      "changeLog": [
+        {
+          "time": 1631954925955,
+          "operation": "create",
+          "description": null
+        }
+      ]
     },
     {
       "name": "Element with annotation",
       "type": "Undefined",
       "relationships": [
         {
+          "target": "4b6260dba4738ea8e52a8151332a068f",
+          "type": "annotated_by"
+        },
+        {
+          "target": "37af8091ddda37d38eb7a2ef5958d81a",
+          "type": "annotated_by"
+        },
+        {
+          "target": "49d7c298152090f8480c03e50eb79231",
+          "type": "annotated_by"
+        },
+        {
+          "target": "d89ff8eb0faee73c1b07f6f67b6c3874",
+          "type": "annotated_by"
+        },
+        {
           "target": "Element without annotation",
           "type": "built_from"
         }
       ],
-      "changeLog": [],
-      "annotations": [
-        {
-          "time": 1650014098264,
-          "text": "This is an action annotation.",
-          "type": "Action"
-        },
-        {
-          "time": 1650014098264,
-          "text": "This is an opportunity annotation.",
-          "type": "Opportunity"
-        },
-        {
-          "time": 1650014098264,
-          "text": "This is a concern annotation.",
-          "type": "Risk"
-        },
-        {
-          "time": 1650014098264,
-          "text": "This is a risk annotation.",
-          "type": "Risk"
-        }
-      ]
+      "changeLog": []
     },
     {
       "name": "Element with description",
       "type": "Undefined",
       "relationships": [
         {
+          "target": "3e4cf43d39eb4bc5dc8fa77045b72c14",
+          "type": "described_by"
+        },
+        {
           "target": "Element without description",
           "type": "built_from"
         }
       ],
-      "changeLog": [],
-      "description": "This is a description."
+      "changeLog": []
     },
     {
       "name": "Element without annotation",
@@ -93,24 +299,57 @@
       "changeLog": []
     },
     {
+      "name": "f43560dcb2416f03aea2437838ae4cd2",
+      "type": "Description",
+      "description": "A software item.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925955,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "fbef0e1aafe78f38c310c5a441c422c0",
+      "type": "Description",
+      "description": "Progress towards this milestone has not been started.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954925954,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
       "name": "Finished",
       "type": "Milestone",
       "status": "Finished",
       "relationships": [
         {
+          "target": "0593a9e6d6eed12debbb17bd98e90d62",
+          "type": "described_by"
+        },
+        {
           "target": "In Progress",
           "type": "defined_by"
         }
       ],
-      "changeLog": [],
-      "description": "The milestone has been reached."
+      "changeLog": []
     },
     {
       "name": "Hardware",
       "type": "Hardware",
-      "relationships": [],
-      "changeLog": [],
-      "description": "A hardware item."
+      "relationships": [
+        {
+          "target": "9a703150e4671840b7f10247858198bb",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "In Progress",
@@ -118,20 +357,27 @@
       "status": "InProgress",
       "relationships": [
         {
+          "target": "2c71ce6d62aab448e990d9d5e3258408",
+          "type": "described_by"
+        },
+        {
           "target": "Not Started",
           "type": "defined_by"
         }
       ],
-      "changeLog": [],
-      "description": "Progress is being made towards this milestone."
+      "changeLog": []
     },
     {
       "name": "Not Started",
       "type": "Milestone",
       "status": "NotStarted",
-      "relationships": [],
-      "changeLog": [],
-      "description": "Progress towards this milestone has not been started."
+      "relationships": [
+        {
+          "target": "fbef0e1aafe78f38c310c5a441c422c0",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "On Hold",
@@ -139,26 +385,37 @@
       "status": "OnHold",
       "relationships": [
         {
+          "target": "077ef13358d3e991b827a8c141831003",
+          "type": "described_by"
+        },
+        {
           "target": "In Progress",
           "type": "defined_by"
         }
       ],
-      "changeLog": [],
-      "description": "Progress towards this milestone has been temporarily stopped."
+      "changeLog": []
     },
     {
       "name": "Service",
       "type": "Service",
-      "relationships": [],
-      "changeLog": [],
-      "description": "A service provided by a service provider."
+      "relationships": [
+        {
+          "target": "1cb4b83b22a3d09d739e82a517d2bcde",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Software",
       "type": "Software",
-      "relationships": [],
-      "changeLog": [],
-      "description": "A software item."
+      "relationships": [
+        {
+          "target": "f43560dcb2416f03aea2437838ae4cd2",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Subsystem",
@@ -184,12 +441,15 @@
       "type": "System",
       "relationships": [
         {
+          "target": "591ff09e1a4d76329176488ee8eee202",
+          "type": "described_by"
+        },
+        {
           "target": "Subsystem",
           "type": "built_from"
         }
       ],
-      "changeLog": [],
-      "description": "A system (either a black box or built from other elements)."
+      "changeLog": []
     },
     {
       "name": "System of Interest",
@@ -229,9 +489,13 @@
       "name": "Undefined",
       "type": "Milestone",
       "status": "NotStarted",
-      "relationships": [],
-      "changeLog": [],
-      "description": "The milestone status has not been defined."
+      "relationships": [
+        {
+          "target": "ea37e5ffb96e7c8463acf54716458955",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
     }
   ],
   "changeLog": [
@@ -239,11 +503,6 @@
       "time": 1631954925935,
       "operation": "update",
       "description": "Upgraded model schema from version 0.7.0 to 0.9.0"
-    },
-    {
-      "time": 1650014098264,
-      "operation": "update",
-      "description": "Upgraded model schema from version 0.9.0 to 0.10.0"
     }
   ]
 }

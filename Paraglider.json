@@ -1,6 +1,6 @@
 {
   "name": "Paraglider",
-  "SCHEMA_VERSION": "0.10.0",
+  "SCHEMA_VERSION": "0.9.0",
   "elements": [
     {
       "name": "Harness",

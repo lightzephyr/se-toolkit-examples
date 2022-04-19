@@ -1,12 +1,194 @@
 {
   "name": "Flight Simulator",
-  "SCHEMA_VERSION": "0.10.0",
+  "SCHEMA_VERSION": "0.9.0",
   "elements": [
+    {
+      "name": "2ad897d4c3a3b5f9c270c46f6920534a",
+      "type": "Description",
+      "description": "IFF describes an electronic, radio based identification system - in this case used between aircraft and ground based radar stations.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954908039,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "3e9251c683886328dd0e7941b09fc581",
+      "type": "Description",
+      "description": "The navigation radio simulation does not include the database of navigation aids.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954908039,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "7bad9205fa3f01333e82be08a616f9be",
+      "type": "Description",
+      "description": "TCAS: Traffic Collision and Avoidance System",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954908039,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "8f68d8be94c57e03d97b178bf690e171",
+      "type": "Description",
+      "description": "The navigation radio simulation does not include communication radios.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954908039,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "31aad153197214e2b817c3e05fae82dc",
+      "type": "Description",
+      "description": "The FADEC is typically too complicated to be able to model all of its functionality from scratch. Therefore a rehost of the actual engine software is required for higher fidelity simulators and is almost unavoidable for Level D.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954908039,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "69ee02e94021a16c151be047d5ebb116",
+      "type": "Description",
+      "description": "The IFF simulation typically includes all transponder modes - including the civil modes 1, 2, and 3A/C and S.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954908039,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "70da9896835f42902a1e6291a6f9585d",
+      "type": "Description",
+      "description": "FADEC: Full Authority Digital Engine Control",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954908039,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "73d907907a91eced90c39d812db10b29",
+      "type": "Description",
+      "description": "GPS: Global Positioning System",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954908039,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "293da79ef13b875bb80632d2b9a508be",
+      "type": "Description",
+      "description": "ACARS: Aircraft Addressing And Reporting System",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954908038,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "75501901ac0a841b647eef7d3ec196cd",
+      "type": "Description",
+      "description": "The flight controls computer is typically too complicated to be able to model all of its functionality from scratch. Therefore a rehost of the actual aircraft software is preferred. The engineering model used by the aircraft OEM may be sufficient if it can be proved to represent the actual aircraft with the required fidelity.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954908038,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "055814348048cfc563d37b4b6bd3b269",
+      "type": "Description",
+      "description": "Simulated navigation radios typically include ADF and ILS.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954908039,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
     {
       "name": "Aerodynamics Model",
       "type": "Software",
       "relationships": [],
       "changeLog": []
+    },
+    {
+      "name": "b536272ebff5668f943aa419fc665289",
+      "type": "Description",
+      "description": "IFF: Identification Friend Or Foe",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954908039,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "c5baee03521424bb61f489ad2921c2e2",
+      "type": "Description",
+      "description": "Simulated communication radios typically include one or more HF, VHF and UHF radios.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954908039,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "c211e0562f3ec831ea0b058d26952e4d",
+      "type": "Description",
+      "description": "The comms radio simulation does not include navigation radios.",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954908039,
+          "operation": "create",
+          "description": null
+        }
+      ]
     },
     {
       "name": "Cockpit Controls Power Supply",
@@ -134,6 +316,19 @@
         }
       ],
       "changeLog": []
+    },
+    {
+      "name": "d00c43abf35843dab31c3cec014153d1",
+      "type": "Description",
+      "description": "GPWS: Ground Proximity Warning System",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1631954908039,
+          "operation": "create",
+          "description": null
+        }
+      ]
     },
     {
       "name": "Display System",
@@ -476,9 +671,13 @@
     {
       "name": "Simulated ACARS",
       "type": "Software",
-      "relationships": [],
-      "changeLog": [],
-      "description": "ACARS: Aircraft Addressing And Reporting System"
+      "relationships": [
+        {
+          "target": "293da79ef13b875bb80632d2b9a508be",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Simulated Aircraft Ancillary Systems",
@@ -547,9 +746,17 @@
     {
       "name": "Simulated Comms Radios",
       "type": "Software",
-      "relationships": [],
-      "changeLog": [],
-      "description": "The comms radio simulation does not include navigation radios. Simulated communication radios typically include one or more HF, VHF and UHF radios."
+      "relationships": [
+        {
+          "target": "c5baee03521424bb61f489ad2921c2e2",
+          "type": "described_by"
+        },
+        {
+          "target": "c211e0562f3ec831ea0b058d26952e4d",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Simulated Electrical System",
@@ -560,9 +767,17 @@
     {
       "name": "Simulated FADEC",
       "type": "Software",
-      "relationships": [],
-      "changeLog": [],
-      "description": "FADEC: Full Authority Digital Engine Control The FADEC is typically too complicated to be able to model all of its functionality from scratch. Therefore a rehost of the actual engine software is required for higher fidelity simulators and is almost unavoidable for Level D."
+      "relationships": [
+        {
+          "target": "31aad153197214e2b817c3e05fae82dc",
+          "type": "described_by"
+        },
+        {
+          "target": "70da9896835f42902a1e6291a6f9585d",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Simulated Flight Controls",
@@ -582,9 +797,13 @@
     {
       "name": "Simulated Flight Controls Computer",
       "type": "Software",
-      "relationships": [],
-      "changeLog": [],
-      "description": "The flight controls computer is typically too complicated to be able to model all of its functionality from scratch. Therefore a rehost of the actual aircraft software is preferred. The engineering model used by the aircraft OEM may be sufficient if it can be proved to represent the actual aircraft with the required fidelity."
+      "relationships": [
+        {
+          "target": "75501901ac0a841b647eef7d3ec196cd",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Simulated Flight Dynamics",
@@ -618,15 +837,23 @@
     {
       "name": "Simulated GPS",
       "type": "Software",
-      "relationships": [],
-      "changeLog": [],
-      "description": "GPS: Global Positioning System"
+      "relationships": [
+        {
+          "target": "73d907907a91eced90c39d812db10b29",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Simulated GPWS",
       "type": "System",
       "status": "NotStarted",
       "relationships": [
+        {
+          "target": "d00c43abf35843dab31c3cec014153d1",
+          "type": "described_by"
+        },
         {
           "target": "GPWS Database",
           "type": "built_from"
@@ -636,8 +863,7 @@
           "type": "built_from"
         }
       ],
-      "changeLog": [],
-      "description": "GPWS: Ground Proximity Warning System"
+      "changeLog": []
     },
     {
       "name": "Simulated Hydraulic System",
@@ -648,9 +874,21 @@
     {
       "name": "Simulated IFF",
       "type": "Software",
-      "relationships": [],
-      "changeLog": [],
-      "description": "IFF: Identification Friend Or Foe The IFF simulation typically includes all transponder modes - including the civil modes 1, 2, and 3A/C and S. IFF describes an electronic, radio based identification system - in this case used between aircraft and ground based radar stations."
+      "relationships": [
+        {
+          "target": "2ad897d4c3a3b5f9c270c46f6920534a",
+          "type": "described_by"
+        },
+        {
+          "target": "69ee02e94021a16c151be047d5ebb116",
+          "type": "described_by"
+        },
+        {
+          "target": "b536272ebff5668f943aa419fc665289",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Simulated Navigation Aids",
@@ -702,9 +940,21 @@
     {
       "name": "Simulated Radio Navigation Systems",
       "type": "Software",
-      "relationships": [],
-      "changeLog": [],
-      "description": "Simulated navigation radios typically include ADF and ILS. The navigation radio simulation does not include communication radios. The navigation radio simulation does not include the database of navigation aids."
+      "relationships": [
+        {
+          "target": "3e9251c683886328dd0e7941b09fc581",
+          "type": "described_by"
+        },
+        {
+          "target": "8f68d8be94c57e03d97b178bf690e171",
+          "type": "described_by"
+        },
+        {
+          "target": "055814348048cfc563d37b4b6bd3b269",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Simulated Sensor Systems",
@@ -729,9 +979,13 @@
     {
       "name": "Simulated TCAS",
       "type": "Software",
-      "relationships": [],
-      "changeLog": [],
-      "description": "TCAS: Traffic Collision and Avoidance System"
+      "relationships": [
+        {
+          "target": "7bad9205fa3f01333e82be08a616f9be",
+          "type": "described_by"
+        }
+      ],
+      "changeLog": []
     },
     {
       "name": "Simulator Cockpit",
@@ -886,11 +1140,6 @@
       "time": 1631954908033,
       "operation": "update",
       "description": "Upgraded model schema from version 0.0.0 to 0.9.0"
-    },
-    {
-      "time": 1650017379859,
-      "operation": "update",
-      "description": "Upgraded model schema from version 0.9.0 to 0.10.0"
     }
   ]
 }
