@@ -8,11 +8,22 @@
       "status": "Aborted",
       "relationships": [
         {
-          "target": "Undefined",
+          "target": "Blocked",
           "type": "defined_by"
         }
       ],
-      "changeLog": [],
+      "changeLog": [
+        {
+          "time": 1651313620859,
+          "operation": "delete",
+          "description": "Removed defined_by relationship with Undefined"
+        },
+        {
+          "time": 1651313634809,
+          "operation": "create",
+          "description": "Added defined_by relationship with Blocked"
+        }
+      ],
       "description": "The milestone will not be reached."
     },
     {
@@ -21,11 +32,22 @@
       "status": "Blocked",
       "relationships": [
         {
-          "target": "In Progress",
+          "target": "On Hold",
           "type": "defined_by"
         }
       ],
-      "changeLog": [],
+      "changeLog": [
+        {
+          "time": 1651313630880,
+          "operation": "create",
+          "description": "Added defined_by relationship with On Hold"
+        },
+        {
+          "time": 1651313632894,
+          "operation": "delete",
+          "description": "Removed defined_by relationship with In Progress"
+        }
+      ],
       "description": "The milestone cannot be reached until whatever is blocking progress has been resolved."
     },
     {
@@ -120,9 +142,19 @@
         {
           "target": "Not Started",
           "type": "defined_by"
+        },
+        {
+          "target": "Undefined",
+          "type": "defined_by"
         }
       ],
-      "changeLog": [],
+      "changeLog": [
+        {
+          "time": 1651313618943,
+          "operation": "create",
+          "description": "Added defined_by relationship with Undefined"
+        }
+      ],
       "description": "Progress is being made towards this milestone."
     },
     {
@@ -139,11 +171,22 @@
       "status": "OnHold",
       "relationships": [
         {
-          "target": "In Progress",
+          "target": "Finished",
           "type": "defined_by"
         }
       ],
-      "changeLog": [],
+      "changeLog": [
+        {
+          "time": 1651313627196,
+          "operation": "create",
+          "description": "Added defined_by relationship with Finished"
+        },
+        {
+          "time": 1651313629292,
+          "operation": "delete",
+          "description": "Removed defined_by relationship with In Progress"
+        }
+      ],
       "description": "Progress towards this milestone has been temporarily stopped."
     },
     {
