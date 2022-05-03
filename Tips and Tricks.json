@@ -1,154 +1,40 @@
 {
   "name": "Tips and Tricks",
-  "SCHEMA_VERSION": "0.9.0",
+  "SCHEMA_VERSION": "0.10.0",
   "elements": [
-    {
-      "name": "7d04d439e43f4db60f34b40cac413840",
-      "type": "Description",
-      "description": "1. The system of interest (SOI) is defined as...",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954936966,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
-      "name": "24d61ee4577b232a7816b01d202fc6f8",
-      "type": "Annotation",
-      "subtype": "Action",
-      "description": "[2020-06-15] \n- Perform this critical action...\n- This action is also critical...",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954936966,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
-      "name": "32cdbddb38b7d2c8d7f40c9bcb01c3a7",
-      "type": "Description",
-      "description": "3. The SOI has external interfaces with...\n3.1 The external interface with system A consists of...\n3.2 The external interface with system B consists of...",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954936966,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
-      "name": "77cbb7fc2049c0ebd609d02c2ea4860f",
-      "type": "Annotation",
-      "subtype": "Action",
-      "description": "[2020-06-20] Somebody told me to take this action, but I don't really know what it means or when its due...",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954936966,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
-      "name": "84f5d726ace7bca92cc06771c8a08186",
-      "type": "Annotation",
-      "subtype": "Action",
-      "description": "[2020-06-30] This action is not so critical...",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954936966,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
-      "name": "34003f3a278d11c1989b6db8b6bf0d13",
-      "type": "Description",
-      "description": "2. The SOI does not include...",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954936966,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
-      "name": "f7b92bcea0b9daa01ac02cbcc2ab31b9",
-      "type": "Description",
-      "description": "4. The SOI needs to operate in compliance with...",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954936966,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
-      "name": "f8d8e064a6f21338ba6953151b07c499",
-      "type": "Description",
-      "description": "5. The SOI operates in the following environments...",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954936966,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
-      "name": "f44f316c502bf392ad03fe75f026fff3",
-      "type": "Annotation",
-      "subtype": "Action",
-      "description": "[2020-12-15] Get this done before the end of year Christmas party...",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1631954936966,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
     {
       "name": "Goal",
       "type": "Milestone",
+      "status": "NotStarted",
       "relationships": [
-        {
-          "target": "24d61ee4577b232a7816b01d202fc6f8",
-          "type": "annotated_by"
-        },
-        {
-          "target": "77cbb7fc2049c0ebd609d02c2ea4860f",
-          "type": "annotated_by"
-        },
-        {
-          "target": "84f5d726ace7bca92cc06771c8a08186",
-          "type": "annotated_by"
-        },
-        {
-          "target": "f44f316c502bf392ad03fe75f026fff3",
-          "type": "annotated_by"
-        },
         {
           "target": "Intermediary Goal",
           "type": "defined_by"
         }
       ],
-      "changeLog": []
+      "changeLog": [],
+      "annotations": [
+        {
+          "time": 1591774004000,
+          "text": "- Perform this critical action...\n- This action is also critical... \n[due by 15 June]",
+          "type": "Action"
+        },
+        {
+          "time": 1591774004000,
+          "text": "Somebody told me to take this action, but I don't really know what it means or when its due... \n[due by 20 June]",
+          "type": "Action"
+        },
+        {
+          "time": 1591774004000,
+          "text": "This action is not so critical... \n[due by 30 June]",
+          "type": "Action"
+        },
+        {
+          "time": 1591774004000,
+          "text": "Get this done before the end of year Christmas party... \n[due by mid December]",
+          "type": "Action"
+        }
+      ]
     },
     {
       "name": "Intermediary Goal",
@@ -168,31 +54,12 @@
       "type": "System",
       "relationships": [
         {
-          "target": "7d04d439e43f4db60f34b40cac413840",
-          "type": "described_by"
-        },
-        {
-          "target": "32cdbddb38b7d2c8d7f40c9bcb01c3a7",
-          "type": "described_by"
-        },
-        {
-          "target": "34003f3a278d11c1989b6db8b6bf0d13",
-          "type": "described_by"
-        },
-        {
-          "target": "f7b92bcea0b9daa01ac02cbcc2ab31b9",
-          "type": "described_by"
-        },
-        {
-          "target": "f8d8e064a6f21338ba6953151b07c499",
-          "type": "described_by"
-        },
-        {
           "target": "Subsystem of Interest",
           "type": "built_from"
         }
       ],
-      "changeLog": []
+      "changeLog": [],
+      "description": "1. The system of interest (SOI) is defined as...\n2. The SOI does not include...\n3. The SOI has external interfaces with...\n3.1 The external interface with system A consists of...\n3.2 The external interface with system B consists of... \n4. The SOI needs to operate in compliance with...\n5. The SOI operates in the following environments..."
     }
   ],
   "changeLog": [
@@ -200,6 +67,11 @@
       "time": 1631954936965,
       "operation": "update",
       "description": "Upgraded model schema from version 0.7.0 to 0.9.0"
+    },
+    {
+      "time": 1650014140248,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.9.0 to 0.10.0"
     }
   ]
 }
