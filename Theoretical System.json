@@ -1,6 +1,6 @@
 {
   "name": "Theoretical System",
-  "SCHEMA_VERSION": "0.10.0",
+  "SCHEMA_VERSION": "0.10.1",
   "elements": [
     {
       "name": "Aborted",
@@ -188,6 +188,61 @@
         }
       ],
       "description": "Progress towards this milestone has been temporarily stopped."
+    },
+    {
+      "name": "Product",
+      "type": "Product",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1651690458124,
+          "operation": "create",
+          "description": null
+        },
+        {
+          "time": 1651690540721,
+          "operation": "update",
+          "description": "Changed description: added: 'An article that is the result of an action or process.'"
+        }
+      ],
+      "description": "An article that is the result of an action or process."
+    },
+    {
+      "name": "Project",
+      "type": "Project",
+      "relationships": [
+        {
+          "target": "Product",
+          "type": "built_from"
+        },
+        {
+          "target": "System of Interest",
+          "type": "built_from"
+        }
+      ],
+      "changeLog": [
+        {
+          "time": 1651690465012,
+          "operation": "create",
+          "description": null
+        },
+        {
+          "time": 1651690469094,
+          "operation": "create",
+          "description": "Added built_from relationship with Product"
+        },
+        {
+          "time": 1651690471445,
+          "operation": "create",
+          "description": "Added built_from relationship with System of Interest"
+        },
+        {
+          "time": 1651690557598,
+          "operation": "update",
+          "description": "Changed description: added: 'An undertaking with pre-specified objectives, magnitude and duration.'"
+        }
+      ],
+      "description": "An undertaking with pre-specified objectives, magnitude and duration."
     },
     {
       "name": "Service",
