@@ -1,6 +1,6 @@
 {
   "name": "Theoretical System",
-  "SCHEMA_VERSION": "0.10.1",
+  "SCHEMA_VERSION": "0.11.0",
   "elements": [
     {
       "name": "Aborted",
@@ -257,6 +257,89 @@
       "relationships": [],
       "changeLog": [],
       "description": "A software item."
+    },
+    {
+      "name": "Stakeholder 1",
+      "type": "Stakeholder",
+      "relationships": [
+        {
+          "target": "Product",
+          "type": "responsible_for"
+        },
+        {
+          "target": "Project",
+          "type": "responsible_for"
+        },
+        {
+          "target": "System",
+          "type": "responsible_for"
+        },
+        {
+          "target": "System of Interest",
+          "type": "responsible_for"
+        }
+      ],
+      "changeLog": [
+        {
+          "time": 1652000630548,
+          "operation": "create",
+          "description": null
+        },
+        {
+          "time": 1652000630548,
+          "operation": "update",
+          "description": "Changed colour from undefined to #16a5a5"
+        },
+        {
+          "time": 1652000630549,
+          "operation": "create",
+          "description": "Added responsible_for relationship with Project"
+        },
+        {
+          "time": 1652000636259,
+          "operation": "create",
+          "description": "Added responsible_for relationship with Product"
+        },
+        {
+          "time": 1652000681917,
+          "operation": "create",
+          "description": "Added responsible_for relationship with System of Interest"
+        },
+        {
+          "time": 1652000685611,
+          "operation": "create",
+          "description": "Added responsible_for relationship with System"
+        }
+      ],
+      "colour": "#16a5a5"
+    },
+    {
+      "name": "Stakeholder 2",
+      "type": "Stakeholder",
+      "relationships": [
+        {
+          "target": "System of Systems",
+          "type": "responsible_for"
+        }
+      ],
+      "changeLog": [
+        {
+          "time": 1652000695259,
+          "operation": "create",
+          "description": null
+        },
+        {
+          "time": 1652000695260,
+          "operation": "update",
+          "description": "Changed colour from undefined to #7b64ff"
+        },
+        {
+          "time": 1652000695260,
+          "operation": "create",
+          "description": "Added responsible_for relationship with System of Systems"
+        }
+      ],
+      "colour": "#7b64ff"
     },
     {
       "name": "Subsystem",
