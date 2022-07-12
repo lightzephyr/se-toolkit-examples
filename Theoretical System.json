@@ -1,6 +1,6 @@
 {
   "name": "Theoretical System",
-  "SCHEMA_VERSION": "0.11.0",
+  "SCHEMA_VERSION": "0.12.0",
   "elements": [
     {
       "name": "Aborted",
@@ -56,63 +56,6 @@
       "relationships": [],
       "changeLog": [],
       "description": "A data item."
-    },
-    {
-      "name": "Element with annotation",
-      "type": "Undefined",
-      "relationships": [
-        {
-          "target": "Element without annotation",
-          "type": "built_from"
-        }
-      ],
-      "changeLog": [],
-      "annotations": [
-        {
-          "time": 1650014098264,
-          "text": "This is an action annotation.",
-          "type": "Action"
-        },
-        {
-          "time": 1650014098264,
-          "text": "This is an opportunity annotation.",
-          "type": "Opportunity"
-        },
-        {
-          "time": 1650014098264,
-          "text": "This is a concern annotation.",
-          "type": "Risk"
-        },
-        {
-          "time": 1650014098264,
-          "text": "This is a risk annotation.",
-          "type": "Risk"
-        }
-      ]
-    },
-    {
-      "name": "Element with description",
-      "type": "Undefined",
-      "relationships": [
-        {
-          "target": "Element without description",
-          "type": "built_from"
-        }
-      ],
-      "changeLog": [],
-      "description": "This is a description."
-    },
-    {
-      "name": "Element without annotation",
-      "type": "Undefined",
-      "relationships": [],
-      "changeLog": []
-    },
-    {
-      "name": "Element without description",
-      "type": "Undefined",
-      "relationships": [],
-      "changeLog": []
     },
     {
       "name": "Finished",
@@ -377,14 +320,6 @@
       "type": "System",
       "relationships": [
         {
-          "target": "Element with annotation",
-          "type": "built_from"
-        },
-        {
-          "target": "Element with description",
-          "type": "built_from"
-        },
-        {
           "target": "System",
           "type": "built_from"
         },
@@ -425,6 +360,39 @@
       "time": 1650014098264,
       "operation": "update",
       "description": "Upgraded model schema from version 0.9.0 to 0.10.0"
+    },
+    {
+      "time": 1657571763217,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.11 to 0.12"
+    },
+    {
+      "time": 1657650328457,
+      "operation": "delete",
+      "description": "Removed undefined element: Element with annotation"
+    },
+    {
+      "time": 1657650328457,
+      "operation": "delete",
+      "description": "Removed undefined element: Element with description"
+    },
+    {
+      "time": 1657650328457,
+      "operation": "delete",
+      "description": "Removed undefined element: Element without description"
+    },
+    {
+      "time": 1657650328457,
+      "operation": "delete",
+      "description": "Removed undefined element: Element without annotation"
     }
-  ]
+  ],
+  "uidSeeds": {
+    "annotations": {
+      "Action": 2,
+      "Assumption": 1,
+      "Opportunity": 2,
+      "Risk": 3
+    }
+  }
 }
