@@ -133,6 +133,18 @@
       "description": "Progress towards this milestone has been temporarily stopped."
     },
     {
+      "name": "Person",
+      "type": "Person",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1657979927801,
+          "operation": "create",
+          "description": "Created element: 'Person' of type: Person"
+        }
+      ]
+    },
+    {
       "name": "Product",
       "type": "Product",
       "relationships": [],
@@ -308,11 +320,21 @@
       "type": "System",
       "relationships": [
         {
+          "target": "Person",
+          "type": "built_from"
+        },
+        {
           "target": "Subsystem",
           "type": "built_from"
         }
       ],
-      "changeLog": [],
+      "changeLog": [
+        {
+          "time": 1657979927804,
+          "operation": "create",
+          "description": "Added built_from relationship with Person"
+        }
+      ],
       "description": "A system (either a black box or built from other elements)."
     },
     {
