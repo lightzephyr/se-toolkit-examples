@@ -74,8 +74,27 @@
       "name": "Hardware",
       "type": "Hardware",
       "relationships": [],
-      "changeLog": [],
-      "description": "A hardware item."
+      "changeLog": [
+        {
+          "time": 1658507565931,
+          "operation": "create",
+          "description": "Added action (ID: AI.5): 'This is a risk related to the hardware.'"
+        },
+        {
+          "time": 1658507730248,
+          "operation": "update",
+          "description": "Changed annotation type from Action (ID: AI.5) to Risk (ID: R.3)."
+        }
+      ],
+      "description": "A hardware item.",
+      "annotations": [
+        {
+          "id": "R.3",
+          "time": 1658507730248,
+          "text": "This is a risk related to the hardware.",
+          "type": "Risk"
+        }
+      ]
     },
     {
       "name": "In Progress",
@@ -141,6 +160,30 @@
           "time": 1657979927801,
           "operation": "create",
           "description": "Created element: 'Person' of type: Person"
+        },
+        {
+          "time": 1658507247555,
+          "operation": "update",
+          "description": "Added description: 'A person who performs a function of, and therefore forms a part of, the system of interest.'"
+        },
+        {
+          "time": 1658507529999,
+          "operation": "create",
+          "description": "Added action (ID: AI.3): 'This is an assumption about the person.'"
+        },
+        {
+          "time": 1658507717528,
+          "operation": "update",
+          "description": "Changed annotation type from Action (ID: AI.3) to Assumption (ID: AS.1)."
+        }
+      ],
+      "description": "A person who performs a function of, and therefore forms a part of, the system of interest.",
+      "annotations": [
+        {
+          "id": "AS.1",
+          "time": 1658507717528,
+          "text": "This is an assumption about the person.",
+          "type": "Assumption"
         }
       ]
     },
@@ -203,8 +246,27 @@
       "name": "Service",
       "type": "Service",
       "relationships": [],
-      "changeLog": [],
-      "description": "A service provided by a service provider."
+      "changeLog": [
+        {
+          "time": 1658507555414,
+          "operation": "create",
+          "description": "Added action (ID: AI.4): 'This is an opportunity related to the service.'"
+        },
+        {
+          "time": 1658507723890,
+          "operation": "update",
+          "description": "Changed annotation type from Action (ID: AI.4) to Opportunity (ID: O.2)."
+        }
+      ],
+      "description": "A service provided by a service provider.",
+      "annotations": [
+        {
+          "id": "O.2",
+          "time": 1658507723890,
+          "text": "This is an opportunity related to the service.",
+          "type": "Opportunity"
+        }
+      ]
     },
     {
       "name": "Software",
@@ -350,7 +412,27 @@
           "type": "built_from"
         }
       ],
-      "changeLog": []
+      "changeLog": [
+        {
+          "time": 1658507162517,
+          "operation": "update",
+          "description": "Added description: 'The system whose life cycle is under consideration.'"
+        },
+        {
+          "time": 1658507490734,
+          "operation": "create",
+          "description": "Added action (ID: AI.2): 'This is an action related to the system of interest.'"
+        }
+      ],
+      "description": "The system whose life cycle is under consideration.",
+      "annotations": [
+        {
+          "id": "AI.2",
+          "time": 1658507490734,
+          "text": "This is an action related to the system of interest.",
+          "type": "Action"
+        }
+      ]
     },
     {
       "name": "System of Systems",
@@ -361,7 +443,19 @@
           "type": "built_from"
         }
       ],
-      "changeLog": []
+      "changeLog": [
+        {
+          "time": 1658507200640,
+          "operation": "update",
+          "description": "Added description: 'A system of systems is a collection of task-oriented or dedicated systems that pool their resources and capabilities together to create a new, more complex system which offers more functionality and performance than simply the sum of the constituent systems.'"
+        },
+        {
+          "time": 1658507282798,
+          "operation": "update",
+          "description": "Changed description: 'A (-system of systems is a) collection of task-oriented or dedicated systems that pool their resources and capabilities together to create a new, more complex system which offers more functionality and performance than simply the sum of the constituent systems.'"
+        }
+      ],
+      "description": "A collection of task-oriented or dedicated systems that pool their resources and capabilities together to create a new, more complex system which offers more functionality and performance than simply the sum of the constituent systems."
     },
     {
       "name": "Undefined",
@@ -411,10 +505,10 @@
   ],
   "uidSeeds": {
     "annotations": {
-      "Action": 2,
-      "Assumption": 1,
-      "Opportunity": 2,
-      "Risk": 3
+      "Action": 6,
+      "Assumption": 2,
+      "Opportunity": 3,
+      "Risk": 4
     }
   }
 }
