@@ -1,6 +1,6 @@
 {
   "name": "Theoretical System",
-  "SCHEMA_VERSION": "0.12.0",
+  "SCHEMA_VERSION": "0.12.1",
   "elements": [
     {
       "name": "Aborted",
@@ -14,12 +14,12 @@
       ],
       "changeLog": [
         {
-          "time": 1651313620859,
+          "time": 1651313621,
           "operation": "delete",
           "description": "Removed defined_by relationship with Undefined"
         },
         {
-          "time": 1651313634809,
+          "time": 1651313635,
           "operation": "create",
           "description": "Added defined_by relationship with Blocked"
         }
@@ -38,12 +38,12 @@
       ],
       "changeLog": [
         {
-          "time": 1651313630880,
+          "time": 1651313631,
           "operation": "create",
           "description": "Added defined_by relationship with On Hold"
         },
         {
-          "time": 1651313632894,
+          "time": 1651313633,
           "operation": "delete",
           "description": "Removed defined_by relationship with In Progress"
         }
@@ -76,12 +76,12 @@
       "relationships": [],
       "changeLog": [
         {
-          "time": 1658507565931,
+          "time": 1658507566,
           "operation": "create",
           "description": "Added action (ID: AI.5): 'This is a risk related to the hardware.'"
         },
         {
-          "time": 1658507730248,
+          "time": 1658507730,
           "operation": "update",
           "description": "Changed annotation type from Action (ID: AI.5) to Risk (ID: R.3)."
         }
@@ -90,7 +90,7 @@
       "annotations": [
         {
           "id": "R.3",
-          "time": 1658507730248,
+          "time": 1658507730,
           "text": "This is a risk related to the hardware.",
           "type": "Risk"
         }
@@ -112,7 +112,7 @@
       ],
       "changeLog": [
         {
-          "time": 1651313618943,
+          "time": 1651313619,
           "operation": "create",
           "description": "Added defined_by relationship with Undefined"
         }
@@ -139,12 +139,12 @@
       ],
       "changeLog": [
         {
-          "time": 1651313627196,
+          "time": 1651313627,
           "operation": "create",
           "description": "Added defined_by relationship with Finished"
         },
         {
-          "time": 1651313629292,
+          "time": 1651313629,
           "operation": "delete",
           "description": "Removed defined_by relationship with In Progress"
         }
@@ -157,22 +157,22 @@
       "relationships": [],
       "changeLog": [
         {
-          "time": 1657979927801,
+          "time": 1657979928,
           "operation": "create",
           "description": "Created element: 'Person' of type: Person"
         },
         {
-          "time": 1658507247555,
+          "time": 1658507248,
           "operation": "update",
           "description": "Added description: 'A person who performs a function of, and therefore forms a part of, the system of interest.'"
         },
         {
-          "time": 1658507529999,
+          "time": 1658507530,
           "operation": "create",
           "description": "Added action (ID: AI.3): 'This is an assumption about the person.'"
         },
         {
-          "time": 1658507717528,
+          "time": 1658507718,
           "operation": "update",
           "description": "Changed annotation type from Action (ID: AI.3) to Assumption (ID: AS.1)."
         }
@@ -181,7 +181,7 @@
       "annotations": [
         {
           "id": "AS.1",
-          "time": 1658507717528,
+          "time": 1658507718,
           "text": "This is an assumption about the person.",
           "type": "Assumption"
         }
@@ -193,17 +193,30 @@
       "relationships": [],
       "changeLog": [
         {
-          "time": 1651690458124,
+          "time": 1651690458,
           "operation": "create",
           "description": null
         },
         {
-          "time": 1651690540721,
+          "time": 1651690541,
           "operation": "update",
           "description": "Changed description: added: 'An article that is the result of an action or process.'"
+        },
+        {
+          "time": 1663705728,
+          "operation": "create",
+          "description": "Added lesson (ID: L.1): 'This is a lesson related to the product.'"
         }
       ],
-      "description": "An article that is the result of an action or process."
+      "description": "An article that is the result of an action or process.",
+      "annotations": [
+        {
+          "id": "L.1",
+          "time": 1663705728,
+          "text": "This is a lesson related to the product.",
+          "type": "Lesson"
+        }
+      ]
     },
     {
       "name": "Project",
@@ -220,22 +233,22 @@
       ],
       "changeLog": [
         {
-          "time": 1651690465012,
+          "time": 1651690465,
           "operation": "create",
           "description": null
         },
         {
-          "time": 1651690469094,
+          "time": 1651690469,
           "operation": "create",
           "description": "Added built_from relationship with Product"
         },
         {
-          "time": 1651690471445,
+          "time": 1651690471,
           "operation": "create",
           "description": "Added built_from relationship with System of Interest"
         },
         {
-          "time": 1651690557598,
+          "time": 1651690558,
           "operation": "update",
           "description": "Changed description: added: 'An undertaking with pre-specified objectives, magnitude and duration.'"
         }
@@ -248,12 +261,12 @@
       "relationships": [],
       "changeLog": [
         {
-          "time": 1658507555414,
+          "time": 1658507555,
           "operation": "create",
           "description": "Added action (ID: AI.4): 'This is an opportunity related to the service.'"
         },
         {
-          "time": 1658507723890,
+          "time": 1658507724,
           "operation": "update",
           "description": "Changed annotation type from Action (ID: AI.4) to Opportunity (ID: O.2)."
         }
@@ -262,7 +275,7 @@
       "annotations": [
         {
           "id": "O.2",
-          "time": 1658507723890,
+          "time": 1658507724,
           "text": "This is an opportunity related to the service.",
           "type": "Opportunity"
         }
@@ -298,32 +311,32 @@
       ],
       "changeLog": [
         {
-          "time": 1652000630548,
+          "time": 1652000631,
           "operation": "create",
           "description": null
         },
         {
-          "time": 1652000630548,
+          "time": 1652000631,
           "operation": "update",
           "description": "Changed colour from undefined to #16a5a5"
         },
         {
-          "time": 1652000630549,
+          "time": 1652000631,
           "operation": "create",
           "description": "Added responsible_for relationship with Project"
         },
         {
-          "time": 1652000636259,
+          "time": 1652000636,
           "operation": "create",
           "description": "Added responsible_for relationship with Product"
         },
         {
-          "time": 1652000681917,
+          "time": 1652000682,
           "operation": "create",
           "description": "Added responsible_for relationship with System of Interest"
         },
         {
-          "time": 1652000685611,
+          "time": 1652000686,
           "operation": "create",
           "description": "Added responsible_for relationship with System"
         }
@@ -341,17 +354,17 @@
       ],
       "changeLog": [
         {
-          "time": 1652000695259,
+          "time": 1652000695,
           "operation": "create",
           "description": null
         },
         {
-          "time": 1652000695260,
+          "time": 1652000695,
           "operation": "update",
           "description": "Changed colour from undefined to #7b64ff"
         },
         {
-          "time": 1652000695260,
+          "time": 1652000695,
           "operation": "create",
           "description": "Added responsible_for relationship with System of Systems"
         }
@@ -392,7 +405,7 @@
       ],
       "changeLog": [
         {
-          "time": 1657979927804,
+          "time": 1657979928,
           "operation": "create",
           "description": "Added built_from relationship with Person"
         }
@@ -414,12 +427,12 @@
       ],
       "changeLog": [
         {
-          "time": 1658507162517,
+          "time": 1658507163,
           "operation": "update",
           "description": "Added description: 'The system whose life cycle is under consideration.'"
         },
         {
-          "time": 1658507490734,
+          "time": 1658507491,
           "operation": "create",
           "description": "Added action (ID: AI.2): 'This is an action related to the system of interest.'"
         }
@@ -428,7 +441,7 @@
       "annotations": [
         {
           "id": "AI.2",
-          "time": 1658507490734,
+          "time": 1658507491,
           "text": "This is an action related to the system of interest.",
           "type": "Action"
         }
@@ -445,12 +458,12 @@
       ],
       "changeLog": [
         {
-          "time": 1658507200640,
+          "time": 1658507201,
           "operation": "update",
           "description": "Added description: 'A system of systems is a collection of task-oriented or dedicated systems that pool their resources and capabilities together to create a new, more complex system which offers more functionality and performance than simply the sum of the constituent systems.'"
         },
         {
-          "time": 1658507282798,
+          "time": 1658507283,
           "operation": "update",
           "description": "Changed description: 'A (-system of systems is a) collection of task-oriented or dedicated systems that pool their resources and capabilities together to create a new, more complex system which offers more functionality and performance than simply the sum of the constituent systems.'"
         }
@@ -468,37 +481,37 @@
   ],
   "changeLog": [
     {
-      "time": 1631954925935,
+      "time": 1631954926,
       "operation": "update",
       "description": "Upgraded model schema from version 0.7.0 to 0.9.0"
     },
     {
-      "time": 1650014098264,
+      "time": 1650014098,
       "operation": "update",
       "description": "Upgraded model schema from version 0.9.0 to 0.10.0"
     },
     {
-      "time": 1657571763217,
+      "time": 1657571763,
       "operation": "update",
       "description": "Upgraded model schema from version 0.11 to 0.12"
     },
     {
-      "time": 1657650328457,
+      "time": 1657650328,
       "operation": "delete",
       "description": "Removed undefined element: Element with annotation"
     },
     {
-      "time": 1657650328457,
+      "time": 1657650328,
       "operation": "delete",
       "description": "Removed undefined element: Element with description"
     },
     {
-      "time": 1657650328457,
+      "time": 1657650328,
       "operation": "delete",
       "description": "Removed undefined element: Element without description"
     },
     {
-      "time": 1657650328457,
+      "time": 1657650328,
       "operation": "delete",
       "description": "Removed undefined element: Element without annotation"
     }
@@ -508,7 +521,8 @@
       "Action": 6,
       "Assumption": 2,
       "Opportunity": 3,
-      "Risk": 4
+      "Risk": 4,
+      "Lesson": 2
     }
   }
 }
