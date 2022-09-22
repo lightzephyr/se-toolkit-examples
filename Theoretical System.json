@@ -1,6 +1,6 @@
 {
   "name": "Theoretical System",
-  "SCHEMA_VERSION": "0.12.1",
+  "SCHEMA_VERSION": "0.13.0",
   "elements": [
     {
       "name": "Aborted",
@@ -195,7 +195,7 @@
         {
           "time": 1651690458,
           "operation": "create",
-          "description": null
+          "description": "Created element: 'Product' of type: Product"
         },
         {
           "time": 1651690541,
@@ -235,7 +235,7 @@
         {
           "time": 1651690465,
           "operation": "create",
-          "description": null
+          "description": "Created element: 'Project' of type: Project"
         },
         {
           "time": 1651690469,
@@ -313,7 +313,7 @@
         {
           "time": 1652000631,
           "operation": "create",
-          "description": null
+          "description": "Created element: 'Stakeholder 1' of type: Stakeholder"
         },
         {
           "time": 1652000631,
@@ -356,7 +356,7 @@
         {
           "time": 1652000695,
           "operation": "create",
-          "description": null
+          "description": "Created element: 'Stakeholder 2' of type: Stakeholder"
         },
         {
           "time": 1652000695,
@@ -514,6 +514,11 @@
       "time": 1657650328,
       "operation": "delete",
       "description": "Removed undefined element: Element without annotation"
+    },
+    {
+      "time": 1663831559,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.12 to 0.13"
     }
   ],
   "uidSeeds": {
