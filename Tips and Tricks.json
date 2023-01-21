@@ -1,94 +1,174 @@
 {
   "name": "Tips and Tricks",
-  "SCHEMA_VERSION": "0.12.0",
-  "elements": [
+  "SCHEMA_VERSION": "0.13.0",
+  "changeLog": [
     {
-      "name": "Goal",
-      "type": "Milestone",
-      "status": "NotStarted",
-      "relationships": [
+      "time": 1631954937,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.7.0 to 0.9.0"
+    },
+    {
+      "time": 1650014140,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.9.0 to 0.10.0"
+    },
+    {
+      "time": 1658582161,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.10 to 0.12"
+    },
+    {
+      "time": 1674296654,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.12 to 0.13"
+    }
+  ],
+  "uidSeeds": {
+    "Action": 5,
+    "Assumption": 1,
+    "Opportunity": 1,
+    "Risk": 1,
+    "Lesson": 1,
+    "Data": 1,
+    "Hardware": 1,
+    "Person": 1,
+    "Product": 1,
+    "Project": 1,
+    "Service": 1,
+    "Software": 1,
+    "System": 3,
+    "Milestone": 3,
+    "Stakeholder": 1
+  },
+  "id": "setm0013202301d4cb0cfa",
+  "annotations": [
+    {
+      "id": "AI.1",
+      "metatype": "Annotation",
+      "changeLog": [
         {
-          "target": "Intermediary Goal",
-          "type": "defined_by"
+          "time": 1591774004,
+          "operation": "create",
+          "description": "Created action annotation: AI.1."
         }
       ],
-      "changeLog": [],
-      "annotations": [
+      "relationships": [
         {
-          "time": 1591774004000,
-          "text": "- Perform this critical action...\n- This action is also critical... \n[due by 15 June]",
-          "type": "Action",
-          "id": "AI.1"
-        },
-        {
-          "time": 1591774004000,
-          "text": "Somebody told me to take this action, but I don't really know what it means or when its due... \n[due by 20 June]",
-          "type": "Action",
-          "id": "AI.2"
-        },
-        {
-          "time": 1591774004000,
-          "text": "This action is not so critical... \n[due by 30 June]",
-          "type": "Action",
-          "id": "AI.3"
-        },
-        {
-          "time": 1591774004000,
-          "text": "Get this done before the end of year Christmas party... \n[due by mid December]",
-          "type": "Action",
-          "id": "AI.4"
+          "targetId": "MS.1",
+          "type": "annotates"
         }
-      ]
+      ],
+      "text": "- Perform this critical action...\n- This action is also critical... \n[due by 15 June]",
+      "type": "Action",
+      "priority": "None"
     },
     {
-      "name": "Intermediary Goal",
-      "type": "Milestone",
-      "status": "InProgress",
-      "relationships": [],
-      "changeLog": []
+      "id": "AI.2",
+      "metatype": "Annotation",
+      "changeLog": [
+        {
+          "time": 1591774004,
+          "operation": "create",
+          "description": "Created action annotation: AI.2."
+        }
+      ],
+      "relationships": [
+        {
+          "targetId": "MS.1",
+          "type": "annotates"
+        }
+      ],
+      "text": "Somebody told me to take this action, but I don't really know what it means or when its due... \n[due by 20 June]",
+      "type": "Action",
+      "priority": "None"
     },
+    {
+      "id": "AI.3",
+      "metatype": "Annotation",
+      "changeLog": [
+        {
+          "time": 1591774004,
+          "operation": "create",
+          "description": "Created action annotation: AI.3."
+        }
+      ],
+      "relationships": [
+        {
+          "targetId": "MS.1",
+          "type": "annotates"
+        }
+      ],
+      "text": "This action is not so critical... \n[due by 30 June]",
+      "type": "Action",
+      "priority": "None"
+    },
+    {
+      "id": "AI.4",
+      "metatype": "Annotation",
+      "changeLog": [
+        {
+          "time": 1591774004,
+          "operation": "create",
+          "description": "Created action annotation: AI.4."
+        }
+      ],
+      "relationships": [
+        {
+          "targetId": "MS.1",
+          "type": "annotates"
+        }
+      ],
+      "text": "Get this done before the end of year Christmas party... \n[due by mid December]",
+      "type": "Action",
+      "priority": "None"
+    }
+  ],
+  "components": [
     {
       "name": "Subsystem of Interest",
       "type": "System",
       "relationships": [],
-      "changeLog": []
+      "changeLog": [],
+      "id": "SYS.1",
+      "metatype": "Component"
     },
     {
       "name": "System of Interest",
       "type": "System",
       "relationships": [
         {
-          "target": "Subsystem of Interest",
-          "type": "built_from"
+          "type": "built_from",
+          "targetId": "SYS.1"
         }
       ],
       "changeLog": [],
-      "description": "1. The system of interest (SOI) is defined as...\n2. The SOI does not include...\n3. The SOI has external interfaces with...\n3.1 The external interface with system A consists of...\n3.2 The external interface with system B consists of... \n4. The SOI needs to operate in compliance with...\n5. The SOI operates in the following environments..."
+      "description": "1. The system of interest (SOI) is defined as...\n2. The SOI does not include...\n3. The SOI has external interfaces with...\n3.1 The external interface with system A consists of...\n3.2 The external interface with system B consists of... \n4. The SOI needs to operate in compliance with...\n5. The SOI operates in the following environments...",
+      "id": "SYS.2",
+      "metatype": "Component"
     }
   ],
-  "changeLog": [
+  "milestones": [
     {
-      "time": 1631954936965,
-      "operation": "update",
-      "description": "Upgraded model schema from version 0.7.0 to 0.9.0"
+      "id": "MS.1",
+      "metatype": "Milestone",
+      "changeLog": [],
+      "relationships": [
+        {
+          "type": "preceded_by",
+          "targetId": "MS.2"
+        }
+      ],
+      "name": "Goal",
+      "status": "NotStarted"
     },
     {
-      "time": 1650014140248,
-      "operation": "update",
-      "description": "Upgraded model schema from version 0.9.0 to 0.10.0"
-    },
-    {
-      "time": 1658582161136,
-      "operation": "update",
-      "description": "Upgraded model schema from version 0.10 to 0.12"
+      "id": "MS.2",
+      "metatype": "Milestone",
+      "changeLog": [],
+      "relationships": [],
+      "name": "Intermediary Goal",
+      "status": "InProgress"
     }
   ],
-  "uidSeeds": {
-    "annotations": {
-      "Action": 5,
-      "Assumption": 1,
-      "Opportunity": 1,
-      "Risk": 1
-    }
-  }
+  "stakeholders": []
 }
