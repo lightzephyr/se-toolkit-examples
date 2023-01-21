@@ -55,10 +55,10 @@
     }
   ],
   "uidSeeds": {
-    "Action": 6,
+    "Action": 8,
     "Assumption": 2,
     "Opportunity": 3,
-    "Risk": 4,
+    "Risk": 5,
     "Lesson": 2,
     "Data": 2,
     "Hardware": 2,
@@ -80,6 +80,11 @@
           "time": 1658507491,
           "operation": "create",
           "description": "Created action annotation: AI.2."
+        },
+        {
+          "time": 1674303659,
+          "operation": "update",
+          "description": "Updated priority from None to Medium."
         }
       ],
       "relationships": [
@@ -90,7 +95,57 @@
       ],
       "text": "This is an action related to the system of interest.",
       "type": "Action",
-      "priority": "None"
+      "priority": "Medium"
+    },
+    {
+      "id": "AI.6",
+      "metatype": "Annotation",
+      "changeLog": [
+        {
+          "time": 1674303571,
+          "operation": "create",
+          "description": "Created action annotation: AI.6."
+        },
+        {
+          "time": 1674303571,
+          "operation": "create",
+          "description": "Created annotates relationship with SYS.1."
+        }
+      ],
+      "relationships": [
+        {
+          "targetId": "SYS.1",
+          "type": "annotates"
+        }
+      ],
+      "text": "This is an action related to this subsystem.",
+      "type": "Action",
+      "priority": "High"
+    },
+    {
+      "id": "AI.7",
+      "metatype": "Annotation",
+      "changeLog": [
+        {
+          "time": 1674303659,
+          "operation": "create",
+          "description": "Created action annotation: AI.7."
+        },
+        {
+          "time": 1674303659,
+          "operation": "create",
+          "description": "Created annotates relationship with SYS.3."
+        }
+      ],
+      "relationships": [
+        {
+          "targetId": "SYS.3",
+          "type": "annotates"
+        }
+      ],
+      "text": "This is another action related to the system of interest.",
+      "type": "Action",
+      "priority": "Low"
     },
     {
       "id": "AS.1",
@@ -160,6 +215,16 @@
           "time": 1658507730,
           "operation": "update",
           "description": "Changed annotation type from Action (ID: AI.5) to Risk (ID: R.3)."
+        },
+        {
+          "time": 1674311352,
+          "operation": "update",
+          "description": "Added remarks: 'This risk no longer exists.'"
+        },
+        {
+          "time": 1674311354,
+          "operation": "update",
+          "description": "Closed risk annotation: R.3."
         }
       ],
       "relationships": [
@@ -170,7 +235,39 @@
       ],
       "text": "This is a risk related to the hardware.",
       "type": "Risk",
-      "priority": "None"
+      "priority": "None",
+      "remarks": "This risk no longer exists.",
+      "closedOn": 1674311354
+    },
+    {
+      "id": "R.4",
+      "metatype": "Annotation",
+      "changeLog": [
+        {
+          "time": 1674303749,
+          "operation": "create",
+          "description": "Created risk annotation: R.4."
+        },
+        {
+          "time": 1674303749,
+          "operation": "create",
+          "description": "Created annotates relationship with MS.6."
+        },
+        {
+          "time": 1674303792,
+          "operation": "update",
+          "description": "Updated priority from None to Medium."
+        }
+      ],
+      "relationships": [
+        {
+          "targetId": "MS.4",
+          "type": "annotates"
+        }
+      ],
+      "text": "This is a risk related to the on hold milestone.",
+      "type": "Risk",
+      "priority": "Medium"
     }
   ],
   "components": [
@@ -417,67 +514,28 @@
       "metatype": "Milestone",
       "changeLog": [
         {
-          "time": 1651313621,
-          "operation": "delete",
-          "description": "Removed defined_by relationship with Undefined"
+          "time": 1674303760,
+          "operation": "update",
+          "description": "Updated name from 'Not Started' to 'Not Started Milestone'."
         },
         {
-          "time": 1651313635,
-          "operation": "create",
-          "description": "Added defined_by relationship with Blocked"
-        }
-      ],
-      "relationships": [
+          "time": 1674311195,
+          "operation": "update",
+          "description": "Updated element ID from MS.5 to MS.a."
+        },
         {
-          "type": "preceded_by",
-          "targetId": "MS.2"
+          "time": 1674311291,
+          "operation": "update",
+          "description": "Updated element ID from MS.a to MS.1."
         }
       ],
-      "name": "Aborted",
-      "status": "Aborted",
-      "description": "The milestone will not be reached."
+      "relationships": [],
+      "name": "Not Started Milestone",
+      "status": "NotStarted",
+      "description": "Progress towards this milestone has not been started."
     },
     {
       "id": "MS.2",
-      "metatype": "Milestone",
-      "changeLog": [
-        {
-          "time": 1651313631,
-          "operation": "create",
-          "description": "Added defined_by relationship with On Hold"
-        },
-        {
-          "time": 1651313633,
-          "operation": "delete",
-          "description": "Removed defined_by relationship with In Progress"
-        }
-      ],
-      "relationships": [
-        {
-          "type": "preceded_by",
-          "targetId": "MS.6"
-        }
-      ],
-      "name": "Blocked",
-      "status": "Blocked",
-      "description": "The milestone cannot be reached until whatever is blocking progress has been resolved."
-    },
-    {
-      "id": "MS.3",
-      "metatype": "Milestone",
-      "changeLog": [],
-      "relationships": [
-        {
-          "type": "preceded_by",
-          "targetId": "MS.4"
-        }
-      ],
-      "name": "Finished",
-      "status": "Finished",
-      "description": "The milestone has been reached."
-    },
-    {
-      "id": "MS.4",
       "metatype": "Milestone",
       "changeLog": [
         {
@@ -489,29 +547,75 @@
           "time": 1673711483,
           "operation": "delete",
           "description": "Deleted preceded_by relationship with MS.7."
+        },
+        {
+          "time": 1674303763,
+          "operation": "update",
+          "description": "Updated name from 'In Progress' to 'In Progress Milestone'."
+        },
+        {
+          "time": 1674303763,
+          "operation": "update",
+          "description": "Updated status from InProgress to NotStarted."
+        },
+        {
+          "time": 1674311092,
+          "operation": "update",
+          "description": "Updated status from NotStarted to InProgress."
+        },
+        {
+          "time": 1674311255,
+          "operation": "update",
+          "description": "Updated element ID from MS.4 to MS.2."
         }
       ],
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.5"
+          "targetId": "MS.1"
         }
       ],
-      "name": "In Progress",
+      "name": "In Progress Milestone",
       "status": "InProgress",
       "description": "Progress is being made towards this milestone."
     },
     {
-      "id": "MS.5",
+      "id": "MS.3",
       "metatype": "Milestone",
-      "changeLog": [],
-      "relationships": [],
-      "name": "Not Started",
-      "status": "NotStarted",
-      "description": "Progress towards this milestone has not been started."
+      "changeLog": [
+        {
+          "time": 1674303766,
+          "operation": "update",
+          "description": "Updated name from 'Finished' to 'Finished Milestone'."
+        },
+        {
+          "time": 1674303766,
+          "operation": "update",
+          "description": "Updated status from Finished to NotStarted."
+        },
+        {
+          "time": 1674311094,
+          "operation": "update",
+          "description": "Updated status from NotStarted to InProgress."
+        },
+        {
+          "time": 1674311095,
+          "operation": "update",
+          "description": "Updated status from InProgress to Finished."
+        }
+      ],
+      "relationships": [
+        {
+          "type": "preceded_by",
+          "targetId": "MS.2"
+        }
+      ],
+      "name": "Finished Milestone",
+      "status": "Finished",
+      "description": "The milestone has been reached."
     },
     {
-      "id": "MS.6",
+      "id": "MS.4",
       "metatype": "Milestone",
       "changeLog": [
         {
@@ -523,6 +627,36 @@
           "time": 1651313629,
           "operation": "delete",
           "description": "Removed defined_by relationship with In Progress"
+        },
+        {
+          "time": 1674303768,
+          "operation": "update",
+          "description": "Updated name from 'On Hold' to 'On Hold Milestone'."
+        },
+        {
+          "time": 1674303768,
+          "operation": "update",
+          "description": "Updated status from OnHold to NotStarted."
+        },
+        {
+          "time": 1674311098,
+          "operation": "update",
+          "description": "Updated status from NotStarted to InProgress."
+        },
+        {
+          "time": 1674311100,
+          "operation": "update",
+          "description": "Updated status from InProgress to Finished."
+        },
+        {
+          "time": 1674311100,
+          "operation": "update",
+          "description": "Updated status from Finished to OnHold."
+        },
+        {
+          "time": 1674311268,
+          "operation": "update",
+          "description": "Updated element ID from MS.6 to MS.4."
         }
       ],
       "relationships": [
@@ -531,9 +665,134 @@
           "targetId": "MS.3"
         }
       ],
-      "name": "On Hold",
+      "name": "On Hold Milestone",
       "status": "OnHold",
       "description": "Progress towards this milestone has been temporarily stopped."
+    },
+    {
+      "id": "MS.5",
+      "metatype": "Milestone",
+      "changeLog": [
+        {
+          "time": 1651313631,
+          "operation": "create",
+          "description": "Added defined_by relationship with On Hold"
+        },
+        {
+          "time": 1651313633,
+          "operation": "delete",
+          "description": "Removed defined_by relationship with In Progress"
+        },
+        {
+          "time": 1674303771,
+          "operation": "update",
+          "description": "Updated name from 'Blocked' to 'Blocked Milestone'."
+        },
+        {
+          "time": 1674303771,
+          "operation": "update",
+          "description": "Updated status from Blocked to NotStarted."
+        },
+        {
+          "time": 1674311101,
+          "operation": "update",
+          "description": "Updated status from NotStarted to InProgress."
+        },
+        {
+          "time": 1674311102,
+          "operation": "update",
+          "description": "Updated status from InProgress to Finished."
+        },
+        {
+          "time": 1674311102,
+          "operation": "update",
+          "description": "Updated status from Finished to OnHold."
+        },
+        {
+          "time": 1674311103,
+          "operation": "update",
+          "description": "Updated status from OnHold to Blocked."
+        },
+        {
+          "time": 1674311221,
+          "operation": "update",
+          "description": "Updated element ID from MS.2 to MS.5."
+        }
+      ],
+      "relationships": [
+        {
+          "type": "preceded_by",
+          "targetId": "MS.4"
+        }
+      ],
+      "name": "Blocked Milestone",
+      "status": "Blocked",
+      "description": "The milestone cannot be reached until whatever is blocking progress has been resolved."
+    },
+    {
+      "id": "MS.6",
+      "metatype": "Milestone",
+      "changeLog": [
+        {
+          "time": 1651313621,
+          "operation": "delete",
+          "description": "Removed defined_by relationship with Undefined"
+        },
+        {
+          "time": 1651313635,
+          "operation": "create",
+          "description": "Added defined_by relationship with Blocked"
+        },
+        {
+          "time": 1674303774,
+          "operation": "update",
+          "description": "Updated name from 'Aborted' to 'Aborted Milestone'."
+        },
+        {
+          "time": 1674303774,
+          "operation": "update",
+          "description": "Updated status from Aborted to NotStarted."
+        },
+        {
+          "time": 1674311105,
+          "operation": "update",
+          "description": "Updated status from NotStarted to InProgress."
+        },
+        {
+          "time": 1674311106,
+          "operation": "update",
+          "description": "Updated status from InProgress to Finished."
+        },
+        {
+          "time": 1674311106,
+          "operation": "update",
+          "description": "Updated status from Finished to OnHold."
+        },
+        {
+          "time": 1674311106,
+          "operation": "update",
+          "description": "Updated status from OnHold to Blocked."
+        },
+        {
+          "time": 1674311107,
+          "operation": "update",
+          "description": "Updated status from Blocked to Aborted."
+        },
+        {
+          "time": 1674311287,
+          "operation": "update",
+          "description": "Updated element ID from MS.1 to MS.6."
+        }
+      ],
+      "relationships": [
+        {
+          "type": "preceded_by",
+          "targetId": "MS.5"
+        }
+      ],
+      "name": "Aborted Milestone",
+      "status": "Aborted",
+      "description": "The milestone will not be reached."
     }
   ],
   "stakeholders": [
