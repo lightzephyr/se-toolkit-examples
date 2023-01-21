@@ -1,201 +1,246 @@
 {
   "name": "Paraglider",
-  "SCHEMA_VERSION": "0.12.0",
-  "elements": [
+  "SCHEMA_VERSION": "0.13.0",
+  "changeLog": [
+    {
+      "time": 1631954917,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.7.0 to 0.9.0"
+    },
+    {
+      "time": 1674296644,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.12 to 0.13"
+    }
+  ],
+  "uidSeeds": {
+    "Action": 1,
+    "Assumption": 1,
+    "Opportunity": 1,
+    "Risk": 1,
+    "Lesson": 1,
+    "Data": 1,
+    "Hardware": 6,
+    "Person": 1,
+    "Product": 1,
+    "Project": 1,
+    "Service": 1,
+    "Software": 1,
+    "System": 2,
+    "Milestone": 8,
+    "Stakeholder": 1
+  },
+  "id": "setm0013202301f8ede757",
+  "annotations": [],
+  "components": [
     {
       "name": "Harness",
       "type": "Hardware",
       "relationships": [
         {
-          "target": "Lines",
-          "type": "input_from"
+          "type": "input_from",
+          "targetId": "HW.2"
         },
         {
-          "target": "Rescue Parachute",
-          "type": "input_from"
+          "type": "input_from",
+          "targetId": "HW.3"
         },
         {
-          "target": "Risers",
-          "type": "input_from"
+          "type": "input_from",
+          "targetId": "HW.4"
         }
       ],
-      "changeLog": []
-    },
-    {
-      "name": "Harness assembled",
-      "type": "Milestone",
-      "relationships": [],
-      "changeLog": []
+      "changeLog": [],
+      "id": "HW.1",
+      "metatype": "Component"
     },
     {
       "name": "Lines",
       "type": "Hardware",
       "relationships": [
         {
-          "target": "Harness",
-          "type": "input_from"
+          "type": "input_from",
+          "targetId": "HW.1"
         },
         {
-          "target": "Risers",
-          "type": "input_from"
+          "type": "input_from",
+          "targetId": "HW.4"
         },
         {
-          "target": "Wing",
-          "type": "input_from"
+          "type": "input_from",
+          "targetId": "HW.5"
         }
       ],
-      "changeLog": []
-    },
-    {
-      "name": "Lines and risers assembled",
-      "type": "Milestone",
-      "relationships": [
-        {
-          "target": "Parts available",
-          "type": "defined_by"
-        },
-        {
-          "target": "People available",
-          "type": "defined_by"
-        }
-      ],
-      "changeLog": []
-    },
-    {
-      "name": "Lines connected to wing",
-      "type": "Milestone",
-      "relationships": [
-        {
-          "target": "Lines and risers assembled",
-          "type": "defined_by"
-        },
-        {
-          "target": "Wing assembled",
-          "type": "defined_by"
-        }
-      ],
-      "changeLog": []
-    },
-    {
-      "name": "Paraglider",
-      "type": "System",
-      "relationships": [
-        {
-          "target": "Harness",
-          "type": "built_from"
-        },
-        {
-          "target": "Lines",
-          "type": "built_from"
-        },
-        {
-          "target": "Rescue Parachute",
-          "type": "built_from"
-        },
-        {
-          "target": "Risers",
-          "type": "built_from"
-        },
-        {
-          "target": "Wing",
-          "type": "built_from"
-        }
-      ],
-      "changeLog": []
-    },
-    {
-      "name": "Paraglider finished",
-      "type": "Milestone",
-      "relationships": [
-        {
-          "target": "Harness assembled",
-          "type": "defined_by"
-        },
-        {
-          "target": "Lines connected to wing",
-          "type": "defined_by"
-        }
-      ],
-      "changeLog": []
-    },
-    {
-      "name": "Parts available",
-      "type": "Milestone",
-      "relationships": [],
-      "changeLog": []
-    },
-    {
-      "name": "People available",
-      "type": "Milestone",
-      "relationships": [],
-      "changeLog": []
+      "changeLog": [],
+      "id": "HW.2",
+      "metatype": "Component"
     },
     {
       "name": "Rescue Parachute",
       "type": "Hardware",
       "relationships": [
         {
-          "target": "Harness",
-          "type": "input_from"
+          "type": "input_from",
+          "targetId": "HW.1"
         }
       ],
-      "changeLog": []
+      "changeLog": [],
+      "id": "HW.3",
+      "metatype": "Component"
     },
     {
       "name": "Risers",
       "type": "Hardware",
       "relationships": [
         {
-          "target": "Harness",
-          "type": "input_from"
+          "type": "input_from",
+          "targetId": "HW.1"
         },
         {
-          "target": "Lines",
-          "type": "input_from"
+          "type": "input_from",
+          "targetId": "HW.2"
         }
       ],
-      "changeLog": []
+      "changeLog": [],
+      "id": "HW.4",
+      "metatype": "Component"
     },
     {
       "name": "Wing",
       "type": "Hardware",
       "relationships": [
         {
-          "target": "Lines",
-          "type": "input_from"
+          "type": "input_from",
+          "targetId": "HW.2"
         }
       ],
-      "changeLog": []
+      "changeLog": [],
+      "id": "HW.5",
+      "metatype": "Component"
     },
     {
-      "name": "Wing assembled",
-      "type": "Milestone",
+      "name": "Paraglider",
+      "type": "System",
       "relationships": [
         {
-          "target": "Parts available",
-          "type": "defined_by"
+          "type": "built_from",
+          "targetId": "HW.1"
         },
         {
-          "target": "People available",
-          "type": "defined_by"
+          "type": "built_from",
+          "targetId": "HW.2"
+        },
+        {
+          "type": "built_from",
+          "targetId": "HW.3"
+        },
+        {
+          "type": "built_from",
+          "targetId": "HW.4"
+        },
+        {
+          "type": "built_from",
+          "targetId": "HW.5"
         }
       ],
-      "changeLog": []
+      "changeLog": [],
+      "id": "SYS.1",
+      "metatype": "Component"
     }
   ],
-  "changeLog": [
+  "milestones": [
     {
-      "time": 1631954917280,
-      "operation": "update",
-      "description": "Upgraded model schema from version 0.7.0 to 0.9.0"
+      "id": "MS.1",
+      "metatype": "Milestone",
+      "changeLog": [],
+      "relationships": [],
+      "name": "Harness assembled",
+      "status": "NotStarted"
+    },
+    {
+      "id": "MS.2",
+      "metatype": "Milestone",
+      "changeLog": [],
+      "relationships": [
+        {
+          "type": "preceded_by",
+          "targetId": "MS.5"
+        },
+        {
+          "type": "preceded_by",
+          "targetId": "MS.6"
+        }
+      ],
+      "name": "Lines and risers assembled",
+      "status": "NotStarted"
+    },
+    {
+      "id": "MS.3",
+      "metatype": "Milestone",
+      "changeLog": [],
+      "relationships": [
+        {
+          "type": "preceded_by",
+          "targetId": "MS.2"
+        },
+        {
+          "type": "preceded_by",
+          "targetId": "MS.7"
+        }
+      ],
+      "name": "Lines connected to wing",
+      "status": "NotStarted"
+    },
+    {
+      "id": "MS.4",
+      "metatype": "Milestone",
+      "changeLog": [],
+      "relationships": [
+        {
+          "type": "preceded_by",
+          "targetId": "MS.1"
+        },
+        {
+          "type": "preceded_by",
+          "targetId": "MS.3"
+        }
+      ],
+      "name": "Paraglider finished",
+      "status": "NotStarted"
+    },
+    {
+      "id": "MS.5",
+      "metatype": "Milestone",
+      "changeLog": [],
+      "relationships": [],
+      "name": "Parts available",
+      "status": "NotStarted"
+    },
+    {
+      "id": "MS.6",
+      "metatype": "Milestone",
+      "changeLog": [],
+      "relationships": [],
+      "name": "People available",
+      "status": "NotStarted"
+    },
+    {
+      "id": "MS.7",
+      "metatype": "Milestone",
+      "changeLog": [],
+      "relationships": [
+        {
+          "type": "preceded_by",
+          "targetId": "MS.5"
+        },
+        {
+          "type": "preceded_by",
+          "targetId": "MS.6"
+        }
+      ],
+      "name": "Wing assembled",
+      "status": "NotStarted"
     }
   ],
-  "uidSeeds": {
-    "annotations": {
-      "Action": 1,
-      "Assumption": 1,
-      "Opportunity": 1,
-      "Risk": 1
-    }
-  }
+  "stakeholders": []
 }
