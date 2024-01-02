@@ -1,6 +1,6 @@
 {
   "name": "Paraglider",
-  "SCHEMA_VERSION": "0.13.0",
+  "SCHEMA_VERSION": "0.14.0",
   "changeLog": [
     {
       "time": 1631954917,
@@ -11,6 +11,11 @@
       "time": 1674296644,
       "operation": "update",
       "description": "Upgraded model schema from version 0.12 to 0.13"
+    },
+    {
+      "time": 1704215072,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.13 to 0.14"
     }
   ],
   "uidSeeds": {
@@ -28,14 +33,15 @@
     "Software": 1,
     "System": 2,
     "Milestone": 8,
-    "Stakeholder": 1
+    "Stakeholder": 1,
+    "Facility": 1,
+    "Organization": 1,
+    "Requirement": 1
   },
   "id": "setm0013202301f8ede757",
   "annotations": [],
   "components": [
     {
-      "name": "Harness",
-      "type": "Hardware",
       "relationships": [
         {
           "type": "input_from",
@@ -52,11 +58,14 @@
       ],
       "changeLog": [],
       "id": "HW.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Harness",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Lines",
-      "type": "Hardware",
       "relationships": [
         {
           "type": "input_from",
@@ -73,11 +82,14 @@
       ],
       "changeLog": [],
       "id": "HW.2",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Lines",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Rescue Parachute",
-      "type": "Hardware",
       "relationships": [
         {
           "type": "input_from",
@@ -86,11 +98,14 @@
       ],
       "changeLog": [],
       "id": "HW.3",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Rescue Parachute",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Risers",
-      "type": "Hardware",
       "relationships": [
         {
           "type": "input_from",
@@ -103,11 +118,14 @@
       ],
       "changeLog": [],
       "id": "HW.4",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Risers",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Wing",
-      "type": "Hardware",
       "relationships": [
         {
           "type": "input_from",
@@ -116,11 +134,14 @@
       ],
       "changeLog": [],
       "id": "HW.5",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Wing",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Paraglider",
-      "type": "System",
       "relationships": [
         {
           "type": "built_from",
@@ -145,7 +166,12 @@
       ],
       "changeLog": [],
       "id": "SYS.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Paraglider",
+        "type": "System",
+        "description": ""
+      }
     }
   ],
   "milestones": [
@@ -154,8 +180,11 @@
       "metatype": "Milestone",
       "changeLog": [],
       "relationships": [],
-      "name": "Harness assembled",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Harness assembled",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.2",
@@ -171,8 +200,11 @@
           "targetId": "MS.6"
         }
       ],
-      "name": "Lines and risers assembled",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Lines and risers assembled",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.3",
@@ -188,8 +220,11 @@
           "targetId": "MS.7"
         }
       ],
-      "name": "Lines connected to wing",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Lines connected to wing",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.4",
@@ -205,24 +240,33 @@
           "targetId": "MS.3"
         }
       ],
-      "name": "Paraglider finished",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Paraglider finished",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.5",
       "metatype": "Milestone",
       "changeLog": [],
       "relationships": [],
-      "name": "Parts available",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Parts available",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.6",
       "metatype": "Milestone",
       "changeLog": [],
       "relationships": [],
-      "name": "People available",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "People available",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.7",
@@ -238,9 +282,13 @@
           "targetId": "MS.6"
         }
       ],
-      "name": "Wing assembled",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Wing assembled",
+        "status": "NotStarted",
+        "description": ""
+      }
     }
   ],
-  "stakeholders": []
+  "stakeholders": [],
+  "requirements": []
 }

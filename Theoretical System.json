@@ -1,7 +1,7 @@
 {
   "id": "setm-theoreticalsystem",
   "name": "Theoretical System",
-  "SCHEMA_VERSION": "0.13.0",
+  "SCHEMA_VERSION": "0.14.0",
   "changeLog": [
     {
       "time": 1631954926,
@@ -52,6 +52,11 @@
       "time": 1673711486,
       "operation": "delete",
       "description": "Deleted milestone: MS.7."
+    },
+    {
+      "time": 1704041278,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.13 to 0.14"
     }
   ],
   "uidSeeds": {
@@ -68,8 +73,11 @@
     "Service": 2,
     "Software": 2,
     "System": 5,
-    "Milestone": 8,
-    "Stakeholder": 3
+    "Milestone": 7,
+    "Stakeholder": 3,
+    "Facility": 2,
+    "Organization": 2,
+    "Requirement": 7
   },
   "annotations": [
     {
@@ -93,9 +101,13 @@
           "type": "annotates"
         }
       ],
-      "text": "This is an action related to the system of interest.",
-      "type": "Action",
-      "priority": "Medium"
+      "attributes": {
+        "text": "This is an action related to the system of interest.",
+        "type": "Action",
+        "priority": "Medium",
+        "closedOn": null,
+        "remarks": ""
+      }
     },
     {
       "id": "AI.6",
@@ -118,9 +130,13 @@
           "type": "annotates"
         }
       ],
-      "text": "This is an action related to this subsystem.",
-      "type": "Action",
-      "priority": "High"
+      "attributes": {
+        "text": "This is an action related to this subsystem.",
+        "type": "Action",
+        "priority": "High",
+        "closedOn": null,
+        "remarks": ""
+      }
     },
     {
       "id": "AI.7",
@@ -143,9 +159,13 @@
           "type": "annotates"
         }
       ],
-      "text": "This is another action related to the system of interest.",
-      "type": "Action",
-      "priority": "Low"
+      "attributes": {
+        "text": "This is another action related to the system of interest.",
+        "type": "Action",
+        "priority": "Low",
+        "closedOn": null,
+        "remarks": ""
+      }
     },
     {
       "id": "AS.1",
@@ -163,9 +183,13 @@
           "type": "annotates"
         }
       ],
-      "text": "This is an assumption about the person.",
-      "type": "Assumption",
-      "priority": "None"
+      "attributes": {
+        "text": "This is an assumption about the person.",
+        "type": "Assumption",
+        "priority": "None",
+        "closedOn": null,
+        "remarks": ""
+      }
     },
     {
       "id": "L.1",
@@ -183,9 +207,13 @@
           "type": "annotates"
         }
       ],
-      "text": "This is a lesson related to the product.",
-      "type": "Lesson",
-      "priority": "None"
+      "attributes": {
+        "text": "This is a lesson related to the product.",
+        "type": "Lesson",
+        "priority": "None",
+        "closedOn": null,
+        "remarks": ""
+      }
     },
     {
       "id": "O.2",
@@ -203,9 +231,13 @@
           "type": "annotates"
         }
       ],
-      "text": "This is an opportunity related to the service.",
-      "type": "Opportunity",
-      "priority": "None"
+      "attributes": {
+        "text": "This is an opportunity related to the service.",
+        "type": "Opportunity",
+        "priority": "None",
+        "closedOn": null,
+        "remarks": ""
+      }
     },
     {
       "id": "R.3",
@@ -233,11 +265,13 @@
           "type": "annotates"
         }
       ],
-      "text": "This is a risk related to the hardware.",
-      "type": "Risk",
-      "priority": "None",
-      "remarks": "This risk no longer exists.",
-      "closedOn": 1674311354
+      "attributes": {
+        "text": "This is a risk related to the hardware.",
+        "type": "Risk",
+        "priority": "None",
+        "closedOn": 1674311354,
+        "remarks": "This risk no longer exists."
+      }
     },
     {
       "id": "R.4",
@@ -265,40 +299,116 @@
           "type": "annotates"
         }
       ],
-      "text": "This is a risk related to the on hold milestone.",
-      "type": "Risk",
-      "priority": "Medium"
+      "attributes": {
+        "text": "This is a risk related to the on hold milestone.",
+        "type": "Risk",
+        "priority": "Medium",
+        "closedOn": null,
+        "remarks": ""
+      }
     }
   ],
   "components": [
     {
-      "name": "Data",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [],
-      "description": "A data item.",
+      "relationships": [
+        {
+          "targetId": "REQ.3",
+          "type": "specified_by"
+        }
+      ],
+      "changeLog": [
+        {
+          "time": 1704214948,
+          "operation": "create",
+          "description": "Created specified_by relationship with REQ.3."
+        }
+      ],
       "id": "D.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Data",
+        "type": "Data",
+        "description": "A data item."
+      }
     },
     {
-      "name": "Hardware",
-      "type": "Hardware",
+      "id": "F.1",
+      "metatype": "Component",
+      "changeLog": [
+        {
+          "time": 1704041418,
+          "operation": "create",
+          "description": "Created facility component: F.1."
+        },
+        {
+          "time": 1704041493,
+          "operation": "update",
+          "description": "Added description: \"A building or other structure in which a system is housed.\""
+        }
+      ],
       "relationships": [],
+      "attributes": {
+        "name": "Facility",
+        "type": "Facility",
+        "description": "A building or other structure in which a system is housed."
+      }
+    },
+    {
+      "relationships": [
+        {
+          "targetId": "REQ.4",
+          "type": "specified_by"
+        }
+      ],
       "changeLog": [
         {
           "time": 1658507566,
           "operation": "create",
           "description": "Added action (ID: AI.5): 'This is a risk related to the hardware.'"
+        },
+        {
+          "time": 1704214954,
+          "operation": "create",
+          "description": "Created specified_by relationship with REQ.4."
         }
       ],
-      "description": "A hardware item.",
       "id": "HW.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Hardware",
+        "type": "Hardware",
+        "description": "A hardware item."
+      }
     },
     {
-      "name": "Person",
-      "type": "Person",
+      "id": "ORG.1",
+      "metatype": "Component",
+      "changeLog": [
+        {
+          "time": 1704041428,
+          "operation": "create",
+          "description": "Created organization component: ORG.1."
+        },
+        {
+          "time": 1704041506,
+          "operation": "update",
+          "description": "Added description: \"A company or other group of people that works together for a particular purpose.\""
+        }
+      ],
       "relationships": [],
+      "attributes": {
+        "name": "Organization",
+        "type": "Organization",
+        "description": "A company or other group of people that works together for a particular purpose."
+      }
+    },
+    {
+      "relationships": [
+        {
+          "targetId": "REQ.5",
+          "type": "specified_by"
+        }
+      ],
       "changeLog": [
         {
           "time": 1657979928,
@@ -314,15 +424,22 @@
           "time": 1658507530,
           "operation": "create",
           "description": "Added action (ID: AI.3): 'This is an assumption about the person.'"
+        },
+        {
+          "time": 1704214962,
+          "operation": "create",
+          "description": "Created specified_by relationship with REQ.5."
         }
       ],
-      "description": "A person who performs a function of, and therefore forms a part of, the system of interest.",
       "id": "P.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Person",
+        "type": "Person",
+        "description": "A person who performs a function of, and therefore forms a part of, the system of interest."
+      }
     },
     {
-      "name": "Product",
-      "type": "Product",
       "relationships": [],
       "changeLog": [
         {
@@ -341,14 +458,24 @@
           "description": "Added lesson (ID: L.1): 'This is a lesson related to the product.'"
         }
       ],
-      "description": "An article that is the result of an action or process.",
       "id": "PRD.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Product",
+        "type": "Product",
+        "description": "An article that is the result of an action or process."
+      }
     },
     {
-      "name": "Project",
-      "type": "Project",
       "relationships": [
+        {
+          "targetId": "F.1",
+          "type": "built_from"
+        },
+        {
+          "targetId": "ORG.1",
+          "type": "built_from"
+        },
         {
           "type": "built_from",
           "targetId": "PRD.1"
@@ -378,15 +505,27 @@
           "time": 1651690558,
           "operation": "update",
           "description": "Changed description: added: 'An undertaking with pre-specified objectives, magnitude and duration.'"
+        },
+        {
+          "time": 1704041452,
+          "operation": "create",
+          "description": "Created built_from relationship with F.1 (Facility)."
+        },
+        {
+          "time": 1704041453,
+          "operation": "create",
+          "description": "Created built_from relationship with ORG.1 (Organization)."
         }
       ],
-      "description": "An undertaking with pre-specified objectives, magnitude and duration.",
       "id": "PRJ.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Project",
+        "type": "Project",
+        "description": "An undertaking with pre-specified objectives, magnitude and duration."
+      }
     },
     {
-      "name": "Service",
-      "type": "Service",
       "relationships": [],
       "changeLog": [
         {
@@ -395,22 +534,26 @@
           "description": "Added action (ID: AI.4): 'This is an opportunity related to the service.'"
         }
       ],
-      "description": "A service provided by a service provider.",
       "id": "S.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Service",
+        "type": "Service",
+        "description": "A service provided by a service provider."
+      }
     },
     {
-      "name": "Software",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
-      "description": "A software item.",
       "id": "SW.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Software",
+        "type": "Software",
+        "description": "A software item."
+      }
     },
     {
-      "name": "Subsystem",
-      "type": "System",
       "relationships": [
         {
           "type": "built_from",
@@ -427,15 +570,26 @@
       ],
       "changeLog": [],
       "id": "SYS.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Subsystem",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "System",
-      "type": "System",
       "relationships": [
         {
           "type": "built_from",
           "targetId": "P.1"
+        },
+        {
+          "targetId": "REQ.1",
+          "type": "specified_by"
+        },
+        {
+          "targetId": "REQ.2",
+          "type": "specified_by"
         },
         {
           "type": "built_from",
@@ -447,15 +601,27 @@
           "time": 1657979928,
           "operation": "create",
           "description": "Added built_from relationship with Person"
+        },
+        {
+          "time": 1704214925,
+          "operation": "create",
+          "description": "Created specified_by relationship with REQ.1."
+        },
+        {
+          "time": 1704214935,
+          "operation": "create",
+          "description": "Created specified_by relationship with REQ.2."
         }
       ],
-      "description": "A system (either a black box or built from other elements).",
       "id": "SYS.2",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "System",
+        "type": "System",
+        "description": "A system (either a black box or built from other elements)."
+      }
     },
     {
-      "name": "System of Interest",
-      "type": "System",
       "relationships": [
         {
           "type": "built_from",
@@ -478,13 +644,15 @@
           "description": "Added action (ID: AI.2): 'This is an action related to the system of interest.'"
         }
       ],
-      "description": "The system whose life cycle is under consideration.",
       "id": "SYS.3",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "System of Interest",
+        "type": "System",
+        "description": "The system whose life cycle is under consideration."
+      }
     },
     {
-      "name": "System of Systems",
-      "type": "System",
       "relationships": [
         {
           "type": "built_from",
@@ -503,9 +671,13 @@
           "description": "Changed description: 'A (-system of systems is a) collection of task-oriented or dedicated systems that pool their resources and capabilities together to create a new, more complex system which offers more functionality and performance than simply the sum of the constituent systems.'"
         }
       ],
-      "description": "A collection of task-oriented or dedicated systems that pool their resources and capabilities together to create a new, more complex system which offers more functionality and performance than simply the sum of the constituent systems.",
       "id": "SYS.4",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "System of Systems",
+        "type": "System",
+        "description": "A collection of task-oriented or dedicated systems that pool their resources and capabilities together to create a new, more complex system which offers more functionality and performance than simply the sum of the constituent systems."
+      }
     }
   ],
   "milestones": [
@@ -530,9 +702,11 @@
         }
       ],
       "relationships": [],
-      "name": "Not Started Milestone",
-      "status": "NotStarted",
-      "description": "Progress towards this milestone has not been started."
+      "attributes": {
+        "name": "Not Started Milestone",
+        "status": "NotStarted",
+        "description": "Progress towards this milestone has not been started."
+      }
     },
     {
       "id": "MS.2",
@@ -575,9 +749,11 @@
           "targetId": "MS.1"
         }
       ],
-      "name": "In Progress Milestone",
-      "status": "InProgress",
-      "description": "Progress is being made towards this milestone."
+      "attributes": {
+        "name": "In Progress Milestone",
+        "status": "InProgress",
+        "description": "Progress is being made towards this milestone."
+      }
     },
     {
       "id": "MS.3",
@@ -610,9 +786,11 @@
           "targetId": "MS.2"
         }
       ],
-      "name": "Finished Milestone",
-      "status": "Finished",
-      "description": "The milestone has been reached."
+      "attributes": {
+        "name": "Finished Milestone",
+        "status": "Finished",
+        "description": "The milestone has been reached."
+      }
     },
     {
       "id": "MS.4",
@@ -665,9 +843,11 @@
           "targetId": "MS.3"
         }
       ],
-      "name": "On Hold Milestone",
-      "status": "OnHold",
-      "description": "Progress towards this milestone has been temporarily stopped."
+      "attributes": {
+        "name": "On Hold Milestone",
+        "status": "OnHold",
+        "description": "Progress towards this milestone has been temporarily stopped."
+      }
     },
     {
       "id": "MS.5",
@@ -725,9 +905,11 @@
           "targetId": "MS.4"
         }
       ],
-      "name": "Blocked Milestone",
-      "status": "Blocked",
-      "description": "The milestone cannot be reached until whatever is blocking progress has been resolved."
+      "attributes": {
+        "name": "Blocked Milestone",
+        "status": "Blocked",
+        "description": "The milestone cannot be reached until whatever is blocking progress has been resolved."
+      }
     },
     {
       "id": "MS.6",
@@ -790,9 +972,115 @@
           "targetId": "MS.5"
         }
       ],
-      "name": "Aborted Milestone",
-      "status": "Aborted",
-      "description": "The milestone will not be reached."
+      "attributes": {
+        "name": "Aborted Milestone",
+        "status": "Aborted",
+        "description": "The milestone will not be reached."
+      }
+    }
+  ],
+  "requirements": [
+    {
+      "id": "REQ.1",
+      "metatype": "Requirement",
+      "changeLog": [
+        {
+          "time": 1704202873,
+          "operation": "create",
+          "description": "Created requirement: REQ.1."
+        }
+      ],
+      "relationships": [],
+      "attributes": {
+        "text": "The System shall perform awesome function 1 unless it is a Tuesday.",
+        "type": "Functional",
+        "verificationMethod": "Demonstration"
+      }
+    },
+    {
+      "id": "REQ.2",
+      "metatype": "Requirement",
+      "changeLog": [
+        {
+          "time": 1704202873,
+          "operation": "create",
+          "description": "Created requirement: REQ.2."
+        }
+      ],
+      "relationships": [],
+      "attributes": {
+        "text": "The System when powered on shall perform awesome function 2.",
+        "type": "Functional",
+        "verificationMethod": "Demonstration"
+      }
+    },
+    {
+      "id": "REQ.3",
+      "metatype": "Requirement",
+      "changeLog": [
+        {
+          "time": 1704202873,
+          "operation": "create",
+          "description": "Created requirement: REQ.3."
+        }
+      ],
+      "relationships": [],
+      "attributes": {
+        "text": "The System shall store data in the cloud in a ground braking new format.",
+        "type": "Design",
+        "verificationMethod": "Analysis"
+      }
+    },
+    {
+      "id": "REQ.4",
+      "metatype": "Requirement",
+      "changeLog": [
+        {
+          "time": 1704202873,
+          "operation": "create",
+          "description": "Created requirement: REQ.4."
+        }
+      ],
+      "relationships": [],
+      "attributes": {
+        "text": "The System shall include hardware.",
+        "type": "Design",
+        "verificationMethod": "Analysis"
+      }
+    },
+    {
+      "id": "REQ.5",
+      "metatype": "Requirement",
+      "changeLog": [
+        {
+          "time": 1704202873,
+          "operation": "create",
+          "description": "Created requirement: REQ.5."
+        }
+      ],
+      "relationships": [],
+      "attributes": {
+        "text": "The System shall include, in accordance with health and safety regulations, a person.",
+        "type": "Design",
+        "verificationMethod": "Analysis"
+      }
+    },
+    {
+      "id": "REQ.6",
+      "metatype": "Requirement",
+      "changeLog": [
+        {
+          "time": 1704202873,
+          "operation": "create",
+          "description": "Created requirement: REQ.6."
+        }
+      ],
+      "relationships": [],
+      "attributes": {
+        "text": "The System shall include software that meets international standards for awesome code.",
+        "type": "Design",
+        "verificationMethod": "Analysis"
+      }
     }
   ],
   "stakeholders": [
@@ -849,8 +1137,11 @@
           "targetId": "SYS.3"
         }
       ],
-      "name": "Stakeholder 1",
-      "colour": "#16a5a5"
+      "attributes": {
+        "name": "Stakeholder 1",
+        "colour": "#16a5a5",
+        "description": ""
+      }
     },
     {
       "id": "SH.2",
@@ -878,8 +1169,11 @@
           "targetId": "SYS.4"
         }
       ],
-      "name": "Stakeholder 2",
-      "colour": "#7b64ff"
+      "attributes": {
+        "name": "Stakeholder 2",
+        "colour": "#7b64ff",
+        "description": ""
+      }
     }
   ]
 }

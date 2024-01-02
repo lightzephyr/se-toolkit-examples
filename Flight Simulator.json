@@ -1,6 +1,6 @@
 {
   "name": "Flight Simulator",
-  "SCHEMA_VERSION": "0.13.0",
+  "SCHEMA_VERSION": "0.14.0",
   "changeLog": [
     {
       "time": 1631954908,
@@ -16,6 +16,11 @@
       "time": 1674296626,
       "operation": "update",
       "description": "Upgraded model schema from version 0.12 to 0.13"
+    },
+    {
+      "time": 1704215049,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.13 to 0.14"
     }
   ],
   "uidSeeds": {
@@ -33,97 +38,128 @@
     "Software": 32,
     "System": 18,
     "Milestone": 8,
-    "Stakeholder": 1
+    "Stakeholder": 1,
+    "Facility": 1,
+    "Organization": 1,
+    "Requirement": 1
   },
   "id": "setm0013202301a8ce57e9",
   "annotations": [],
   "components": [
     {
-      "name": "GPWS Database",
-      "type": "Data",
       "relationships": [],
       "changeLog": [],
       "id": "D.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "GPWS Database",
+        "type": "Data",
+        "description": ""
+      }
     },
     {
-      "name": "Navigation Aid Database",
-      "type": "Data",
       "status": "NotStarted",
       "relationships": [],
       "changeLog": [],
       "id": "D.2",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Navigation Aid Database",
+        "type": "Data",
+        "description": ""
+      }
     },
     {
-      "name": "Cockpit Controls Power Supply",
-      "type": "Hardware",
       "relationships": [],
       "changeLog": [],
       "id": "HW.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Cockpit Controls Power Supply",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Cockpit Instruments",
-      "type": "Hardware",
       "relationships": [],
       "changeLog": [],
       "id": "HW.2",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Cockpit Instruments",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Cockpit Instruments Data Interface",
-      "type": "Hardware",
       "relationships": [],
       "changeLog": [],
       "id": "HW.3",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Cockpit Instruments Data Interface",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Cockpit Instruments Power Supply",
-      "type": "Hardware",
       "status": "NotStarted",
       "relationships": [],
       "changeLog": [],
       "id": "HW.4",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Cockpit Instruments Power Supply",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Cockpit Instruments Structural Interface",
-      "type": "Hardware",
       "relationships": [],
       "changeLog": [],
       "id": "HW.5",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Cockpit Instruments Structural Interface",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Cockpit Interface Computer Hardware",
-      "type": "Hardware",
       "relationships": [],
       "changeLog": [],
       "id": "HW.6",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Cockpit Interface Computer Hardware",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Cockpit Lighting",
-      "type": "Hardware",
       "relationships": [],
       "changeLog": [],
       "id": "HW.7",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Cockpit Lighting",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Cockpit Lighting Power Supply",
-      "type": "Hardware",
       "status": "NotStarted",
       "relationships": [],
       "changeLog": [],
       "id": "HW.8",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Cockpit Lighting Power Supply",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Cockpit Power Supply",
-      "type": "Hardware",
       "relationships": [
         {
           "type": "built_from",
@@ -140,36 +176,48 @@
       ],
       "changeLog": [],
       "id": "HW.9",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Cockpit Power Supply",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Cockpit Structure",
-      "type": "Hardware",
       "relationships": [],
       "changeLog": [],
       "id": "HW.10",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Cockpit Structure",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Crew Seats",
-      "type": "Hardware",
       "relationships": [],
       "changeLog": [],
       "id": "HW.11",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Crew Seats",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Display System",
-      "type": "Hardware",
       "status": "NotStarted",
       "relationships": [],
       "changeLog": [],
       "id": "HW.12",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Display System",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Flight Control Hardware",
-      "type": "Hardware",
       "relationships": [
         {
           "type": "built_from",
@@ -182,28 +230,37 @@
       ],
       "changeLog": [],
       "id": "HW.13",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Flight Control Hardware",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Host Computer Hardware",
-      "type": "Hardware",
       "status": "NotStarted",
       "relationships": [],
       "changeLog": [],
       "id": "HW.14",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Host Computer Hardware",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Motion Computer Hardware",
-      "type": "Hardware",
       "relationships": [],
       "changeLog": [],
       "id": "HW.15",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Motion Computer Hardware",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Motion Platform Hardware",
-      "type": "Hardware",
       "status": "NotStarted",
       "relationships": [
         {
@@ -213,145 +270,195 @@
       ],
       "changeLog": [],
       "id": "HW.16",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Motion Platform Hardware",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Primary Flight Controls",
-      "type": "Hardware",
       "relationships": [],
       "changeLog": [],
       "id": "HW.17",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Primary Flight Controls",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Secondary Flight Controls",
-      "type": "Hardware",
       "relationships": [],
       "changeLog": [],
       "id": "HW.18",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Secondary Flight Controls",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Aerodynamics Model",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
       "id": "SW.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Aerodynamics Model",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Cockpit Interface Computer Operating System",
-      "type": "Software",
       "status": "NotStarted",
       "relationships": [],
       "changeLog": [],
       "id": "SW.2",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Cockpit Interface Computer Operating System",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Cockpit Interface Hardware Drivers",
-      "type": "Software",
       "status": "NotStarted",
       "relationships": [],
       "changeLog": [],
       "id": "SW.3",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Cockpit Interface Hardware Drivers",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Flight Controls Model",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
       "id": "SW.4",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Flight Controls Model",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Flight Dynamics Model",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
       "id": "SW.5",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Flight Dynamics Model",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "GPWS Simulation",
-      "type": "Software",
       "status": "NotStarted",
       "relationships": [],
       "changeLog": [],
       "id": "SW.6",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "GPWS Simulation",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Host Computer Hardware Drivers",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
       "id": "SW.7",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Host Computer Hardware Drivers",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Host Computer Operating System",
-      "type": "Software",
       "status": "NotStarted",
       "relationships": [],
       "changeLog": [],
       "id": "SW.8",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Host Computer Operating System",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Landing Gear Model",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
       "id": "SW.9",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Landing Gear Model",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Motion Computer Operating System",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
       "id": "SW.10",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Motion Computer Operating System",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Motion Hardware Drivers",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
       "id": "SW.11",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Motion Hardware Drivers",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Motion Washout Algorithms",
-      "type": "Software",
       "status": "NotStarted",
       "relationships": [],
       "changeLog": [],
       "id": "SW.12",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Motion Washout Algorithms",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Navigation Aid Simulation",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
       "id": "SW.13",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Navigation Aid Simulation",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Simulated ACARS",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
-      "description": "ACARS: Aircraft Addressing And Reporting System",
       "id": "SW.14",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated ACARS",
+        "type": "Software",
+        "description": "ACARS: Aircraft Addressing And Reporting System"
+      }
     },
     {
-      "name": "Simulated Aircraft Ancillary Systems",
-      "type": "Software",
       "status": "NotStarted",
       "relationships": [
         {
@@ -373,11 +480,14 @@
       ],
       "changeLog": [],
       "id": "SW.15",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated Aircraft Ancillary Systems",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Simulated Aircraft Comms System",
-      "type": "Software",
       "status": "NotStarted",
       "relationships": [
         {
@@ -395,11 +505,14 @@
       ],
       "changeLog": [],
       "id": "SW.16",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated Aircraft Comms System",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Simulated Aircraft Engines",
-      "type": "Software",
       "status": "NotStarted",
       "relationships": [
         {
@@ -417,37 +530,47 @@
       ],
       "changeLog": [],
       "id": "SW.17",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated Aircraft Engines",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Simulated Comms Radios",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
-      "description": "The comms radio simulation does not include navigation radios. Simulated communication radios typically include one or more HF, VHF and UHF radios.",
       "id": "SW.18",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated Comms Radios",
+        "type": "Software",
+        "description": "The comms radio simulation does not include navigation radios. Simulated communication radios typically include one or more HF, VHF and UHF radios."
+      }
     },
     {
-      "name": "Simulated Electrical System",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
       "id": "SW.19",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated Electrical System",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Simulated FADEC",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
-      "description": "FADEC: Full Authority Digital Engine Control The FADEC is typically too complicated to be able to model all of its functionality from scratch. Therefore a rehost of the actual engine software is required for higher fidelity simulators and is almost unavoidable for Level D.",
       "id": "SW.20",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated FADEC",
+        "type": "Software",
+        "description": "FADEC: Full Authority Digital Engine Control The FADEC is typically too complicated to be able to model all of its functionality from scratch. Therefore a rehost of the actual engine software is required for higher fidelity simulators and is almost unavoidable for Level D."
+      }
     },
     {
-      "name": "Simulated Flight Controls",
-      "type": "Software",
       "relationships": [
         {
           "type": "built_from",
@@ -460,20 +583,25 @@
       ],
       "changeLog": [],
       "id": "SW.21",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated Flight Controls",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Simulated Flight Controls Computer",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
-      "description": "The flight controls computer is typically too complicated to be able to model all of its functionality from scratch. Therefore a rehost of the actual aircraft software is preferred. The engineering model used by the aircraft OEM may be sufficient if it can be proved to represent the actual aircraft with the required fidelity.",
       "id": "SW.22",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated Flight Controls Computer",
+        "type": "Software",
+        "description": "The flight controls computer is typically too complicated to be able to model all of its functionality from scratch. Therefore a rehost of the actual aircraft software is preferred. The engineering model used by the aircraft OEM may be sufficient if it can be proved to represent the actual aircraft with the required fidelity."
+      }
     },
     {
-      "name": "Simulated Flight Dynamics",
-      "type": "Software",
       "relationships": [
         {
           "type": "built_from",
@@ -494,45 +622,58 @@
       ],
       "changeLog": [],
       "id": "SW.23",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated Flight Dynamics",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Simulated Fuel System",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
       "id": "SW.24",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated Fuel System",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Simulated GPS",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
-      "description": "GPS: Global Positioning System",
       "id": "SW.25",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated GPS",
+        "type": "Software",
+        "description": "GPS: Global Positioning System"
+      }
     },
     {
-      "name": "Simulated Hydraulic System",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
       "id": "SW.26",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated Hydraulic System",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Simulated IFF",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
-      "description": "IFF: Identification Friend Or Foe The IFF simulation typically includes all transponder modes - including the civil modes 1, 2, and 3A/C and S. IFF describes an electronic, radio based identification system - in this case used between aircraft and ground based radar stations.",
       "id": "SW.27",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated IFF",
+        "type": "Software",
+        "description": "IFF: Identification Friend Or Foe The IFF simulation typically includes all transponder modes - including the civil modes 1, 2, and 3A/C and S. IFF describes an electronic, radio based identification system - in this case used between aircraft and ground based radar stations."
+      }
     },
     {
-      "name": "Simulated Navigation Systems",
-      "type": "Software",
       "status": "NotStarted",
       "relationships": [
         {
@@ -554,38 +695,48 @@
       ],
       "changeLog": [],
       "id": "SW.28",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated Navigation Systems",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Simulated Powerplant",
-      "type": "Software",
       "status": "NotStarted",
       "relationships": [],
       "changeLog": [],
       "id": "SW.29",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated Powerplant",
+        "type": "Software",
+        "description": ""
+      }
     },
     {
-      "name": "Simulated Radio Navigation Systems",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
-      "description": "Simulated navigation radios typically include ADF and ILS. The navigation radio simulation does not include communication radios. The navigation radio simulation does not include the database of navigation aids.",
       "id": "SW.30",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated Radio Navigation Systems",
+        "type": "Software",
+        "description": "Simulated navigation radios typically include ADF and ILS. The navigation radio simulation does not include communication radios. The navigation radio simulation does not include the database of navigation aids."
+      }
     },
     {
-      "name": "Simulated TCAS",
-      "type": "Software",
       "relationships": [],
       "changeLog": [],
-      "description": "TCAS: Traffic Collision and Avoidance System",
       "id": "SW.31",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated TCAS",
+        "type": "Software",
+        "description": "TCAS: Traffic Collision and Avoidance System"
+      }
     },
     {
-      "name": "Cockpit Interface Computer",
-      "type": "System",
       "status": "NotStarted",
       "relationships": [
         {
@@ -603,11 +754,14 @@
       ],
       "changeLog": [],
       "id": "SYS.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Cockpit Interface Computer",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "Flight Simulator",
-      "type": "System",
       "relationships": [
         {
           "type": "built_from",
@@ -644,11 +798,14 @@
       ],
       "changeLog": [],
       "id": "SYS.2",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Flight Simulator",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "Host Computer",
-      "type": "System",
       "status": "NotStarted",
       "relationships": [
         {
@@ -666,11 +823,14 @@
       ],
       "changeLog": [],
       "id": "SYS.3",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Host Computer",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "Image Generation System",
-      "type": "System",
       "relationships": [
         {
           "type": "input_from",
@@ -679,11 +839,14 @@
       ],
       "changeLog": [],
       "id": "SYS.4",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Image Generation System",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "IT Infrastructure",
-      "type": "System",
       "status": "NotStarted",
       "relationships": [
         {
@@ -693,11 +856,14 @@
       ],
       "changeLog": [],
       "id": "SYS.5",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "IT Infrastructure",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "Motion Control Computer",
-      "type": "System",
       "status": "NotStarted",
       "relationships": [
         {
@@ -723,11 +889,14 @@
       ],
       "changeLog": [],
       "id": "SYS.6",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Motion Control Computer",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "Motion System",
-      "type": "System",
       "relationships": [
         {
           "type": "built_from",
@@ -740,11 +909,14 @@
       ],
       "changeLog": [],
       "id": "SYS.7",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Motion System",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "Ownship Simulation",
-      "type": "System",
       "relationships": [
         {
           "type": "built_from",
@@ -773,11 +945,14 @@
       ],
       "changeLog": [],
       "id": "SYS.8",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Ownship Simulation",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "Projection System",
-      "type": "System",
       "relationships": [
         {
           "type": "input_from",
@@ -786,11 +961,14 @@
       ],
       "changeLog": [],
       "id": "SYS.9",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Projection System",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "Simulated GPWS",
-      "type": "System",
       "status": "NotStarted",
       "relationships": [
         {
@@ -803,13 +981,15 @@
         }
       ],
       "changeLog": [],
-      "description": "GPWS: Ground Proximity Warning System",
       "id": "SYS.10",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated GPWS",
+        "type": "System",
+        "description": "GPWS: Ground Proximity Warning System"
+      }
     },
     {
-      "name": "Simulated Navigation Aids",
-      "type": "System",
       "status": "NotStarted",
       "relationships": [
         {
@@ -823,11 +1003,14 @@
       ],
       "changeLog": [],
       "id": "SYS.11",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated Navigation Aids",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "Simulated Sensor Systems",
-      "type": "System",
       "status": "NotStarted",
       "relationships": [
         {
@@ -845,11 +1028,14 @@
       ],
       "changeLog": [],
       "id": "SYS.12",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulated Sensor Systems",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "Simulator Cockpit",
-      "type": "System",
       "status": "NotStarted",
       "relationships": [
         {
@@ -903,11 +1089,14 @@
       ],
       "changeLog": [],
       "id": "SYS.13",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulator Cockpit",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "Simulator Comms System",
-      "type": "System",
       "relationships": [
         {
           "type": "input_from",
@@ -916,11 +1105,14 @@
       ],
       "changeLog": [],
       "id": "SYS.14",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulator Comms System",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "Simulator Sound System",
-      "type": "System",
       "relationships": [
         {
           "type": "input_from",
@@ -937,11 +1129,14 @@
       ],
       "changeLog": [],
       "id": "SYS.15",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Simulator Sound System",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "Visual System",
-      "type": "System",
       "relationships": [
         {
           "type": "built_from",
@@ -958,11 +1153,14 @@
       ],
       "changeLog": [],
       "id": "SYS.16",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Visual System",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "World Simulation",
-      "type": "System",
       "relationships": [
         {
           "type": "built_from",
@@ -971,7 +1169,12 @@
       ],
       "changeLog": [],
       "id": "SYS.17",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "World Simulation",
+        "type": "System",
+        "description": ""
+      }
     }
   ],
   "milestones": [
@@ -985,8 +1188,11 @@
           "targetId": "MS.6"
         }
       ],
-      "name": "Cruise",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Cruise",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.2",
@@ -998,8 +1204,11 @@
           "targetId": "MS.3"
         }
       ],
-      "name": "Emergencies in Flight",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Emergencies in Flight",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.3",
@@ -1011,8 +1220,11 @@
           "targetId": "MS.4"
         }
       ],
-      "name": "Emergencies on Ground",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Emergencies on Ground",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.4",
@@ -1024,16 +1236,22 @@
           "targetId": "MS.1"
         }
       ],
-      "name": "Landing",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Landing",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.5",
       "metatype": "Milestone",
       "changeLog": [],
       "relationships": [],
-      "name": "Stationary on Ground",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Stationary on Ground",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.6",
@@ -1045,8 +1263,11 @@
           "targetId": "MS.7"
         }
       ],
-      "name": "Takeoff",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Takeoff",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.7",
@@ -1058,9 +1279,13 @@
           "targetId": "MS.5"
         }
       ],
-      "name": "Taxi",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Taxi",
+        "status": "NotStarted",
+        "description": ""
+      }
     }
   ],
-  "stakeholders": []
+  "stakeholders": [],
+  "requirements": []
 }

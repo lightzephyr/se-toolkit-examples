@@ -1,6 +1,6 @@
 {
   "name": "Bicycle",
-  "SCHEMA_VERSION": "0.13.0",
+  "SCHEMA_VERSION": "0.14.0",
   "changeLog": [
     {
       "time": 1631954895,
@@ -16,6 +16,11 @@
       "time": 1674296605,
       "operation": "update",
       "description": "Upgraded model schema from version 0.12 to 0.13"
+    },
+    {
+      "time": 1704215027,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.13 to 0.14"
     }
   ],
   "uidSeeds": {
@@ -33,14 +38,15 @@
     "Software": 1,
     "System": 5,
     "Milestone": 10,
-    "Stakeholder": 1
+    "Stakeholder": 1,
+    "Facility": 1,
+    "Organization": 1,
+    "Requirement": 1
   },
   "id": "setm0013202301e45d729a",
   "annotations": [],
   "components": [
     {
-      "name": "Back Wheel",
-      "type": "Hardware",
       "relationships": [
         {
           "type": "input_from",
@@ -57,11 +63,14 @@
       ],
       "changeLog": [],
       "id": "HW.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Back Wheel",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Brake Disks / Pads / Mounts",
-      "type": "Hardware",
       "status": "NotStarted",
       "relationships": [
         {
@@ -71,20 +80,25 @@
       ],
       "changeLog": [],
       "id": "HW.2",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Brake Disks / Pads / Mounts",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Brake Handles",
-      "type": "Hardware",
       "relationships": [],
       "changeLog": [],
-      "description": "Front and back brake handles.",
       "id": "HW.3",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Brake Handles",
+        "type": "Hardware",
+        "description": "Front and back brake handles."
+      }
     },
     {
-      "name": "Chain",
-      "type": "Hardware",
       "relationships": [
         {
           "type": "input_from",
@@ -97,20 +111,26 @@
       ],
       "changeLog": [],
       "id": "HW.4",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Chain",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Crank & Pedals",
-      "type": "Hardware",
       "status": "NotStarted",
       "relationships": [],
       "changeLog": [],
       "id": "HW.5",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Crank & Pedals",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Forks",
-      "type": "Hardware",
       "relationships": [
         {
           "type": "input_from",
@@ -122,13 +142,15 @@
         }
       ],
       "changeLog": [],
-      "description": "Forks can be plain forks or shock absorbers.",
       "id": "HW.6",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Forks",
+        "type": "Hardware",
+        "description": "Forks can be plain forks or shock absorbers."
+      }
     },
     {
-      "name": "Frame",
-      "type": "Hardware",
       "relationships": [
         {
           "type": "input_from",
@@ -141,11 +163,14 @@
       ],
       "changeLog": [],
       "id": "HW.7",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Frame",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Front Wheel",
-      "type": "Hardware",
       "relationships": [
         {
           "type": "input_from",
@@ -158,11 +183,14 @@
       ],
       "changeLog": [],
       "id": "HW.8",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Front Wheel",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Gears",
-      "type": "Hardware",
       "status": "NotStarted",
       "relationships": [
         {
@@ -171,22 +199,26 @@
         }
       ],
       "changeLog": [],
-      "description": "Front and back gear sprockets.",
       "id": "HW.9",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Gears",
+        "type": "Hardware",
+        "description": "Front and back gear sprockets."
+      }
     },
     {
-      "name": "Shifters",
-      "type": "Hardware",
       "relationships": [],
       "changeLog": [],
-      "description": "Front and back shifters. Shifters could be further broken down into levers, cables, and the part that actually moves the chain.",
       "id": "HW.10",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Shifters",
+        "type": "Hardware",
+        "description": "Front and back shifters. Shifters could be further broken down into levers, cables, and the part that actually moves the chain."
+      }
     },
     {
-      "name": "Structure",
-      "type": "Hardware",
       "status": "NotStarted",
       "relationships": [
         {
@@ -200,11 +232,14 @@
       ],
       "changeLog": [],
       "id": "HW.11",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Structure",
+        "type": "Hardware",
+        "description": ""
+      }
     },
     {
-      "name": "Wheels",
-      "type": "Hardware",
       "status": "NotStarted",
       "relationships": [
         {
@@ -217,13 +252,15 @@
         }
       ],
       "changeLog": [],
-      "description": "Each wheel could be further broken down into hub, rims, spokes, and tyres.",
       "id": "HW.12",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Wheels",
+        "type": "Hardware",
+        "description": "Each wheel could be further broken down into hub, rims, spokes, and tyres."
+      }
     },
     {
-      "name": "Bicycle",
-      "type": "System",
       "relationships": [
         {
           "type": "built_from",
@@ -244,11 +281,14 @@
       ],
       "changeLog": [],
       "id": "SYS.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Bicycle",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "Brake Hydraulic Systems",
-      "type": "System",
       "status": "NotStarted",
       "relationships": [
         {
@@ -257,13 +297,15 @@
         }
       ],
       "changeLog": [],
-      "description": "Hydraulic systems could be further broken down into reservoir, cables, and fluid. Front and back hydraulic systems.",
       "id": "SYS.2",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Brake Hydraulic Systems",
+        "type": "System",
+        "description": "Hydraulic systems could be further broken down into reservoir, cables, and fluid. Front and back hydraulic systems."
+      }
     },
     {
-      "name": "Brake System",
-      "type": "System",
       "relationships": [
         {
           "type": "built_from",
@@ -280,11 +322,14 @@
       ],
       "changeLog": [],
       "id": "SYS.3",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Brake System",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "Drive System",
-      "type": "System",
       "relationships": [
         {
           "type": "built_from",
@@ -305,7 +350,12 @@
       ],
       "changeLog": [],
       "id": "SYS.4",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Drive System",
+        "type": "System",
+        "description": ""
+      }
     }
   ],
   "milestones": [
@@ -319,8 +369,11 @@
           "targetId": "MS.5"
         }
       ],
-      "name": "Bike assembled",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Bike assembled",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.2",
@@ -332,8 +385,11 @@
           "targetId": "MS.3"
         }
       ],
-      "name": "Bike finished",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Bike finished",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.3",
@@ -345,8 +401,11 @@
           "targetId": "MS.1"
         }
       ],
-      "name": "Bike tuned",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Bike tuned",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.4",
@@ -362,8 +421,11 @@
           "targetId": "MS.9"
         }
       ],
-      "name": "Frame assembled",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Frame assembled",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.5",
@@ -383,41 +445,57 @@
           "targetId": "MS.7"
         }
       ],
-      "name": "Frame painted",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Frame painted",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.6",
       "metatype": "Milestone",
       "changeLog": [],
       "relationships": [],
-      "name": "Paint available",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Paint available",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.7",
       "metatype": "Milestone",
       "changeLog": [],
       "relationships": [],
-      "name": "Paint booth available",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Paint booth available",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.8",
       "metatype": "Milestone",
       "changeLog": [],
       "relationships": [],
-      "name": "Parts available",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Parts available",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.9",
       "metatype": "Milestone",
       "changeLog": [],
       "relationships": [],
-      "name": "People available",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "People available",
+        "status": "NotStarted",
+        "description": ""
+      }
     }
   ],
-  "stakeholders": []
+  "stakeholders": [],
+  "requirements": []
 }

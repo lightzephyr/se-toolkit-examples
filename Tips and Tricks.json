@@ -1,6 +1,6 @@
 {
   "name": "Tips and Tricks",
-  "SCHEMA_VERSION": "0.13.0",
+  "SCHEMA_VERSION": "0.14.0",
   "changeLog": [
     {
       "time": 1631954937,
@@ -21,6 +21,11 @@
       "time": 1674296654,
       "operation": "update",
       "description": "Upgraded model schema from version 0.12 to 0.13"
+    },
+    {
+      "time": 1704215091,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.13 to 0.14"
     }
   ],
   "uidSeeds": {
@@ -38,7 +43,10 @@
     "Software": 1,
     "System": 3,
     "Milestone": 3,
-    "Stakeholder": 1
+    "Stakeholder": 1,
+    "Facility": 1,
+    "Organization": 1,
+    "Requirement": 1
   },
   "id": "setm0013202301d4cb0cfa",
   "annotations": [
@@ -58,9 +66,13 @@
           "type": "annotates"
         }
       ],
-      "text": "- Perform this critical action...\n- This action is also critical... \n[due by 15 June]",
-      "type": "Action",
-      "priority": "None"
+      "attributes": {
+        "text": "- Perform this critical action...\n- This action is also critical... \n[due by 15 June]",
+        "type": "Action",
+        "priority": "None",
+        "closedOn": null,
+        "remarks": ""
+      }
     },
     {
       "id": "AI.2",
@@ -78,9 +90,13 @@
           "type": "annotates"
         }
       ],
-      "text": "Somebody told me to take this action, but I don't really know what it means or when its due... \n[due by 20 June]",
-      "type": "Action",
-      "priority": "None"
+      "attributes": {
+        "text": "Somebody told me to take this action, but I don't really know what it means or when its due... \n[due by 20 June]",
+        "type": "Action",
+        "priority": "None",
+        "closedOn": null,
+        "remarks": ""
+      }
     },
     {
       "id": "AI.3",
@@ -98,9 +114,13 @@
           "type": "annotates"
         }
       ],
-      "text": "This action is not so critical... \n[due by 30 June]",
-      "type": "Action",
-      "priority": "None"
+      "attributes": {
+        "text": "This action is not so critical... \n[due by 30 June]",
+        "type": "Action",
+        "priority": "None",
+        "closedOn": null,
+        "remarks": ""
+      }
     },
     {
       "id": "AI.4",
@@ -118,23 +138,28 @@
           "type": "annotates"
         }
       ],
-      "text": "Get this done before the end of year Christmas party... \n[due by mid December]",
-      "type": "Action",
-      "priority": "None"
+      "attributes": {
+        "text": "Get this done before the end of year Christmas party... \n[due by mid December]",
+        "type": "Action",
+        "priority": "None",
+        "closedOn": null,
+        "remarks": ""
+      }
     }
   ],
   "components": [
     {
-      "name": "Subsystem of Interest",
-      "type": "System",
       "relationships": [],
       "changeLog": [],
       "id": "SYS.1",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "Subsystem of Interest",
+        "type": "System",
+        "description": ""
+      }
     },
     {
-      "name": "System of Interest",
-      "type": "System",
       "relationships": [
         {
           "type": "built_from",
@@ -142,9 +167,13 @@
         }
       ],
       "changeLog": [],
-      "description": "1. The system of interest (SOI) is defined as...\n2. The SOI does not include...\n3. The SOI has external interfaces with...\n3.1 The external interface with system A consists of...\n3.2 The external interface with system B consists of... \n4. The SOI needs to operate in compliance with...\n5. The SOI operates in the following environments...",
       "id": "SYS.2",
-      "metatype": "Component"
+      "metatype": "Component",
+      "attributes": {
+        "name": "System of Interest",
+        "type": "System",
+        "description": "1. The system of interest (SOI) is defined as...\n2. The SOI does not include...\n3. The SOI has external interfaces with...\n3.1 The external interface with system A consists of...\n3.2 The external interface with system B consists of... \n4. The SOI needs to operate in compliance with...\n5. The SOI operates in the following environments..."
+      }
     }
   ],
   "milestones": [
@@ -158,17 +187,24 @@
           "targetId": "MS.2"
         }
       ],
-      "name": "Goal",
-      "status": "NotStarted"
+      "attributes": {
+        "name": "Goal",
+        "status": "NotStarted",
+        "description": ""
+      }
     },
     {
       "id": "MS.2",
       "metatype": "Milestone",
       "changeLog": [],
       "relationships": [],
-      "name": "Intermediary Goal",
-      "status": "InProgress"
+      "attributes": {
+        "name": "Intermediary Goal",
+        "status": "InProgress",
+        "description": ""
+      }
     }
   ],
-  "stakeholders": []
+  "stakeholders": [],
+  "requirements": []
 }
