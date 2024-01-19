@@ -77,7 +77,7 @@
     "Stakeholder": 3,
     "Facility": 2,
     "Organization": 2,
-    "Requirement": 11
+    "Requirement": 12
   },
   "annotations": [
     {
@@ -324,7 +324,7 @@
       ],
       "relationships": [
         {
-          "targetId": "REQ.1",
+          "targetId": "REQ.2",
           "type": "annotates"
         }
       ],
@@ -341,7 +341,7 @@
     {
       "relationships": [
         {
-          "targetId": "REQ.3",
+          "targetId": "REQ.4",
           "type": "specified_by"
         }
       ],
@@ -385,7 +385,7 @@
     {
       "relationships": [
         {
-          "targetId": "REQ.4",
+          "targetId": "REQ.5",
           "type": "specified_by"
         }
       ],
@@ -434,7 +434,7 @@
     {
       "relationships": [
         {
-          "targetId": "REQ.5",
+          "targetId": "REQ.6",
           "type": "specified_by"
         }
       ],
@@ -613,11 +613,11 @@
           "targetId": "P.1"
         },
         {
-          "targetId": "REQ.1",
+          "targetId": "REQ.2",
           "type": "specified_by"
         },
         {
-          "targetId": "REQ.2",
+          "targetId": "REQ.3",
           "type": "specified_by"
         },
         {
@@ -1014,6 +1014,38 @@
       "metatype": "Requirement",
       "changeLog": [
         {
+          "time": 1705673448,
+          "operation": "create",
+          "description": "Created requirement: REQ.11."
+        },
+        {
+          "time": 1705673454,
+          "operation": "update",
+          "description": "Updated text: \"The operation of the system shall be described in a user manual. (-a a)\""
+        },
+        {
+          "time": 1705673458,
+          "operation": "update",
+          "description": "Updated element ID from REQ.11 to REQ.1a."
+        },
+        {
+          "time": 1705673493,
+          "operation": "update",
+          "description": "Updated element ID from REQ.1a to REQ.1."
+        }
+      ],
+      "relationships": [],
+      "attributes": {
+        "text": "The operation of the system shall be described in a user manual.",
+        "type": "CDRL",
+        "verificationMethod": "Inspection"
+      }
+    },
+    {
+      "id": "REQ.2",
+      "metatype": "Requirement",
+      "changeLog": [
+        {
           "time": 1704202873,
           "operation": "create",
           "description": "Created requirement: REQ.1."
@@ -1032,6 +1064,11 @@
           "time": 1705650829,
           "operation": "update",
           "description": "Updated verification method from Demonstration to Analysis."
+        },
+        {
+          "time": 1705673489,
+          "operation": "update",
+          "description": "Updated element ID from REQ.1 to REQ.2."
         }
       ],
       "relationships": [],
@@ -1042,7 +1079,7 @@
       }
     },
     {
-      "id": "REQ.2",
+      "id": "REQ.3",
       "metatype": "Requirement",
       "changeLog": [
         {
@@ -1064,6 +1101,11 @@
           "time": 1705650829,
           "operation": "update",
           "description": "Updated verification method from Demonstration to Analysis."
+        },
+        {
+          "time": 1705673486,
+          "operation": "update",
+          "description": "Updated element ID from REQ.2 to REQ.3."
         }
       ],
       "relationships": [],
@@ -1074,7 +1116,7 @@
       }
     },
     {
-      "id": "REQ.3",
+      "id": "REQ.4",
       "metatype": "Requirement",
       "changeLog": [
         {
@@ -1096,6 +1138,11 @@
           "time": 1705650829,
           "operation": "update",
           "description": "Updated verification method from Analysis to Test."
+        },
+        {
+          "time": 1705673483,
+          "operation": "update",
+          "description": "Updated element ID from REQ.3 to REQ.4."
         }
       ],
       "relationships": [],
@@ -1106,7 +1153,7 @@
       }
     },
     {
-      "id": "REQ.4",
+      "id": "REQ.5",
       "metatype": "Requirement",
       "changeLog": [
         {
@@ -1128,6 +1175,11 @@
           "time": 1705650829,
           "operation": "update",
           "description": "Updated verification method from Analysis to Demonstration."
+        },
+        {
+          "time": 1705673480,
+          "operation": "update",
+          "description": "Updated element ID from REQ.4 to REQ.5."
         }
       ],
       "relationships": [],
@@ -1138,7 +1190,7 @@
       }
     },
     {
-      "id": "REQ.5",
+      "id": "REQ.6",
       "metatype": "Requirement",
       "changeLog": [
         {
@@ -1155,6 +1207,11 @@
           "time": 1705650829,
           "operation": "update",
           "description": "Updated type from Design to NonSystem."
+        },
+        {
+          "time": 1705673478,
+          "operation": "update",
+          "description": "Updated element ID from REQ.5 to REQ.6."
         }
       ],
       "relationships": [],
@@ -1165,7 +1222,7 @@
       }
     },
     {
-      "id": "REQ.6",
+      "id": "REQ.7",
       "metatype": "Requirement",
       "changeLog": [
         {
@@ -1177,6 +1234,11 @@
           "time": 1705650829,
           "operation": "update",
           "description": "Updated type from Design to OtherQualities."
+        },
+        {
+          "time": 1705673475,
+          "operation": "update",
+          "description": "Updated element ID from REQ.6 to REQ.7."
         }
       ],
       "relationships": [],
@@ -1187,13 +1249,18 @@
       }
     },
     {
-      "id": "REQ.7",
+      "id": "REQ.8",
       "metatype": "Requirement",
       "changeLog": [
         {
           "time": 1705650829,
           "operation": "create",
           "description": "Created requirement: REQ.7."
+        },
+        {
+          "time": 1705673473,
+          "operation": "update",
+          "description": "Updated element ID from REQ.7 to REQ.8."
         }
       ],
       "relationships": [],
@@ -1204,13 +1271,18 @@
       }
     },
     {
-      "id": "REQ.8",
+      "id": "REQ.9",
       "metatype": "Requirement",
       "changeLog": [
         {
           "time": 1705650829,
           "operation": "create",
           "description": "Created requirement: REQ.8."
+        },
+        {
+          "time": 1705673470,
+          "operation": "update",
+          "description": "Updated element ID from REQ.8 to REQ.9."
         }
       ],
       "relationships": [],
@@ -1221,13 +1293,18 @@
       }
     },
     {
-      "id": "REQ.9",
+      "id": "REQ.10",
       "metatype": "Requirement",
       "changeLog": [
         {
           "time": 1705650829,
           "operation": "create",
           "description": "Created requirement: REQ.9."
+        },
+        {
+          "time": 1705673467,
+          "operation": "update",
+          "description": "Updated element ID from REQ.9 to REQ.10."
         }
       ],
       "relationships": [],
@@ -1238,13 +1315,18 @@
       }
     },
     {
-      "id": "REQ.10",
+      "id": "REQ.11",
       "metatype": "Requirement",
       "changeLog": [
         {
           "time": 1705650829,
           "operation": "create",
           "description": "Created requirement: REQ.10."
+        },
+        {
+          "time": 1705673464,
+          "operation": "update",
+          "description": "Updated element ID from REQ.10 to REQ.11."
         }
       ],
       "relationships": [],
@@ -1306,7 +1388,7 @@
           "targetId": "PRJ.1"
         },
         {
-          "targetId": "REQ.1",
+          "targetId": "REQ.2",
           "type": "responsible_for"
         },
         {
@@ -1351,7 +1433,7 @@
       ],
       "relationships": [
         {
-          "targetId": "REQ.3",
+          "targetId": "REQ.4",
           "type": "responsible_for"
         },
         {
