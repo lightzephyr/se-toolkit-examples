@@ -63,7 +63,7 @@
     "Action": 8,
     "Assumption": 2,
     "Opportunity": 3,
-    "Risk": 5,
+    "Risk": 6,
     "Lesson": 2,
     "Data": 2,
     "Hardware": 2,
@@ -77,7 +77,7 @@
     "Stakeholder": 3,
     "Facility": 2,
     "Organization": 2,
-    "Requirement": 7
+    "Requirement": 11
   },
   "annotations": [
     {
@@ -301,6 +301,35 @@
       ],
       "attributes": {
         "text": "This is a risk related to the on hold milestone.",
+        "type": "Risk",
+        "priority": "Medium",
+        "closedOn": null,
+        "remarks": ""
+      }
+    },
+    {
+      "id": "R.5",
+      "metatype": "Annotation",
+      "changeLog": [
+        {
+          "time": 1705650958,
+          "operation": "create",
+          "description": "Created risk annotation: R.5."
+        },
+        {
+          "time": 1705650958,
+          "operation": "create",
+          "description": "Created annotates relationship with REQ.1."
+        }
+      ],
+      "relationships": [
+        {
+          "targetId": "REQ.1",
+          "type": "annotates"
+        }
+      ],
+      "attributes": {
+        "text": "This is a risk related to requirement 1.",
         "type": "Risk",
         "priority": "Medium",
         "closedOn": null,
@@ -988,13 +1017,28 @@
           "time": 1704202873,
           "operation": "create",
           "description": "Created requirement: REQ.1."
+        },
+        {
+          "time": 1705650829,
+          "operation": "update",
+          "description": "Updated text: \"The System shall (-perform|+be) (-awesome|+designed) (-function|+to) (-1|+be) (-unless|+future) (-it is a Tuesday|+proof).\""
+        },
+        {
+          "time": 1705650829,
+          "operation": "update",
+          "description": "Updated type from Functional to Design."
+        },
+        {
+          "time": 1705650829,
+          "operation": "update",
+          "description": "Updated verification method from Demonstration to Analysis."
         }
       ],
       "relationships": [],
       "attributes": {
-        "text": "The System shall perform awesome function 1 unless it is a Tuesday.",
-        "type": "Functional",
-        "verificationMethod": "Demonstration"
+        "text": "The System shall be designed to be future proof.",
+        "type": "Design",
+        "verificationMethod": "Analysis"
       }
     },
     {
@@ -1005,13 +1049,28 @@
           "time": 1704202873,
           "operation": "create",
           "description": "Created requirement: REQ.2."
+        },
+        {
+          "time": 1705650829,
+          "operation": "update",
+          "description": "Updated text: \"The System (-when powered on) shall (-perform|+improve) (-awesome|+the) (-function 2|+environment).\""
+        },
+        {
+          "time": 1705650829,
+          "operation": "update",
+          "description": "Updated type from Functional to Environmental."
+        },
+        {
+          "time": 1705650829,
+          "operation": "update",
+          "description": "Updated verification method from Demonstration to Analysis."
         }
       ],
       "relationships": [],
       "attributes": {
-        "text": "The System when powered on shall perform awesome function 2.",
-        "type": "Functional",
-        "verificationMethod": "Demonstration"
+        "text": "The System shall improve the environment.",
+        "type": "Environmental",
+        "verificationMethod": "Analysis"
       }
     },
     {
@@ -1022,13 +1081,28 @@
           "time": 1704202873,
           "operation": "create",
           "description": "Created requirement: REQ.3."
+        },
+        {
+          "time": 1705650829,
+          "operation": "update",
+          "description": "Updated text: \"The System shall (-store|+automatically) (-data|+send) (-in|+problem) (-the|+reports) (-cloud|+to) (-in|+anyone) (-a|+but) (-ground braking new format|+us).\""
+        },
+        {
+          "time": 1705650829,
+          "operation": "update",
+          "description": "Updated type from Design to ExternalInterface."
+        },
+        {
+          "time": 1705650829,
+          "operation": "update",
+          "description": "Updated verification method from Analysis to Test."
         }
       ],
       "relationships": [],
       "attributes": {
-        "text": "The System shall store data in the cloud in a ground braking new format.",
-        "type": "Design",
-        "verificationMethod": "Analysis"
+        "text": "The System shall automatically send problem reports to anyone but us.",
+        "type": "ExternalInterface",
+        "verificationMethod": "Test"
       }
     },
     {
@@ -1039,13 +1113,28 @@
           "time": 1704202873,
           "operation": "create",
           "description": "Created requirement: REQ.4."
+        },
+        {
+          "time": 1705650829,
+          "operation": "update",
+          "description": "Updated text: \"The System shall (-include|+perform) (-hardware|+awesome function 1).\""
+        },
+        {
+          "time": 1705650829,
+          "operation": "update",
+          "description": "Updated type from Design to Functional."
+        },
+        {
+          "time": 1705650829,
+          "operation": "update",
+          "description": "Updated verification method from Analysis to Demonstration."
         }
       ],
       "relationships": [],
       "attributes": {
-        "text": "The System shall include hardware.",
-        "type": "Design",
-        "verificationMethod": "Analysis"
+        "text": "The System shall perform awesome function 1.",
+        "type": "Functional",
+        "verificationMethod": "Demonstration"
       }
     },
     {
@@ -1056,12 +1145,22 @@
           "time": 1704202873,
           "operation": "create",
           "description": "Created requirement: REQ.5."
+        },
+        {
+          "time": 1705650829,
+          "operation": "update",
+          "description": "Updated text: \"The System shall (-include,|+be) (+developed) in (-accordance|+an) (-with|+agile) (-health and safety regulations, a person|+manner).\""
+        },
+        {
+          "time": 1705650829,
+          "operation": "update",
+          "description": "Updated type from Design to NonSystem."
         }
       ],
       "relationships": [],
       "attributes": {
-        "text": "The System shall include, in accordance with health and safety regulations, a person.",
-        "type": "Design",
+        "text": "The System shall be developed in an agile manner.",
+        "type": "NonSystem",
         "verificationMethod": "Analysis"
       }
     },
@@ -1073,13 +1172,86 @@
           "time": 1704202873,
           "operation": "create",
           "description": "Created requirement: REQ.6."
+        },
+        {
+          "time": 1705650829,
+          "operation": "update",
+          "description": "Updated type from Design to OtherQualities."
         }
       ],
       "relationships": [],
       "attributes": {
         "text": "The System shall include software that meets international standards for awesome code.",
-        "type": "Design",
+        "type": "OtherQualities",
         "verificationMethod": "Analysis"
+      }
+    },
+    {
+      "id": "REQ.7",
+      "metatype": "Requirement",
+      "changeLog": [
+        {
+          "time": 1705650829,
+          "operation": "create",
+          "description": "Created requirement: REQ.7."
+        }
+      ],
+      "relationships": [],
+      "attributes": {
+        "text": "The System shall deploy widgets that move at 3 furlongs per fortnight.",
+        "type": "Performance",
+        "verificationMethod": "Test"
+      }
+    },
+    {
+      "id": "REQ.8",
+      "metatype": "Requirement",
+      "changeLog": [
+        {
+          "time": 1705650829,
+          "operation": "create",
+          "description": "Created requirement: REQ.8."
+        }
+      ],
+      "relationships": [],
+      "attributes": {
+        "text": "The System shall be blue.",
+        "type": "Physical",
+        "verificationMethod": "Inspection"
+      }
+    },
+    {
+      "id": "REQ.9",
+      "metatype": "Requirement",
+      "changeLog": [
+        {
+          "time": 1705650829,
+          "operation": "create",
+          "description": "Created requirement: REQ.9."
+        }
+      ],
+      "relationships": [],
+      "attributes": {
+        "text": "The System shall consume stuff.",
+        "type": "Resource",
+        "verificationMethod": "Inspection"
+      }
+    },
+    {
+      "id": "REQ.10",
+      "metatype": "Requirement",
+      "changeLog": [
+        {
+          "time": 1705650829,
+          "operation": "create",
+          "description": "Created requirement: REQ.10."
+        }
+      ],
+      "relationships": [],
+      "attributes": {
+        "text": "The System shall have a linked mode.",
+        "type": "States/Modes",
+        "verificationMethod": "Demonstration"
       }
     }
   ],
@@ -1117,6 +1289,11 @@
           "time": 1652000686,
           "operation": "create",
           "description": "Added responsible_for relationship with System"
+        },
+        {
+          "time": 1705650866,
+          "operation": "create",
+          "description": "Created responsible_for relationship with REQ.1."
         }
       ],
       "relationships": [
@@ -1127,6 +1304,10 @@
         {
           "type": "responsible_for",
           "targetId": "PRJ.1"
+        },
+        {
+          "targetId": "REQ.1",
+          "type": "responsible_for"
         },
         {
           "type": "responsible_for",
@@ -1161,9 +1342,18 @@
           "time": 1652000695,
           "operation": "create",
           "description": "Added responsible_for relationship with System of Systems"
+        },
+        {
+          "time": 1705650870,
+          "operation": "create",
+          "description": "Created responsible_for relationship with REQ.3."
         }
       ],
       "relationships": [
+        {
+          "targetId": "REQ.3",
+          "type": "responsible_for"
+        },
         {
           "type": "responsible_for",
           "targetId": "SYS.4"
