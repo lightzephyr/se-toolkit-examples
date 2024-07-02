@@ -1,7 +1,8 @@
 {
   "id": "setm-theoreticalsystem",
   "name": "Theoretical System",
-  "SCHEMA_VERSION": "0.14.0",
+  "SCHEMA_VERSION": "0.15.0",
+  "createdOn": 1631954926,
   "changeLog": [
     {
       "time": 1631954926,
@@ -57,6 +58,11 @@
       "time": 1704041278,
       "operation": "update",
       "description": "Upgraded model schema from version 0.13 to 0.14"
+    },
+    {
+      "time": 1719937625,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.14 to 0.15"
     }
   ],
   "uidSeeds": {
@@ -77,18 +83,13 @@
     "Stakeholder": 3,
     "Facility": 2,
     "Organization": 2,
-    "Requirement": 12
+    "Requirement": 17
   },
   "annotations": [
     {
       "id": "AI.2",
       "metatype": "Annotation",
       "changeLog": [
-        {
-          "time": 1658507491,
-          "operation": "create",
-          "description": "Created action annotation: AI.2."
-        },
         {
           "time": 1674303659,
           "operation": "update",
@@ -98,7 +99,8 @@
       "relationships": [
         {
           "targetId": "SYS.3",
-          "type": "annotates"
+          "type": "annotates",
+          "createdOn": 1658507491
         }
       ],
       "attributes": {
@@ -107,27 +109,19 @@
         "priority": "Medium",
         "closedOn": null,
         "remarks": ""
-      }
+      },
+      "createdOn": 1658507491,
+      "name": ""
     },
     {
       "id": "AI.6",
       "metatype": "Annotation",
-      "changeLog": [
-        {
-          "time": 1674303571,
-          "operation": "create",
-          "description": "Created action annotation: AI.6."
-        },
-        {
-          "time": 1674303571,
-          "operation": "create",
-          "description": "Created annotates relationship with SYS.1."
-        }
-      ],
+      "changeLog": [],
       "relationships": [
         {
           "targetId": "SYS.1",
-          "type": "annotates"
+          "type": "annotates",
+          "createdOn": 1674303571
         }
       ],
       "attributes": {
@@ -136,27 +130,19 @@
         "priority": "High",
         "closedOn": null,
         "remarks": ""
-      }
+      },
+      "createdOn": 1674303571,
+      "name": ""
     },
     {
       "id": "AI.7",
       "metatype": "Annotation",
-      "changeLog": [
-        {
-          "time": 1674303659,
-          "operation": "create",
-          "description": "Created action annotation: AI.7."
-        },
-        {
-          "time": 1674303659,
-          "operation": "create",
-          "description": "Created annotates relationship with SYS.3."
-        }
-      ],
+      "changeLog": [],
       "relationships": [
         {
           "targetId": "SYS.3",
-          "type": "annotates"
+          "type": "annotates",
+          "createdOn": 1674303659
         }
       ],
       "attributes": {
@@ -165,7 +151,9 @@
         "priority": "Low",
         "closedOn": null,
         "remarks": ""
-      }
+      },
+      "createdOn": 1674303659,
+      "name": ""
     },
     {
       "id": "AS.1",
@@ -180,7 +168,8 @@
       "relationships": [
         {
           "targetId": "P.1",
-          "type": "annotates"
+          "type": "annotates",
+          "createdOn": 1658507718
         }
       ],
       "attributes": {
@@ -189,22 +178,19 @@
         "priority": "None",
         "closedOn": null,
         "remarks": ""
-      }
+      },
+      "createdOn": 1658507718,
+      "name": ""
     },
     {
       "id": "L.1",
       "metatype": "Annotation",
-      "changeLog": [
-        {
-          "time": 1663705728,
-          "operation": "create",
-          "description": "Created lesson annotation: L.1."
-        }
-      ],
+      "changeLog": [],
       "relationships": [
         {
           "targetId": "PRD.1",
-          "type": "annotates"
+          "type": "annotates",
+          "createdOn": 1663705728
         }
       ],
       "attributes": {
@@ -213,7 +199,9 @@
         "priority": "None",
         "closedOn": null,
         "remarks": ""
-      }
+      },
+      "createdOn": 1663705728,
+      "name": ""
     },
     {
       "id": "O.2",
@@ -228,7 +216,8 @@
       "relationships": [
         {
           "targetId": "S.1",
-          "type": "annotates"
+          "type": "annotates",
+          "createdOn": 1658507724
         }
       ],
       "attributes": {
@@ -237,7 +226,9 @@
         "priority": "None",
         "closedOn": null,
         "remarks": ""
-      }
+      },
+      "createdOn": 1658507724,
+      "name": ""
     },
     {
       "id": "R.3",
@@ -262,7 +253,8 @@
       "relationships": [
         {
           "targetId": "HW.1",
-          "type": "annotates"
+          "type": "annotates",
+          "createdOn": 1658507730
         }
       ],
       "attributes": {
@@ -271,22 +263,14 @@
         "priority": "None",
         "closedOn": 1674311354,
         "remarks": "This risk no longer exists."
-      }
+      },
+      "createdOn": 1658507730,
+      "name": ""
     },
     {
       "id": "R.4",
       "metatype": "Annotation",
       "changeLog": [
-        {
-          "time": 1674303749,
-          "operation": "create",
-          "description": "Created risk annotation: R.4."
-        },
-        {
-          "time": 1674303749,
-          "operation": "create",
-          "description": "Created annotates relationship with MS.6."
-        },
         {
           "time": 1674303792,
           "operation": "update",
@@ -296,7 +280,8 @@
       "relationships": [
         {
           "targetId": "MS.4",
-          "type": "annotates"
+          "type": "annotates",
+          "createdOn": 1674303749
         }
       ],
       "attributes": {
@@ -305,27 +290,19 @@
         "priority": "Medium",
         "closedOn": null,
         "remarks": ""
-      }
+      },
+      "createdOn": 1674303749,
+      "name": ""
     },
     {
       "id": "R.5",
       "metatype": "Annotation",
-      "changeLog": [
-        {
-          "time": 1705650958,
-          "operation": "create",
-          "description": "Created risk annotation: R.5."
-        },
-        {
-          "time": 1705650958,
-          "operation": "create",
-          "description": "Created annotates relationship with REQ.1."
-        }
-      ],
+      "changeLog": [],
       "relationships": [
         {
           "targetId": "REQ.2",
-          "type": "annotates"
+          "type": "annotates",
+          "createdOn": 1705650958
         }
       ],
       "attributes": {
@@ -334,7 +311,9 @@
         "priority": "Medium",
         "closedOn": null,
         "remarks": ""
-      }
+      },
+      "createdOn": 1705650958,
+      "name": ""
     }
   ],
   "components": [
@@ -342,33 +321,24 @@
       "relationships": [
         {
           "targetId": "REQ.4",
-          "type": "specified_by"
+          "type": "specified_by",
+          "createdOn": 1704214948
         }
       ],
-      "changeLog": [
-        {
-          "time": 1704214948,
-          "operation": "create",
-          "description": "Created specified_by relationship with REQ.3."
-        }
-      ],
+      "changeLog": [],
       "id": "D.1",
       "metatype": "Component",
       "attributes": {
-        "name": "Data",
         "type": "Data",
         "description": "A data item."
-      }
+      },
+      "createdOn": 1704214948,
+      "name": "Data"
     },
     {
       "id": "F.1",
       "metatype": "Component",
       "changeLog": [
-        {
-          "time": 1704041418,
-          "operation": "create",
-          "description": "Created facility component: F.1."
-        },
         {
           "time": 1704041493,
           "operation": "update",
@@ -377,47 +347,34 @@
       ],
       "relationships": [],
       "attributes": {
-        "name": "Facility",
         "type": "Facility",
         "description": "A building or other structure in which a system is housed."
-      }
+      },
+      "createdOn": 1704041418,
+      "name": "Facility"
     },
     {
       "relationships": [
         {
           "targetId": "REQ.5",
-          "type": "specified_by"
+          "type": "specified_by",
+          "createdOn": 1704202873
         }
       ],
-      "changeLog": [
-        {
-          "time": 1658507566,
-          "operation": "create",
-          "description": "Added action (ID: AI.5): 'This is a risk related to the hardware.'"
-        },
-        {
-          "time": 1704214954,
-          "operation": "create",
-          "description": "Created specified_by relationship with REQ.4."
-        }
-      ],
+      "changeLog": [],
       "id": "HW.1",
       "metatype": "Component",
       "attributes": {
-        "name": "Hardware",
         "type": "Hardware",
         "description": "A hardware item."
-      }
+      },
+      "createdOn": 1658507566,
+      "name": "Hardware"
     },
     {
       "id": "ORG.1",
       "metatype": "Component",
       "changeLog": [
-        {
-          "time": 1704041428,
-          "operation": "create",
-          "description": "Created organization component: ORG.1."
-        },
         {
           "time": 1704041506,
           "operation": "update",
@@ -426,150 +383,104 @@
       ],
       "relationships": [],
       "attributes": {
-        "name": "Organization",
         "type": "Organization",
         "description": "A company or other group of people that works together for a particular purpose."
-      }
+      },
+      "createdOn": 1704041428,
+      "name": "Organization"
     },
     {
       "relationships": [
         {
           "targetId": "REQ.6",
-          "type": "specified_by"
+          "type": "specified_by",
+          "createdOn": 1704202873
         }
       ],
       "changeLog": [
         {
-          "time": 1657979928,
-          "operation": "create",
-          "description": "Created element: 'Person' of type: Person"
-        },
-        {
           "time": 1658507248,
           "operation": "update",
           "description": "Added description: 'A person who performs a function of, and therefore forms a part of, the system of interest.'"
-        },
-        {
-          "time": 1658507530,
-          "operation": "create",
-          "description": "Added action (ID: AI.3): 'This is an assumption about the person.'"
-        },
-        {
-          "time": 1704214962,
-          "operation": "create",
-          "description": "Created specified_by relationship with REQ.5."
         }
       ],
       "id": "P.1",
       "metatype": "Component",
       "attributes": {
-        "name": "Person",
         "type": "Person",
         "description": "A person who performs a function of, and therefore forms a part of, the system of interest."
-      }
+      },
+      "createdOn": 1657979928,
+      "name": "Person"
     },
     {
       "relationships": [],
       "changeLog": [
         {
-          "time": 1651690458,
-          "operation": "create",
-          "description": "Created element: 'Product' of type: Product"
-        },
-        {
           "time": 1651690541,
           "operation": "update",
           "description": "Changed description: added: 'An article that is the result of an action or process.'"
-        },
-        {
-          "time": 1663705728,
-          "operation": "create",
-          "description": "Added lesson (ID: L.1): 'This is a lesson related to the product.'"
         }
       ],
       "id": "PRD.1",
       "metatype": "Component",
       "attributes": {
-        "name": "Product",
         "type": "Product",
         "description": "An article that is the result of an action or process."
-      }
+      },
+      "createdOn": 1651690458,
+      "name": "Product"
     },
     {
       "relationships": [
         {
           "targetId": "F.1",
-          "type": "built_from"
+          "type": "built_from",
+          "createdOn": 1704041452
         },
         {
           "targetId": "ORG.1",
-          "type": "built_from"
+          "type": "built_from",
+          "createdOn": 1704041453
         },
         {
           "type": "built_from",
-          "targetId": "PRD.1"
+          "targetId": "PRD.1",
+          "createdOn": 1651690465
         },
         {
           "type": "built_from",
-          "targetId": "SYS.3"
+          "targetId": "SYS.3",
+          "createdOn": 1658507163
         }
       ],
       "changeLog": [
         {
-          "time": 1651690465,
-          "operation": "create",
-          "description": "Created element: 'Project' of type: Project"
-        },
-        {
-          "time": 1651690469,
-          "operation": "create",
-          "description": "Added built_from relationship with Product"
-        },
-        {
-          "time": 1651690471,
-          "operation": "create",
-          "description": "Added built_from relationship with System of Interest"
-        },
-        {
           "time": 1651690558,
           "operation": "update",
           "description": "Changed description: added: 'An undertaking with pre-specified objectives, magnitude and duration.'"
-        },
-        {
-          "time": 1704041452,
-          "operation": "create",
-          "description": "Created built_from relationship with F.1 (Facility)."
-        },
-        {
-          "time": 1704041453,
-          "operation": "create",
-          "description": "Created built_from relationship with ORG.1 (Organization)."
         }
       ],
       "id": "PRJ.1",
       "metatype": "Component",
       "attributes": {
-        "name": "Project",
         "type": "Project",
         "description": "An undertaking with pre-specified objectives, magnitude and duration."
-      }
+      },
+      "createdOn": 1651690465,
+      "name": "Project"
     },
     {
       "relationships": [],
-      "changeLog": [
-        {
-          "time": 1658507555,
-          "operation": "create",
-          "description": "Added action (ID: AI.4): 'This is an opportunity related to the service.'"
-        }
-      ],
+      "changeLog": [],
       "id": "S.1",
       "metatype": "Component",
       "attributes": {
-        "name": "Service",
         "type": "Service",
         "description": "A service provided by a service provider."
-      }
+      },
+      "createdOn": 1658507555,
+      "name": "Service"
     },
     {
       "relationships": [],
@@ -577,88 +488,84 @@
       "id": "SW.1",
       "metatype": "Component",
       "attributes": {
-        "name": "Software",
         "type": "Software",
         "description": "A software item."
-      }
+      },
+      "createdOn": 1631954926,
+      "name": "Software"
     },
     {
       "relationships": [
         {
           "type": "built_from",
-          "targetId": "D.1"
+          "targetId": "D.1",
+          "createdOn": 1704214948
         },
         {
           "type": "built_from",
-          "targetId": "HW.1"
+          "targetId": "HW.1",
+          "createdOn": 1658507566
         },
         {
           "type": "built_from",
-          "targetId": "SW.1"
+          "targetId": "SW.1",
+          "createdOn": 1631954926
         }
       ],
       "changeLog": [],
       "id": "SYS.1",
       "metatype": "Component",
       "attributes": {
-        "name": "Subsystem",
         "type": "System",
         "description": ""
-      }
+      },
+      "createdOn": 1631954926,
+      "name": "Subsystem"
     },
     {
       "relationships": [
         {
           "type": "built_from",
-          "targetId": "P.1"
+          "targetId": "P.1",
+          "createdOn": 1657979928
         },
         {
           "targetId": "REQ.2",
-          "type": "specified_by"
+          "type": "specified_by",
+          "createdOn": 1704214935
         },
         {
           "targetId": "REQ.3",
-          "type": "specified_by"
+          "type": "specified_by",
+          "createdOn": 1704202873
         },
         {
           "type": "built_from",
-          "targetId": "SYS.1"
+          "targetId": "SYS.1",
+          "createdOn": 1657979928
         }
       ],
-      "changeLog": [
-        {
-          "time": 1657979928,
-          "operation": "create",
-          "description": "Added built_from relationship with Person"
-        },
-        {
-          "time": 1704214925,
-          "operation": "create",
-          "description": "Created specified_by relationship with REQ.1."
-        },
-        {
-          "time": 1704214935,
-          "operation": "create",
-          "description": "Created specified_by relationship with REQ.2."
-        }
-      ],
+      "changeLog": [],
       "id": "SYS.2",
       "metatype": "Component",
       "attributes": {
-        "name": "System",
         "type": "System",
         "description": "A system (either a black box or built from other elements)."
-      }
+      },
+      "createdOn": 1657979928,
+      "name": "System"
     },
     {
       "relationships": [
         {
           "type": "built_from",
-          "targetId": "SYS.2"
+          "targetId": "SYS.2",
+          "createdOn": 1658507163
         },
         {
           "type": "built_from",
-          "targetId": "SYS.4"
+          "targetId": "SYS.4",
+          "createdOn": 1658507201
         }
       ],
       "changeLog": [
@@ -666,26 +573,23 @@
           "time": 1658507163,
           "operation": "update",
           "description": "Added description: 'The system whose life cycle is under consideration.'"
-        },
-        {
-          "time": 1658507491,
-          "operation": "create",
-          "description": "Added action (ID: AI.2): 'This is an action related to the system of interest.'"
         }
       ],
       "id": "SYS.3",
       "metatype": "Component",
       "attributes": {
-        "name": "System of Interest",
         "type": "System",
         "description": "The system whose life cycle is under consideration."
-      }
+      },
+      "createdOn": 1658507163,
+      "name": "System of Interest"
     },
     {
       "relationships": [
         {
           "type": "built_from",
-          "targetId": "S.1"
+          "targetId": "S.1",
+          "createdOn": 1658507555
         }
       ],
       "changeLog": [
@@ -703,10 +607,11 @@
       "id": "SYS.4",
       "metatype": "Component",
       "attributes": {
-        "name": "System of Systems",
         "type": "System",
         "description": "A collection of task-oriented or dedicated systems that pool their resources and capabilities together to create a new, more complex system which offers more functionality and performance than simply the sum of the constituent systems."
-      }
+      },
+      "createdOn": 1658507201,
+      "name": "System of Systems"
     }
   ],
   "milestones": [
@@ -732,20 +637,16 @@
       ],
       "relationships": [],
       "attributes": {
-        "name": "Not Started Milestone",
         "status": "NotStarted",
         "description": "Progress towards this milestone has not been started."
-      }
+      },
+      "createdOn": 1674303760,
+      "name": "Not Started Milestone"
     },
     {
       "id": "MS.2",
       "metatype": "Milestone",
       "changeLog": [
-        {
-          "time": 1651313619,
-          "operation": "create",
-          "description": "Added defined_by relationship with Undefined"
-        },
         {
           "time": 1673711483,
           "operation": "delete",
@@ -775,14 +676,16 @@
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.1"
+          "targetId": "MS.1",
+          "createdOn": 1674303760
         }
       ],
       "attributes": {
-        "name": "In Progress Milestone",
         "status": "InProgress",
         "description": "Progress is being made towards this milestone."
-      }
+      },
+      "createdOn": 1651313619,
+      "name": "In Progress Milestone"
     },
     {
       "id": "MS.3",
@@ -812,24 +715,21 @@
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.2"
+          "targetId": "MS.2",
+          "createdOn": 1674303766
         }
       ],
       "attributes": {
-        "name": "Finished Milestone",
         "status": "Finished",
         "description": "The milestone has been reached."
-      }
+      },
+      "createdOn": 1674303766,
+      "name": "Finished Milestone"
     },
     {
       "id": "MS.4",
       "metatype": "Milestone",
       "changeLog": [
-        {
-          "time": 1651313627,
-          "operation": "create",
-          "description": "Added defined_by relationship with Finished"
-        },
         {
           "time": 1651313629,
           "operation": "delete",
@@ -869,24 +769,21 @@
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.3"
+          "targetId": "MS.3",
+          "createdOn": 1674303766
         }
       ],
       "attributes": {
-        "name": "On Hold Milestone",
         "status": "OnHold",
         "description": "Progress towards this milestone has been temporarily stopped."
-      }
+      },
+      "createdOn": 1651313627,
+      "name": "On Hold Milestone"
     },
     {
       "id": "MS.5",
       "metatype": "Milestone",
       "changeLog": [
-        {
-          "time": 1651313631,
-          "operation": "create",
-          "description": "Added defined_by relationship with On Hold"
-        },
         {
           "time": 1651313633,
           "operation": "delete",
@@ -931,14 +828,16 @@
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.4"
+          "targetId": "MS.4",
+          "createdOn": 1651313631
         }
       ],
       "attributes": {
-        "name": "Blocked Milestone",
         "status": "Blocked",
         "description": "The milestone cannot be reached until whatever is blocking progress has been resolved."
-      }
+      },
+      "createdOn": 1651313631,
+      "name": "Blocked Milestone"
     },
     {
       "id": "MS.6",
@@ -948,11 +847,6 @@
           "time": 1651313621,
           "operation": "delete",
           "description": "Removed defined_by relationship with Undefined"
-        },
-        {
-          "time": 1651313635,
-          "operation": "create",
-          "description": "Added defined_by relationship with Blocked"
         },
         {
           "time": 1674303774,
@@ -998,14 +892,16 @@
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.5"
+          "targetId": "MS.5",
+          "createdOn": 1651313631
         }
       ],
       "attributes": {
-        "name": "Aborted Milestone",
         "status": "Aborted",
         "description": "The milestone will not be reached."
-      }
+      },
+      "createdOn": 1651313621,
+      "name": "Aborted Milestone"
     }
   ],
   "requirements": [
@@ -1013,11 +909,6 @@
       "id": "REQ.1",
       "metatype": "Requirement",
       "changeLog": [
-        {
-          "time": 1705673448,
-          "operation": "create",
-          "description": "Created requirement: REQ.11."
-        },
         {
           "time": 1705673454,
           "operation": "update",
@@ -1037,19 +928,16 @@
       "relationships": [],
       "attributes": {
         "text": "The operation of the system shall be described in a user manual.",
-        "type": "CDRL",
+        "type": "Documentation",
         "verificationMethod": "Inspection"
-      }
+      },
+      "createdOn": 1704214925,
+      "name": ""
     },
     {
       "id": "REQ.2",
       "metatype": "Requirement",
       "changeLog": [
-        {
-          "time": 1704202873,
-          "operation": "create",
-          "description": "Created requirement: REQ.1."
-        },
         {
           "time": 1705650829,
           "operation": "update",
@@ -1076,17 +964,14 @@
         "text": "The System shall be designed to be future proof.",
         "type": "Design",
         "verificationMethod": "Analysis"
-      }
+      },
+      "createdOn": 1704202873,
+      "name": ""
     },
     {
       "id": "REQ.3",
       "metatype": "Requirement",
       "changeLog": [
-        {
-          "time": 1704202873,
-          "operation": "create",
-          "description": "Created requirement: REQ.2."
-        },
         {
           "time": 1705650829,
           "operation": "update",
@@ -1113,17 +998,14 @@
         "text": "The System shall improve the environment.",
         "type": "Environmental",
         "verificationMethod": "Analysis"
-      }
+      },
+      "createdOn": 1704202873,
+      "name": ""
     },
     {
       "id": "REQ.4",
       "metatype": "Requirement",
       "changeLog": [
-        {
-          "time": 1704202873,
-          "operation": "create",
-          "description": "Created requirement: REQ.3."
-        },
         {
           "time": 1705650829,
           "operation": "update",
@@ -1150,17 +1032,14 @@
         "text": "The System shall automatically send problem reports to anyone but us.",
         "type": "ExternalInterface",
         "verificationMethod": "Test"
-      }
+      },
+      "createdOn": 1704202873,
+      "name": ""
     },
     {
       "id": "REQ.5",
       "metatype": "Requirement",
       "changeLog": [
-        {
-          "time": 1704202873,
-          "operation": "create",
-          "description": "Created requirement: REQ.4."
-        },
         {
           "time": 1705650829,
           "operation": "update",
@@ -1187,17 +1066,14 @@
         "text": "The System shall perform awesome function 1.",
         "type": "Functional",
         "verificationMethod": "Demonstration"
-      }
+      },
+      "createdOn": 1704202873,
+      "name": ""
     },
     {
       "id": "REQ.6",
       "metatype": "Requirement",
       "changeLog": [
-        {
-          "time": 1704202873,
-          "operation": "create",
-          "description": "Created requirement: REQ.5."
-        },
         {
           "time": 1705650829,
           "operation": "update",
@@ -1219,17 +1095,14 @@
         "text": "The System shall be developed in an agile manner.",
         "type": "NonSystem",
         "verificationMethod": "Analysis"
-      }
+      },
+      "createdOn": 1704202873,
+      "name": ""
     },
     {
       "id": "REQ.7",
       "metatype": "Requirement",
       "changeLog": [
-        {
-          "time": 1704202873,
-          "operation": "create",
-          "description": "Created requirement: REQ.6."
-        },
         {
           "time": 1705650829,
           "operation": "update",
@@ -1246,17 +1119,14 @@
         "text": "The System shall include software that meets international standards for awesome code.",
         "type": "OtherQualities",
         "verificationMethod": "Analysis"
-      }
+      },
+      "createdOn": 1704202873,
+      "name": ""
     },
     {
       "id": "REQ.8",
       "metatype": "Requirement",
       "changeLog": [
-        {
-          "time": 1705650829,
-          "operation": "create",
-          "description": "Created requirement: REQ.7."
-        },
         {
           "time": 1705673473,
           "operation": "update",
@@ -1268,17 +1138,14 @@
         "text": "The System shall deploy widgets that move at 3 furlongs per fortnight.",
         "type": "Performance",
         "verificationMethod": "Test"
-      }
+      },
+      "createdOn": 1705650829,
+      "name": ""
     },
     {
       "id": "REQ.9",
       "metatype": "Requirement",
       "changeLog": [
-        {
-          "time": 1705650829,
-          "operation": "create",
-          "description": "Created requirement: REQ.8."
-        },
         {
           "time": 1705673470,
           "operation": "update",
@@ -1290,17 +1157,14 @@
         "text": "The System shall be blue.",
         "type": "Physical",
         "verificationMethod": "Inspection"
-      }
+      },
+      "createdOn": 1705650829,
+      "name": ""
     },
     {
       "id": "REQ.10",
       "metatype": "Requirement",
       "changeLog": [
-        {
-          "time": 1705650829,
-          "operation": "create",
-          "description": "Created requirement: REQ.9."
-        },
         {
           "time": 1705673467,
           "operation": "update",
@@ -1312,17 +1176,14 @@
         "text": "The System shall consume stuff.",
         "type": "Resource",
         "verificationMethod": "Inspection"
-      }
+      },
+      "createdOn": 1705650829,
+      "name": ""
     },
     {
       "id": "REQ.11",
       "metatype": "Requirement",
       "changeLog": [
-        {
-          "time": 1705650829,
-          "operation": "create",
-          "description": "Created requirement: REQ.10."
-        },
         {
           "time": 1705673464,
           "operation": "update",
@@ -1334,6 +1195,120 @@
         "text": "The System shall have a linked mode.",
         "type": "States/Modes",
         "verificationMethod": "Demonstration"
+      },
+      "createdOn": 1705650829,
+      "name": ""
+    },
+    {
+      "id": "REQ.12",
+      "name": "",
+      "metatype": "Requirement",
+      "createdOn": 1719937722,
+      "changeLog": [],
+      "relationships": [
+        {
+          "targetId": "REQ.5",
+          "type": "derived_from",
+          "createdOn": 1719937722
+        }
+      ],
+      "attributes": {
+        "text": "The System shall perform sub-function 1.",
+        "type": "Functional",
+        "verificationMethod": "Demonstration"
+      }
+    },
+    {
+      "id": "REQ.13",
+      "name": "",
+      "metatype": "Requirement",
+      "createdOn": 1719937818,
+      "changeLog": [],
+      "relationships": [
+        {
+          "targetId": "REQ.11",
+          "type": "derived_from",
+          "createdOn": 1719937818
+        }
+      ],
+      "attributes": {
+        "text": "The system, when in linked mode, shall talk to other systems.",
+        "type": "ExternalInterface",
+        "verificationMethod": "Analysis"
+      }
+    },
+    {
+      "id": "REQ.14",
+      "name": "",
+      "metatype": "Requirement",
+      "createdOn": 1719937865,
+      "changeLog": [
+        {
+          "time": 1719937911,
+          "operation": "update",
+          "description": "Updated text: \"The (-system|+System) shall perform sub-sub-function 1\""
+        }
+      ],
+      "relationships": [
+        {
+          "targetId": "REQ.12",
+          "type": "derived_from",
+          "createdOn": 1719937865
+        }
+      ],
+      "attributes": {
+        "text": "The System shall perform sub-sub-function 1",
+        "type": "Functional",
+        "verificationMethod": "Demonstration"
+      }
+    },
+    {
+      "id": "REQ.15",
+      "name": "",
+      "metatype": "Requirement",
+      "createdOn": 1719937904,
+      "changeLog": [],
+      "relationships": [
+        {
+          "targetId": "REQ.8",
+          "type": "derived_from",
+          "createdOn": 1719937904
+        }
+      ],
+      "attributes": {
+        "text": "The System shall deploy widgets.",
+        "type": "Functional",
+        "verificationMethod": "Demonstration"
+      }
+    },
+    {
+      "id": "REQ.16",
+      "name": "",
+      "metatype": "Requirement",
+      "createdOn": 1719937980,
+      "changeLog": [
+        {
+          "time": 1719937991,
+          "operation": "update",
+          "description": "Updated text: \"The widgets, deployed by the system, shall move at (-three|+3) furlongs per fortnight.\""
+        },
+        {
+          "time": 1719938001,
+          "operation": "update",
+          "description": "Updated text: \"The widgets (-,) deployed by the system (-,) shall move at 3 furlongs per fortnight.\""
+        }
+      ],
+      "relationships": [
+        {
+          "targetId": "REQ.8",
+          "type": "derived_from",
+          "createdOn": 1719937980
+        }
+      ],
+      "attributes": {
+        "text": "The widgets deployed by the system shall move at 3 furlongs per fortnight.",
+        "type": "Performance",
+        "verificationMethod": "Test"
       }
     }
   ],
@@ -1344,67 +1319,43 @@
       "changeLog": [
         {
           "time": 1652000631,
-          "operation": "create",
-          "description": "Created element: 'Stakeholder 1' of type: Stakeholder"
-        },
-        {
-          "time": 1652000631,
           "operation": "update",
           "description": "Changed colour from undefined to #16a5a5"
-        },
-        {
-          "time": 1652000631,
-          "operation": "create",
-          "description": "Added responsible_for relationship with Project"
-        },
-        {
-          "time": 1652000636,
-          "operation": "create",
-          "description": "Added responsible_for relationship with Product"
-        },
-        {
-          "time": 1652000682,
-          "operation": "create",
-          "description": "Added responsible_for relationship with System of Interest"
-        },
-        {
-          "time": 1652000686,
-          "operation": "create",
-          "description": "Added responsible_for relationship with System"
-        },
-        {
-          "time": 1705650866,
-          "operation": "create",
-          "description": "Created responsible_for relationship with REQ.1."
         }
       ],
       "relationships": [
         {
           "type": "responsible_for",
-          "targetId": "PRD.1"
+          "targetId": "PRD.1",
+          "createdOn": 1652000631
         },
         {
           "type": "responsible_for",
-          "targetId": "PRJ.1"
+          "targetId": "PRJ.1",
+          "createdOn": 1652000631
         },
         {
           "targetId": "REQ.2",
-          "type": "responsible_for"
+          "type": "responsible_for",
+          "createdOn": 1704202873
         },
         {
           "type": "responsible_for",
-          "targetId": "SYS.2"
+          "targetId": "SYS.2",
+          "createdOn": 1657979928
         },
         {
           "type": "responsible_for",
-          "targetId": "SYS.3"
+          "targetId": "SYS.3",
+          "createdOn": 1658507163
         }
       ],
       "attributes": {
-        "name": "Stakeholder 1",
         "colour": "#16a5a5",
         "description": ""
-      }
+      },
+      "createdOn": 1652000631,
+      "name": "Stakeholder 1"
     },
     {
       "id": "SH.2",
@@ -1412,40 +1363,28 @@
       "changeLog": [
         {
           "time": 1652000695,
-          "operation": "create",
-          "description": "Created element: 'Stakeholder 2' of type: Stakeholder"
-        },
-        {
-          "time": 1652000695,
           "operation": "update",
           "description": "Changed colour from undefined to #7b64ff"
-        },
-        {
-          "time": 1652000695,
-          "operation": "create",
-          "description": "Added responsible_for relationship with System of Systems"
-        },
-        {
-          "time": 1705650870,
-          "operation": "create",
-          "description": "Created responsible_for relationship with REQ.3."
         }
       ],
       "relationships": [
         {
           "targetId": "REQ.4",
-          "type": "responsible_for"
+          "type": "responsible_for",
+          "createdOn": 1704202873
         },
         {
           "type": "responsible_for",
-          "targetId": "SYS.4"
+          "targetId": "SYS.4",
+          "createdOn": 1658507201
         }
       ],
       "attributes": {
-        "name": "Stakeholder 2",
         "colour": "#7b64ff",
         "description": ""
-      }
+      },
+      "createdOn": 1652000695,
+      "name": "Stakeholder 2"
     }
   ]
 }
