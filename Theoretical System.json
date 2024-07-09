@@ -83,7 +83,7 @@
     "Stakeholder": 3,
     "Facility": 2,
     "Organization": 2,
-    "Requirement": 17
+    "Requirement": 20
   },
   "annotations": [
     {
@@ -929,7 +929,8 @@
       "attributes": {
         "text": "The operation of the system shall be described in a user manual.",
         "type": "Documentation",
-        "verificationMethod": "Inspection"
+        "verificationMethod": "Inspection",
+        "remarks": ""
       },
       "createdOn": 1704214925,
       "name": ""
@@ -963,7 +964,8 @@
       "attributes": {
         "text": "The System shall be designed to be future proof.",
         "type": "Design",
-        "verificationMethod": "Analysis"
+        "verificationMethod": "Analysis",
+        "remarks": ""
       },
       "createdOn": 1704202873,
       "name": ""
@@ -997,7 +999,8 @@
       "attributes": {
         "text": "The System shall improve the environment.",
         "type": "Environmental",
-        "verificationMethod": "Analysis"
+        "verificationMethod": "Analysis",
+        "remarks": ""
       },
       "createdOn": 1704202873,
       "name": ""
@@ -1031,7 +1034,8 @@
       "attributes": {
         "text": "The System shall automatically send problem reports to anyone but us.",
         "type": "ExternalInterface",
-        "verificationMethod": "Test"
+        "verificationMethod": "Test",
+        "remarks": ""
       },
       "createdOn": 1704202873,
       "name": ""
@@ -1065,7 +1069,8 @@
       "attributes": {
         "text": "The System shall perform awesome function 1.",
         "type": "Functional",
-        "verificationMethod": "Demonstration"
+        "verificationMethod": "Demonstration",
+        "remarks": ""
       },
       "createdOn": 1704202873,
       "name": ""
@@ -1094,7 +1099,8 @@
       "attributes": {
         "text": "The System shall be developed in an agile manner.",
         "type": "NonSystem",
-        "verificationMethod": "Analysis"
+        "verificationMethod": "Analysis",
+        "remarks": ""
       },
       "createdOn": 1704202873,
       "name": ""
@@ -1118,7 +1124,8 @@
       "attributes": {
         "text": "The System shall include software that meets international standards for awesome code.",
         "type": "OtherQualities",
-        "verificationMethod": "Analysis"
+        "verificationMethod": "Analysis",
+        "remarks": ""
       },
       "createdOn": 1704202873,
       "name": ""
@@ -1137,7 +1144,8 @@
       "attributes": {
         "text": "The System shall deploy widgets that move at 3 furlongs per fortnight.",
         "type": "Performance",
-        "verificationMethod": "Test"
+        "verificationMethod": "Test",
+        "remarks": ""
       },
       "createdOn": 1705650829,
       "name": ""
@@ -1156,7 +1164,8 @@
       "attributes": {
         "text": "The System shall be blue.",
         "type": "Physical",
-        "verificationMethod": "Inspection"
+        "verificationMethod": "Inspection",
+        "remarks": ""
       },
       "createdOn": 1705650829,
       "name": ""
@@ -1175,7 +1184,8 @@
       "attributes": {
         "text": "The System shall consume stuff.",
         "type": "Resource",
-        "verificationMethod": "Inspection"
+        "verificationMethod": "Inspection",
+        "remarks": ""
       },
       "createdOn": 1705650829,
       "name": ""
@@ -1194,7 +1204,8 @@
       "attributes": {
         "text": "The System shall have a linked mode.",
         "type": "States/Modes",
-        "verificationMethod": "Demonstration"
+        "verificationMethod": "Demonstration",
+        "remarks": ""
       },
       "createdOn": 1705650829,
       "name": ""
@@ -1204,7 +1215,13 @@
       "name": "",
       "metatype": "Requirement",
       "createdOn": 1719937722,
-      "changeLog": [],
+      "changeLog": [
+        {
+          "time": 1720555340,
+          "operation": "update",
+          "description": "Updated text: \"The (-System|+hardware) (+component) shall perform (+awesome) sub-function 1(-.)\""
+        }
+      ],
       "relationships": [
         {
           "targetId": "REQ.5",
@@ -1213,9 +1230,10 @@
         }
       ],
       "attributes": {
-        "text": "The System shall perform sub-function 1.",
+        "text": "The hardware component shall perform awesome sub-function 1",
         "type": "Functional",
-        "verificationMethod": "Demonstration"
+        "verificationMethod": "Demonstration",
+        "remarks": ""
       }
     },
     {
@@ -1223,7 +1241,23 @@
       "name": "",
       "metatype": "Requirement",
       "createdOn": 1719937818,
-      "changeLog": [],
+      "changeLog": [
+        {
+          "time": 1720555340,
+          "operation": "update",
+          "description": "Updated text: \"The (-system,|+software) (-when|+component) (-in linked mode,) shall (-talk|+perform) (-to|+awesome) (-other|+sub-function) (-systems|+2).\""
+        },
+        {
+          "time": 1720555340,
+          "operation": "update",
+          "description": "Updated type from ExternalInterface to Functional."
+        },
+        {
+          "time": 1720555340,
+          "operation": "update",
+          "description": "Updated verification method from Analysis to Demonstration."
+        }
+      ],
       "relationships": [
         {
           "targetId": "REQ.11",
@@ -1232,9 +1266,10 @@
         }
       ],
       "attributes": {
-        "text": "The system, when in linked mode, shall talk to other systems.",
-        "type": "ExternalInterface",
-        "verificationMethod": "Analysis"
+        "text": "The software component shall perform awesome sub-function 2.",
+        "type": "Functional",
+        "verificationMethod": "Demonstration",
+        "remarks": ""
       }
     },
     {
@@ -1247,6 +1282,11 @@
           "time": 1719937911,
           "operation": "update",
           "description": "Updated text: \"The (-system|+System) shall perform sub-sub-function 1\""
+        },
+        {
+          "time": 1720555340,
+          "operation": "update",
+          "description": "Updated text: \"The (-System|+system) shall (-perform|+deploy) (-sub-sub-function 1|+widgets.)\""
         }
       ],
       "relationships": [
@@ -1257,9 +1297,10 @@
         }
       ],
       "attributes": {
-        "text": "The System shall perform sub-sub-function 1",
+        "text": "The system shall deploy widgets.",
         "type": "Functional",
-        "verificationMethod": "Demonstration"
+        "verificationMethod": "Demonstration",
+        "remarks": ""
       }
     },
     {
@@ -1267,7 +1308,23 @@
       "name": "",
       "metatype": "Requirement",
       "createdOn": 1719937904,
-      "changeLog": [],
+      "changeLog": [
+        {
+          "time": 1720555340,
+          "operation": "update",
+          "description": "Updated text: \"The (-System|+widget) shall (-deploy|+move) (-widgets|+at three furlongs per fortnight).\""
+        },
+        {
+          "time": 1720555340,
+          "operation": "update",
+          "description": "Updated type from Functional to Performance."
+        },
+        {
+          "time": 1720555340,
+          "operation": "update",
+          "description": "Updated verification method from Demonstration to Test."
+        }
+      ],
       "relationships": [
         {
           "targetId": "REQ.8",
@@ -1276,9 +1333,10 @@
         }
       ],
       "attributes": {
-        "text": "The System shall deploy widgets.",
-        "type": "Functional",
-        "verificationMethod": "Demonstration"
+        "text": "The widget shall move at three furlongs per fortnight.",
+        "type": "Performance",
+        "verificationMethod": "Test",
+        "remarks": ""
       }
     },
     {
@@ -1296,6 +1354,21 @@
           "time": 1719938001,
           "operation": "update",
           "description": "Updated text: \"The widgets (-,) deployed by the system (-,) shall move at 3 furlongs per fortnight.\""
+        },
+        {
+          "time": 1720555340,
+          "operation": "update",
+          "description": "Updated text: \"The (-widgets|+widget) (-deployed by the system) shall (-move|+be) (-at 3 furlongs per fortnight|+blue).\""
+        },
+        {
+          "time": 1720555340,
+          "operation": "update",
+          "description": "Updated type from Performance to Physical."
+        },
+        {
+          "time": 1720555340,
+          "operation": "update",
+          "description": "Updated verification method from Test to Inspection."
         }
       ],
       "relationships": [
@@ -1306,9 +1379,52 @@
         }
       ],
       "attributes": {
-        "text": "The widgets deployed by the system shall move at 3 furlongs per fortnight.",
-        "type": "Performance",
-        "verificationMethod": "Test"
+        "text": "The widget shall be blue.",
+        "type": "Physical",
+        "verificationMethod": "Inspection",
+        "remarks": ""
+      }
+    },
+    {
+      "id": "REQ.17",
+      "name": "",
+      "metatype": "Requirement",
+      "createdOn": 1720555340,
+      "changeLog": [],
+      "relationships": [],
+      "attributes": {
+        "text": "The widget shall have a propulsion system.",
+        "type": "Design",
+        "verificationMethod": "Analysis",
+        "remarks": ""
+      }
+    },
+    {
+      "id": "REQ.18",
+      "name": "",
+      "metatype": "Requirement",
+      "createdOn": 1720555340,
+      "changeLog": [],
+      "relationships": [],
+      "attributes": {
+        "text": "I just made this sentence up.",
+        "type": "NotApplicable",
+        "verificationMethod": "NotApplicable",
+        "remarks": "This is not a requirement."
+      }
+    },
+    {
+      "id": "REQ.19",
+      "name": "",
+      "metatype": "Requirement",
+      "createdOn": 1720555340,
+      "changeLog": [],
+      "relationships": [],
+      "attributes": {
+        "text": "The System shall do something new.",
+        "type": "Undefined",
+        "verificationMethod": "Undefined",
+        "remarks": "This requirement cannot be fulfilled."
       }
     }
   ],
