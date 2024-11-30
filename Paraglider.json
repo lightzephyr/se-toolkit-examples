@@ -1,6 +1,6 @@
 {
   "name": "Paraglider",
-  "SCHEMA_VERSION": "0.14.0",
+  "SCHEMA_VERSION": "0.16.0",
   "changeLog": [
     {
       "time": 1631954917,
@@ -16,6 +16,11 @@
       "time": 1704215072,
       "operation": "update",
       "description": "Upgraded model schema from version 0.13 to 0.14"
+    },
+    {
+      "time": 1732957423,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.14 to 0.16"
     }
   ],
   "uidSeeds": {
@@ -36,7 +41,8 @@
     "Stakeholder": 1,
     "Facility": 1,
     "Organization": 1,
-    "Requirement": 1
+    "Requirement": 1,
+    "SystemFunction": 1
   },
   "id": "setm0013202301f8ede757",
   "annotations": [],
@@ -45,133 +51,154 @@
       "relationships": [
         {
           "type": "input_from",
-          "targetId": "HW.2"
+          "targetId": "HW.2",
+          "createdOn": 1631954917
         },
         {
           "type": "input_from",
-          "targetId": "HW.3"
+          "targetId": "HW.3",
+          "createdOn": 1631954917
         },
         {
           "type": "input_from",
-          "targetId": "HW.4"
+          "targetId": "HW.4",
+          "createdOn": 1631954917
         }
       ],
       "changeLog": [],
       "id": "HW.1",
       "metatype": "Component",
       "attributes": {
-        "name": "Harness",
         "type": "Hardware",
         "description": ""
-      }
+      },
+      "createdOn": 1631954917,
+      "name": "Harness"
     },
     {
       "relationships": [
         {
           "type": "input_from",
-          "targetId": "HW.1"
+          "targetId": "HW.1",
+          "createdOn": 1631954917
         },
         {
           "type": "input_from",
-          "targetId": "HW.4"
+          "targetId": "HW.4",
+          "createdOn": 1631954917
         },
         {
           "type": "input_from",
-          "targetId": "HW.5"
+          "targetId": "HW.5",
+          "createdOn": 1631954917
         }
       ],
       "changeLog": [],
       "id": "HW.2",
       "metatype": "Component",
       "attributes": {
-        "name": "Lines",
         "type": "Hardware",
         "description": ""
-      }
+      },
+      "createdOn": 1631954917,
+      "name": "Lines"
     },
     {
       "relationships": [
         {
           "type": "input_from",
-          "targetId": "HW.1"
+          "targetId": "HW.1",
+          "createdOn": 1631954917
         }
       ],
       "changeLog": [],
       "id": "HW.3",
       "metatype": "Component",
       "attributes": {
-        "name": "Rescue Parachute",
         "type": "Hardware",
         "description": ""
-      }
+      },
+      "createdOn": 1631954917,
+      "name": "Rescue Parachute"
     },
     {
       "relationships": [
         {
           "type": "input_from",
-          "targetId": "HW.1"
+          "targetId": "HW.1",
+          "createdOn": 1631954917
         },
         {
           "type": "input_from",
-          "targetId": "HW.2"
+          "targetId": "HW.2",
+          "createdOn": 1631954917
         }
       ],
       "changeLog": [],
       "id": "HW.4",
       "metatype": "Component",
       "attributes": {
-        "name": "Risers",
         "type": "Hardware",
         "description": ""
-      }
+      },
+      "createdOn": 1631954917,
+      "name": "Risers"
     },
     {
       "relationships": [
         {
           "type": "input_from",
-          "targetId": "HW.2"
+          "targetId": "HW.2",
+          "createdOn": 1631954917
         }
       ],
       "changeLog": [],
       "id": "HW.5",
       "metatype": "Component",
       "attributes": {
-        "name": "Wing",
         "type": "Hardware",
         "description": ""
-      }
+      },
+      "createdOn": 1631954917,
+      "name": "Wing"
     },
     {
       "relationships": [
         {
           "type": "built_from",
-          "targetId": "HW.1"
+          "targetId": "HW.1",
+          "createdOn": 1631954917
         },
         {
           "type": "built_from",
-          "targetId": "HW.2"
+          "targetId": "HW.2",
+          "createdOn": 1631954917
         },
         {
           "type": "built_from",
-          "targetId": "HW.3"
+          "targetId": "HW.3",
+          "createdOn": 1631954917
         },
         {
           "type": "built_from",
-          "targetId": "HW.4"
+          "targetId": "HW.4",
+          "createdOn": 1631954917
         },
         {
           "type": "built_from",
-          "targetId": "HW.5"
+          "targetId": "HW.5",
+          "createdOn": 1631954917
         }
       ],
       "changeLog": [],
       "id": "SYS.1",
       "metatype": "Component",
       "attributes": {
-        "name": "Paraglider",
         "type": "System",
         "description": ""
-      }
+      },
+      "createdOn": 1631954917,
+      "name": "Paraglider"
     }
   ],
   "milestones": [
@@ -181,10 +208,11 @@
       "changeLog": [],
       "relationships": [],
       "attributes": {
-        "name": "Harness assembled",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954917,
+      "name": "Harness assembled"
     },
     {
       "id": "MS.2",
@@ -193,18 +221,21 @@
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.5"
+          "targetId": "MS.5",
+          "createdOn": 1631954917
         },
         {
           "type": "preceded_by",
-          "targetId": "MS.6"
+          "targetId": "MS.6",
+          "createdOn": 1631954917
         }
       ],
       "attributes": {
-        "name": "Lines and risers assembled",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954917,
+      "name": "Lines and risers assembled"
     },
     {
       "id": "MS.3",
@@ -213,18 +244,21 @@
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.2"
+          "targetId": "MS.2",
+          "createdOn": 1631954917
         },
         {
           "type": "preceded_by",
-          "targetId": "MS.7"
+          "targetId": "MS.7",
+          "createdOn": 1631954917
         }
       ],
       "attributes": {
-        "name": "Lines connected to wing",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954917,
+      "name": "Lines connected to wing"
     },
     {
       "id": "MS.4",
@@ -233,18 +267,21 @@
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.1"
+          "targetId": "MS.1",
+          "createdOn": 1631954917
         },
         {
           "type": "preceded_by",
-          "targetId": "MS.3"
+          "targetId": "MS.3",
+          "createdOn": 1631954917
         }
       ],
       "attributes": {
-        "name": "Paraglider finished",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954917,
+      "name": "Paraglider finished"
     },
     {
       "id": "MS.5",
@@ -252,10 +289,11 @@
       "changeLog": [],
       "relationships": [],
       "attributes": {
-        "name": "Parts available",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954917,
+      "name": "Parts available"
     },
     {
       "id": "MS.6",
@@ -263,10 +301,11 @@
       "changeLog": [],
       "relationships": [],
       "attributes": {
-        "name": "People available",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954917,
+      "name": "People available"
     },
     {
       "id": "MS.7",
@@ -275,20 +314,25 @@
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.5"
+          "targetId": "MS.5",
+          "createdOn": 1631954917
         },
         {
           "type": "preceded_by",
-          "targetId": "MS.6"
+          "targetId": "MS.6",
+          "createdOn": 1631954917
         }
       ],
       "attributes": {
-        "name": "Wing assembled",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954917,
+      "name": "Wing assembled"
     }
   ],
   "stakeholders": [],
-  "requirements": []
+  "requirements": [],
+  "createdOn": 1631954917,
+  "systemfunctions": []
 }

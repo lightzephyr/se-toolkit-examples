@@ -1,6 +1,6 @@
 {
   "name": "Bicycle",
-  "SCHEMA_VERSION": "0.14.0",
+  "SCHEMA_VERSION": "0.16.0",
   "changeLog": [
     {
       "time": 1631954895,
@@ -21,6 +21,11 @@
       "time": 1704215027,
       "operation": "update",
       "description": "Upgraded model schema from version 0.13 to 0.14"
+    },
+    {
+      "time": 1732957243,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.14 to 0.16"
     }
   ],
   "uidSeeds": {
@@ -41,7 +46,8 @@
     "Stakeholder": 1,
     "Facility": 1,
     "Organization": 1,
-    "Requirement": 1
+    "Requirement": 1,
+    "SystemFunction": 1
   },
   "id": "setm0013202301e45d729a",
   "annotations": [],
@@ -50,42 +56,48 @@
       "relationships": [
         {
           "type": "input_from",
-          "targetId": "HW.2"
+          "targetId": "HW.2",
+          "createdOn": 1631954895
         },
         {
           "type": "input_from",
-          "targetId": "HW.4"
+          "targetId": "HW.4",
+          "createdOn": 1631954895
         },
         {
           "type": "input_from",
-          "targetId": "HW.7"
+          "targetId": "HW.7",
+          "createdOn": 1631954895
         }
       ],
       "changeLog": [],
       "id": "HW.1",
       "metatype": "Component",
       "attributes": {
-        "name": "Back Wheel",
         "type": "Hardware",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Back Wheel"
     },
     {
       "status": "NotStarted",
       "relationships": [
         {
           "type": "input_from",
-          "targetId": "SYS.2"
+          "targetId": "SYS.2",
+          "createdOn": 1631954895
         }
       ],
       "changeLog": [],
       "id": "HW.2",
       "metatype": "Component",
       "attributes": {
-        "name": "Brake Disks / Pads / Mounts",
         "type": "Hardware",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Brake Disks / Pads / Mounts"
     },
     {
       "relationships": [],
@@ -93,30 +105,34 @@
       "id": "HW.3",
       "metatype": "Component",
       "attributes": {
-        "name": "Brake Handles",
         "type": "Hardware",
         "description": "Front and back brake handles."
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Brake Handles"
     },
     {
       "relationships": [
         {
           "type": "input_from",
-          "targetId": "HW.5"
+          "targetId": "HW.5",
+          "createdOn": 1631954895
         },
         {
           "type": "input_from",
-          "targetId": "HW.9"
+          "targetId": "HW.9",
+          "createdOn": 1631954895
         }
       ],
       "changeLog": [],
       "id": "HW.4",
       "metatype": "Component",
       "attributes": {
-        "name": "Chain",
         "type": "Hardware",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Chain"
     },
     {
       "status": "NotStarted",
@@ -125,87 +141,99 @@
       "id": "HW.5",
       "metatype": "Component",
       "attributes": {
-        "name": "Crank & Pedals",
         "type": "Hardware",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Crank & Pedals"
     },
     {
       "relationships": [
         {
           "type": "input_from",
-          "targetId": "HW.7"
+          "targetId": "HW.7",
+          "createdOn": 1631954895
         },
         {
           "type": "input_from",
-          "targetId": "HW.8"
+          "targetId": "HW.8",
+          "createdOn": 1631954895
         }
       ],
       "changeLog": [],
       "id": "HW.6",
       "metatype": "Component",
       "attributes": {
-        "name": "Forks",
         "type": "Hardware",
         "description": "Forks can be plain forks or shock absorbers."
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Forks"
     },
     {
       "relationships": [
         {
           "type": "input_from",
-          "targetId": "HW.1"
+          "targetId": "HW.1",
+          "createdOn": 1631954895
         },
         {
           "type": "input_from",
-          "targetId": "HW.6"
+          "targetId": "HW.6",
+          "createdOn": 1631954895
         }
       ],
       "changeLog": [],
       "id": "HW.7",
       "metatype": "Component",
       "attributes": {
-        "name": "Frame",
         "type": "Hardware",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Frame"
     },
     {
       "relationships": [
         {
           "type": "input_from",
-          "targetId": "HW.2"
+          "targetId": "HW.2",
+          "createdOn": 1631954895
         },
         {
           "type": "input_from",
-          "targetId": "HW.6"
+          "targetId": "HW.6",
+          "createdOn": 1631954895
         }
       ],
       "changeLog": [],
       "id": "HW.8",
       "metatype": "Component",
       "attributes": {
-        "name": "Front Wheel",
         "type": "Hardware",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Front Wheel"
     },
     {
       "status": "NotStarted",
       "relationships": [
         {
           "type": "input_from",
-          "targetId": "HW.10"
+          "targetId": "HW.10",
+          "createdOn": 1631954895
         }
       ],
       "changeLog": [],
       "id": "HW.9",
       "metatype": "Component",
       "attributes": {
-        "name": "Gears",
         "type": "Hardware",
         "description": "Front and back gear sprockets."
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Gears"
     },
     {
       "relationships": [],
@@ -213,149 +241,172 @@
       "id": "HW.10",
       "metatype": "Component",
       "attributes": {
-        "name": "Shifters",
         "type": "Hardware",
         "description": "Front and back shifters. Shifters could be further broken down into levers, cables, and the part that actually moves the chain."
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Shifters"
     },
     {
       "status": "NotStarted",
       "relationships": [
         {
           "type": "built_from",
-          "targetId": "HW.6"
+          "targetId": "HW.6",
+          "createdOn": 1631954895
         },
         {
           "type": "built_from",
-          "targetId": "HW.7"
+          "targetId": "HW.7",
+          "createdOn": 1631954895
         }
       ],
       "changeLog": [],
       "id": "HW.11",
       "metatype": "Component",
       "attributes": {
-        "name": "Structure",
         "type": "Hardware",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Structure"
     },
     {
       "status": "NotStarted",
       "relationships": [
         {
           "type": "built_from",
-          "targetId": "HW.1"
+          "targetId": "HW.1",
+          "createdOn": 1631954895
         },
         {
           "type": "built_from",
-          "targetId": "HW.8"
+          "targetId": "HW.8",
+          "createdOn": 1631954895
         }
       ],
       "changeLog": [],
       "id": "HW.12",
       "metatype": "Component",
       "attributes": {
-        "name": "Wheels",
         "type": "Hardware",
         "description": "Each wheel could be further broken down into hub, rims, spokes, and tyres."
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Wheels"
     },
     {
       "relationships": [
         {
           "type": "built_from",
-          "targetId": "HW.11"
+          "targetId": "HW.11",
+          "createdOn": 1631954895
         },
         {
           "type": "built_from",
-          "targetId": "HW.12"
+          "targetId": "HW.12",
+          "createdOn": 1631954895
         },
         {
           "type": "built_from",
-          "targetId": "SYS.3"
+          "targetId": "SYS.3",
+          "createdOn": 1631954895
         },
         {
           "type": "built_from",
-          "targetId": "SYS.4"
+          "targetId": "SYS.4",
+          "createdOn": 1631954895
         }
       ],
       "changeLog": [],
       "id": "SYS.1",
       "metatype": "Component",
       "attributes": {
-        "name": "Bicycle",
         "type": "System",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Bicycle"
     },
     {
       "status": "NotStarted",
       "relationships": [
         {
           "type": "input_from",
-          "targetId": "HW.3"
+          "targetId": "HW.3",
+          "createdOn": 1631954895
         }
       ],
       "changeLog": [],
       "id": "SYS.2",
       "metatype": "Component",
       "attributes": {
-        "name": "Brake Hydraulic Systems",
         "type": "System",
         "description": "Hydraulic systems could be further broken down into reservoir, cables, and fluid. Front and back hydraulic systems."
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Brake Hydraulic Systems"
     },
     {
       "relationships": [
         {
           "type": "built_from",
-          "targetId": "HW.2"
+          "targetId": "HW.2",
+          "createdOn": 1631954895
         },
         {
           "type": "built_from",
-          "targetId": "HW.3"
+          "targetId": "HW.3",
+          "createdOn": 1631954895
         },
         {
           "type": "built_from",
-          "targetId": "SYS.2"
+          "targetId": "SYS.2",
+          "createdOn": 1631954895
         }
       ],
       "changeLog": [],
       "id": "SYS.3",
       "metatype": "Component",
       "attributes": {
-        "name": "Brake System",
         "type": "System",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Brake System"
     },
     {
       "relationships": [
         {
           "type": "built_from",
-          "targetId": "HW.4"
+          "targetId": "HW.4",
+          "createdOn": 1631954895
         },
         {
           "type": "built_from",
-          "targetId": "HW.5"
+          "targetId": "HW.5",
+          "createdOn": 1631954895
         },
         {
           "type": "built_from",
-          "targetId": "HW.9"
+          "targetId": "HW.9",
+          "createdOn": 1631954895
         },
         {
           "type": "built_from",
-          "targetId": "HW.10"
+          "targetId": "HW.10",
+          "createdOn": 1631954895
         }
       ],
       "changeLog": [],
       "id": "SYS.4",
       "metatype": "Component",
       "attributes": {
-        "name": "Drive System",
         "type": "System",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Drive System"
     }
   ],
   "milestones": [
@@ -366,14 +417,16 @@
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.5"
+          "targetId": "MS.5",
+          "createdOn": 1631954895
         }
       ],
       "attributes": {
-        "name": "Bike assembled",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Bike assembled"
     },
     {
       "id": "MS.2",
@@ -382,14 +435,16 @@
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.3"
+          "targetId": "MS.3",
+          "createdOn": 1631954895
         }
       ],
       "attributes": {
-        "name": "Bike finished",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Bike finished"
     },
     {
       "id": "MS.3",
@@ -398,14 +453,16 @@
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.1"
+          "targetId": "MS.1",
+          "createdOn": 1631954895
         }
       ],
       "attributes": {
-        "name": "Bike tuned",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Bike tuned"
     },
     {
       "id": "MS.4",
@@ -414,18 +471,21 @@
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.8"
+          "targetId": "MS.8",
+          "createdOn": 1631954895
         },
         {
           "type": "preceded_by",
-          "targetId": "MS.9"
+          "targetId": "MS.9",
+          "createdOn": 1631954895
         }
       ],
       "attributes": {
-        "name": "Frame assembled",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Frame assembled"
     },
     {
       "id": "MS.5",
@@ -434,22 +494,26 @@
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.4"
+          "targetId": "MS.4",
+          "createdOn": 1631954895
         },
         {
           "type": "preceded_by",
-          "targetId": "MS.6"
+          "targetId": "MS.6",
+          "createdOn": 1631954895
         },
         {
           "type": "preceded_by",
-          "targetId": "MS.7"
+          "targetId": "MS.7",
+          "createdOn": 1631954895
         }
       ],
       "attributes": {
-        "name": "Frame painted",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Frame painted"
     },
     {
       "id": "MS.6",
@@ -457,10 +521,11 @@
       "changeLog": [],
       "relationships": [],
       "attributes": {
-        "name": "Paint available",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Paint available"
     },
     {
       "id": "MS.7",
@@ -468,10 +533,11 @@
       "changeLog": [],
       "relationships": [],
       "attributes": {
-        "name": "Paint booth available",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Paint booth available"
     },
     {
       "id": "MS.8",
@@ -479,10 +545,11 @@
       "changeLog": [],
       "relationships": [],
       "attributes": {
-        "name": "Parts available",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "Parts available"
     },
     {
       "id": "MS.9",
@@ -490,12 +557,15 @@
       "changeLog": [],
       "relationships": [],
       "attributes": {
-        "name": "People available",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1631954895,
+      "name": "People available"
     }
   ],
   "stakeholders": [],
-  "requirements": []
+  "requirements": [],
+  "createdOn": 1631954895,
+  "systemfunctions": []
 }

@@ -1,6 +1,6 @@
 {
   "name": "Tips and Tricks",
-  "SCHEMA_VERSION": "0.14.0",
+  "SCHEMA_VERSION": "0.16.0",
   "changeLog": [
     {
       "time": 1631954937,
@@ -26,6 +26,11 @@
       "time": 1704215091,
       "operation": "update",
       "description": "Upgraded model schema from version 0.13 to 0.14"
+    },
+    {
+      "time": 1732957446,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.14 to 0.16"
     }
   ],
   "uidSeeds": {
@@ -46,24 +51,20 @@
     "Stakeholder": 1,
     "Facility": 1,
     "Organization": 1,
-    "Requirement": 1
+    "Requirement": 1,
+    "SystemFunction": 1
   },
   "id": "setm0013202301d4cb0cfa",
   "annotations": [
     {
       "id": "AI.1",
       "metatype": "Annotation",
-      "changeLog": [
-        {
-          "time": 1591774004,
-          "operation": "create",
-          "description": "Created action annotation: AI.1."
-        }
-      ],
+      "changeLog": [],
       "relationships": [
         {
           "targetId": "MS.1",
-          "type": "annotates"
+          "type": "annotates",
+          "createdOn": 1591774004
         }
       ],
       "attributes": {
@@ -72,22 +73,19 @@
         "priority": "None",
         "closedOn": null,
         "remarks": ""
-      }
+      },
+      "createdOn": 1591774004,
+      "name": ""
     },
     {
       "id": "AI.2",
       "metatype": "Annotation",
-      "changeLog": [
-        {
-          "time": 1591774004,
-          "operation": "create",
-          "description": "Created action annotation: AI.2."
-        }
-      ],
+      "changeLog": [],
       "relationships": [
         {
           "targetId": "MS.1",
-          "type": "annotates"
+          "type": "annotates",
+          "createdOn": 1591774004
         }
       ],
       "attributes": {
@@ -96,22 +94,19 @@
         "priority": "None",
         "closedOn": null,
         "remarks": ""
-      }
+      },
+      "createdOn": 1591774004,
+      "name": ""
     },
     {
       "id": "AI.3",
       "metatype": "Annotation",
-      "changeLog": [
-        {
-          "time": 1591774004,
-          "operation": "create",
-          "description": "Created action annotation: AI.3."
-        }
-      ],
+      "changeLog": [],
       "relationships": [
         {
           "targetId": "MS.1",
-          "type": "annotates"
+          "type": "annotates",
+          "createdOn": 1591774004
         }
       ],
       "attributes": {
@@ -120,22 +115,19 @@
         "priority": "None",
         "closedOn": null,
         "remarks": ""
-      }
+      },
+      "createdOn": 1591774004,
+      "name": ""
     },
     {
       "id": "AI.4",
       "metatype": "Annotation",
-      "changeLog": [
-        {
-          "time": 1591774004,
-          "operation": "create",
-          "description": "Created action annotation: AI.4."
-        }
-      ],
+      "changeLog": [],
       "relationships": [
         {
           "targetId": "MS.1",
-          "type": "annotates"
+          "type": "annotates",
+          "createdOn": 1591774004
         }
       ],
       "attributes": {
@@ -144,7 +136,9 @@
         "priority": "None",
         "closedOn": null,
         "remarks": ""
-      }
+      },
+      "createdOn": 1591774004,
+      "name": ""
     }
   ],
   "components": [
@@ -154,26 +148,29 @@
       "id": "SYS.1",
       "metatype": "Component",
       "attributes": {
-        "name": "Subsystem of Interest",
         "type": "System",
         "description": ""
-      }
+      },
+      "createdOn": 1591774004,
+      "name": "Subsystem of Interest"
     },
     {
       "relationships": [
         {
           "type": "built_from",
-          "targetId": "SYS.1"
+          "targetId": "SYS.1",
+          "createdOn": 1591774004
         }
       ],
       "changeLog": [],
       "id": "SYS.2",
       "metatype": "Component",
       "attributes": {
-        "name": "System of Interest",
         "type": "System",
         "description": "1. The system of interest (SOI) is defined as...\n2. The SOI does not include...\n3. The SOI has external interfaces with...\n3.1 The external interface with system A consists of...\n3.2 The external interface with system B consists of... \n4. The SOI needs to operate in compliance with...\n5. The SOI operates in the following environments..."
-      }
+      },
+      "createdOn": 1591774004,
+      "name": "System of Interest"
     }
   ],
   "milestones": [
@@ -184,14 +181,16 @@
       "relationships": [
         {
           "type": "preceded_by",
-          "targetId": "MS.2"
+          "targetId": "MS.2",
+          "createdOn": 1591774004
         }
       ],
       "attributes": {
-        "name": "Goal",
         "status": "NotStarted",
         "description": ""
-      }
+      },
+      "createdOn": 1591774004,
+      "name": "Goal"
     },
     {
       "id": "MS.2",
@@ -199,12 +198,15 @@
       "changeLog": [],
       "relationships": [],
       "attributes": {
-        "name": "Intermediary Goal",
         "status": "InProgress",
         "description": ""
-      }
+      },
+      "createdOn": 1591774004,
+      "name": "Intermediary Goal"
     }
   ],
   "stakeholders": [],
-  "requirements": []
+  "requirements": [],
+  "createdOn": 1591774004,
+  "systemfunctions": []
 }

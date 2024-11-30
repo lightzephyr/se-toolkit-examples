@@ -1,13 +1,18 @@
 {
   "id": "setm0015202407f128adcd",
   "name": "Large Test Model",
-  "SCHEMA_VERSION": "0.15.0",
+  "SCHEMA_VERSION": "0.16.0",
   "createdOn": 1720108590,
   "changeLog": [
     {
       "time": 1720108615,
       "operation": "update",
       "description": "Updated model name from 'New Model' to 'Large Test Model'."
+    },
+    {
+      "time": 1732957302,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.15 to 0.16"
     }
   ],
   "uidSeeds": {
@@ -28,7 +33,8 @@
     "System": 1,
     "Milestone": 1,
     "Requirement": 502,
-    "Stakeholder": 1
+    "Stakeholder": 1,
+    "SystemFunction": 1
   },
   "annotations": [],
   "components": [
@@ -38,7 +44,18 @@
       "metatype": "Component",
       "createdOn": 1720109172,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "SW.2",
+          "type": "built_from",
+          "createdOn": 1732957325
+        },
+        {
+          "targetId": "SW.3",
+          "type": "built_from",
+          "createdOn": 1732957330
+        }
+      ],
       "attributes": {
         "type": "Software",
         "description": ""
@@ -50,7 +67,18 @@
       "metatype": "Component",
       "createdOn": 1720109172,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "SW.4",
+          "type": "built_from",
+          "createdOn": 1732957350
+        },
+        {
+          "targetId": "SW.5",
+          "type": "built_from",
+          "createdOn": 1732957355
+        }
+      ],
       "attributes": {
         "type": "Software",
         "description": ""
@@ -62,7 +90,18 @@
       "metatype": "Component",
       "createdOn": 1720109172,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "SW.6",
+          "type": "built_from",
+          "createdOn": 1732957360
+        },
+        {
+          "targetId": "SW.7",
+          "type": "built_from",
+          "createdOn": 1732957365
+        }
+      ],
       "attributes": {
         "type": "Software",
         "description": ""
@@ -74,7 +113,18 @@
       "metatype": "Component",
       "createdOn": 1720109172,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "SW.8",
+          "type": "built_from",
+          "createdOn": 1732957374
+        },
+        {
+          "targetId": "SW.9",
+          "type": "built_from",
+          "createdOn": 1732957379
+        }
+      ],
       "attributes": {
         "type": "Software",
         "description": ""
@@ -86,7 +136,18 @@
       "metatype": "Component",
       "createdOn": 1720109172,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "SW.10",
+          "type": "built_from",
+          "createdOn": 1732957384
+        },
+        {
+          "targetId": "SW.11",
+          "type": "built_from",
+          "createdOn": 1732957389
+        }
+      ],
       "attributes": {
         "type": "Software",
         "description": ""
@@ -98,7 +159,18 @@
       "metatype": "Component",
       "createdOn": 1720109172,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "SW.12",
+          "type": "built_from",
+          "createdOn": 1732957393
+        },
+        {
+          "targetId": "SW.13",
+          "type": "built_from",
+          "createdOn": 1732957398
+        }
+      ],
       "attributes": {
         "type": "Software",
         "description": ""
@@ -110,7 +182,18 @@
       "metatype": "Component",
       "createdOn": 1720109172,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "SW.14",
+          "type": "built_from",
+          "createdOn": 1732957403
+        },
+        {
+          "targetId": "SW.15",
+          "type": "built_from",
+          "createdOn": 1732957408
+        }
+      ],
       "attributes": {
         "type": "Software",
         "description": ""
@@ -13062,5 +13145,6 @@
       }
     }
   ],
-  "stakeholders": []
+  "stakeholders": [],
+  "systemfunctions": []
 }

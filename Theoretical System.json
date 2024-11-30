@@ -1,7 +1,7 @@
 {
   "id": "setm-theoreticalsystem",
   "name": "Theoretical System",
-  "SCHEMA_VERSION": "0.15.0",
+  "SCHEMA_VERSION": "0.16.0",
   "createdOn": 1631954926,
   "changeLog": [
     {
@@ -63,6 +63,11 @@
       "time": 1719937625,
       "operation": "update",
       "description": "Upgraded model schema from version 0.14 to 0.15"
+    },
+    {
+      "time": 1732957603,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.15 to 0.16"
     }
   ],
   "uidSeeds": {
@@ -83,7 +88,8 @@
     "Stakeholder": 3,
     "Facility": 2,
     "Organization": 2,
-    "Requirement": 20
+    "Requirement": 20,
+    "SystemFunction": 1
   },
   "annotations": [
     {
@@ -1502,5 +1508,6 @@
       "createdOn": 1652000695,
       "name": "Stakeholder 2"
     }
-  ]
+  ],
+  "systemfunctions": []
 }
