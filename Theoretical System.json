@@ -88,7 +88,7 @@
     "Stakeholder": 3,
     "Facility": 2,
     "Organization": 2,
-    "Requirement": 20,
+    "Requirement": 21,
     "SystemFunction": 1
   },
   "annotations": [
@@ -1431,6 +1431,20 @@
         "type": "Undefined",
         "verificationMethod": "Undefined",
         "remarks": "This requirement cannot be fulfilled."
+      }
+    },
+    {
+      "id": "REQ.20",
+      "name": "",
+      "metatype": "Requirement",
+      "createdOn": 1733174447,
+      "changeLog": [],
+      "relationships": [],
+      "attributes": {
+        "text": "The sky is blue.",
+        "type": "Information/Guidance",
+        "verificationMethod": "NotApplicable",
+        "remarks": "This is not a requirement."
       }
     }
   ],
