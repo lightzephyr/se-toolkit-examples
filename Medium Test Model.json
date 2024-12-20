@@ -41,6 +41,11 @@
       "changeLog": [],
       "relationships": [
         {
+          "targetId": "REQ.1",
+          "type": "specified_by",
+          "createdOn": 1734644003
+        },
+        {
           "targetId": "SW.2",
           "type": "built_from",
           "createdOn": 1734624197
@@ -63,6 +68,11 @@
       "createdOn": 1734624143,
       "changeLog": [],
       "relationships": [
+        {
+          "targetId": "REQ.2",
+          "type": "specified_by",
+          "createdOn": 1734644032
+        },
         {
           "targetId": "SW.4",
           "type": "built_from",
@@ -110,6 +120,11 @@
       "changeLog": [],
       "relationships": [
         {
+          "targetId": "REQ.4",
+          "type": "specified_by",
+          "createdOn": 1734644035
+        },
+        {
           "targetId": "SW.8",
           "type": "built_from",
           "createdOn": 1734624230
@@ -132,6 +147,11 @@
       "createdOn": 1734624143,
       "changeLog": [],
       "relationships": [
+        {
+          "targetId": "REQ.5",
+          "type": "specified_by",
+          "createdOn": 1734644048
+        },
         {
           "targetId": "SW.10",
           "type": "built_from",
@@ -202,6 +222,11 @@
       "changeLog": [],
       "relationships": [
         {
+          "targetId": "REQ.8",
+          "type": "specified_by",
+          "createdOn": 1734644038
+        },
+        {
           "targetId": "SW.16",
           "type": "built_from",
           "createdOn": 1734624274
@@ -225,6 +250,11 @@
       "changeLog": [],
       "relationships": [
         {
+          "targetId": "REQ.9",
+          "type": "specified_by",
+          "createdOn": 1734644045
+        },
+        {
           "targetId": "SW.18",
           "type": "built_from",
           "createdOn": 1734624286
@@ -247,6 +277,11 @@
       "createdOn": 1734624143,
       "changeLog": [],
       "relationships": [
+        {
+          "targetId": "REQ.10",
+          "type": "specified_by",
+          "createdOn": 1734644050
+        },
         {
           "targetId": "SW.20",
           "type": "built_from",
@@ -1441,7 +1476,13 @@
       "metatype": "Requirement",
       "createdOn": 1734624143,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "REQ.1",
+          "type": "derived_from",
+          "createdOn": 1734643940
+        }
+      ],
       "attributes": {
         "text": "The system shall perform function 3.",
         "type": "Functional",
@@ -1455,7 +1496,13 @@
       "metatype": "Requirement",
       "createdOn": 1734624143,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "REQ.2",
+          "type": "derived_from",
+          "createdOn": 1734643943
+        }
+      ],
       "attributes": {
         "text": "The system shall perform function 4.",
         "type": "Functional",
@@ -1469,7 +1516,13 @@
       "metatype": "Requirement",
       "createdOn": 1734624143,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "REQ.2",
+          "type": "derived_from",
+          "createdOn": 1734643948
+        }
+      ],
       "attributes": {
         "text": "The system shall perform function 5.",
         "type": "Functional",
@@ -1483,7 +1536,13 @@
       "metatype": "Requirement",
       "createdOn": 1734624143,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "REQ.3",
+          "type": "derived_from",
+          "createdOn": 1734643951
+        }
+      ],
       "attributes": {
         "text": "The system shall perform function 6.",
         "type": "Functional",
@@ -1497,7 +1556,13 @@
       "metatype": "Requirement",
       "createdOn": 1734624143,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "REQ.3",
+          "type": "derived_from",
+          "createdOn": 1734643954
+        }
+      ],
       "attributes": {
         "text": "The system shall perform function 7.",
         "type": "Functional",
@@ -1511,7 +1576,13 @@
       "metatype": "Requirement",
       "createdOn": 1734624143,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "REQ.4",
+          "type": "derived_from",
+          "createdOn": 1734643959
+        }
+      ],
       "attributes": {
         "text": "The system shall perform function 8.",
         "type": "Functional",
@@ -1525,7 +1596,13 @@
       "metatype": "Requirement",
       "createdOn": 1734624143,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "REQ.4",
+          "type": "derived_from",
+          "createdOn": 1734643963
+        }
+      ],
       "attributes": {
         "text": "The system shall perform function 9.",
         "type": "Functional",
@@ -1539,7 +1616,13 @@
       "metatype": "Requirement",
       "createdOn": 1734624143,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "REQ.5",
+          "type": "derived_from",
+          "createdOn": 1734643967
+        }
+      ],
       "attributes": {
         "text": "The system shall perform function 10.",
         "type": "Functional",
@@ -1553,7 +1636,13 @@
       "metatype": "Requirement",
       "createdOn": 1734624143,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "REQ.5",
+          "type": "derived_from",
+          "createdOn": 1734643971
+        }
+      ],
       "attributes": {
         "text": "The system shall perform function 11.",
         "type": "Functional",
@@ -1567,7 +1656,13 @@
       "metatype": "Requirement",
       "createdOn": 1734624143,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "REQ.6",
+          "type": "derived_from",
+          "createdOn": 1734643974
+        }
+      ],
       "attributes": {
         "text": "The system shall perform function 12.",
         "type": "Functional",
@@ -1581,7 +1676,13 @@
       "metatype": "Requirement",
       "createdOn": 1734624143,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "REQ.6",
+          "type": "derived_from",
+          "createdOn": 1734643978
+        }
+      ],
       "attributes": {
         "text": "The system shall perform function 13.",
         "type": "Functional",
@@ -1595,7 +1696,13 @@
       "metatype": "Requirement",
       "createdOn": 1734624143,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "REQ.7",
+          "type": "derived_from",
+          "createdOn": 1734643982
+        }
+      ],
       "attributes": {
         "text": "The system shall perform function 14.",
         "type": "Functional",
@@ -1609,7 +1716,13 @@
       "metatype": "Requirement",
       "createdOn": 1734624143,
       "changeLog": [],
-      "relationships": [],
+      "relationships": [
+        {
+          "targetId": "REQ.7",
+          "type": "derived_from",
+          "createdOn": 1734643986
+        }
+      ],
       "attributes": {
         "text": "The system shall perform function 15.",
         "type": "Functional",
