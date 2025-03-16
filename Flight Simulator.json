@@ -1,6 +1,6 @@
 {
   "name": "Flight Simulator",
-  "SCHEMA_VERSION": "0.16.0",
+  "SCHEMA_VERSION": "0.17",
   "changeLog": [
     {
       "time": 1631954908,
@@ -26,6 +26,11 @@
       "time": 1732957286,
       "operation": "update",
       "description": "Upgraded model schema from version 0.14 to 0.16"
+    },
+    {
+      "time": 1742144237,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.16 to 0.17"
     }
   ],
   "uidSeeds": {
@@ -62,7 +67,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "GPWS Database"
+      "name": "GPWS Database",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -75,7 +81,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Navigation Aid Database"
+      "name": "Navigation Aid Database",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -87,7 +94,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Cockpit Controls Power Supply"
+      "name": "Cockpit Controls Power Supply",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -99,7 +107,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Cockpit Instruments"
+      "name": "Cockpit Instruments",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -111,7 +120,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Cockpit Instruments Data Interface"
+      "name": "Cockpit Instruments Data Interface",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -124,7 +134,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Cockpit Instruments Power Supply"
+      "name": "Cockpit Instruments Power Supply",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -136,7 +147,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Cockpit Instruments Structural Interface"
+      "name": "Cockpit Instruments Structural Interface",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -148,7 +160,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Cockpit Interface Computer Hardware"
+      "name": "Cockpit Interface Computer Hardware",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -160,7 +173,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Cockpit Lighting"
+      "name": "Cockpit Lighting",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -173,7 +187,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Cockpit Lighting Power Supply"
+      "name": "Cockpit Lighting Power Supply",
+      "tags": ""
     },
     {
       "relationships": [
@@ -201,7 +216,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Cockpit Power Supply"
+      "name": "Cockpit Power Supply",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -213,7 +229,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Cockpit Structure"
+      "name": "Cockpit Structure",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -225,7 +242,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Crew Seats"
+      "name": "Crew Seats",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -238,7 +256,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Display System"
+      "name": "Display System",
+      "tags": ""
     },
     {
       "relationships": [
@@ -261,7 +280,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Flight Control Hardware"
+      "name": "Flight Control Hardware",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -274,7 +294,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Host Computer Hardware"
+      "name": "Host Computer Hardware",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -286,7 +307,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Motion Computer Hardware"
+      "name": "Motion Computer Hardware",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -305,7 +327,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Motion Platform Hardware"
+      "name": "Motion Platform Hardware",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -317,7 +340,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Primary Flight Controls"
+      "name": "Primary Flight Controls",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -329,7 +353,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Secondary Flight Controls"
+      "name": "Secondary Flight Controls",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -341,7 +366,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Aerodynamics Model"
+      "name": "Aerodynamics Model",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -354,7 +380,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Cockpit Interface Computer Operating System"
+      "name": "Cockpit Interface Computer Operating System",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -367,7 +394,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Cockpit Interface Hardware Drivers"
+      "name": "Cockpit Interface Hardware Drivers",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -379,7 +407,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Flight Controls Model"
+      "name": "Flight Controls Model",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -391,7 +420,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Flight Dynamics Model"
+      "name": "Flight Dynamics Model",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -404,7 +434,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "GPWS Simulation"
+      "name": "GPWS Simulation",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -416,7 +447,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Host Computer Hardware Drivers"
+      "name": "Host Computer Hardware Drivers",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -429,7 +461,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Host Computer Operating System"
+      "name": "Host Computer Operating System",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -441,7 +474,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Landing Gear Model"
+      "name": "Landing Gear Model",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -453,7 +487,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Motion Computer Operating System"
+      "name": "Motion Computer Operating System",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -465,7 +500,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Motion Hardware Drivers"
+      "name": "Motion Hardware Drivers",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -478,7 +514,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Motion Washout Algorithms"
+      "name": "Motion Washout Algorithms",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -490,7 +527,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Navigation Aid Simulation"
+      "name": "Navigation Aid Simulation",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -502,7 +540,8 @@
         "description": "ACARS: Aircraft Addressing And Reporting System"
       },
       "createdOn": 1631954908,
-      "name": "Simulated ACARS"
+      "name": "Simulated ACARS",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -536,7 +575,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Simulated Aircraft Ancillary Systems"
+      "name": "Simulated Aircraft Ancillary Systems",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -565,7 +605,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Simulated Aircraft Comms System"
+      "name": "Simulated Aircraft Comms System",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -594,7 +635,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Simulated Aircraft Engines"
+      "name": "Simulated Aircraft Engines",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -606,7 +648,8 @@
         "description": "The comms radio simulation does not include navigation radios. Simulated communication radios typically include one or more HF, VHF and UHF radios."
       },
       "createdOn": 1631954908,
-      "name": "Simulated Comms Radios"
+      "name": "Simulated Comms Radios",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -618,7 +661,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Simulated Electrical System"
+      "name": "Simulated Electrical System",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -630,7 +674,8 @@
         "description": "FADEC: Full Authority Digital Engine Control The FADEC is typically too complicated to be able to model all of its functionality from scratch. Therefore a rehost of the actual engine software is required for higher fidelity simulators and is almost unavoidable for Level D."
       },
       "createdOn": 1631954908,
-      "name": "Simulated FADEC"
+      "name": "Simulated FADEC",
+      "tags": ""
     },
     {
       "relationships": [
@@ -653,7 +698,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Simulated Flight Controls"
+      "name": "Simulated Flight Controls",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -665,7 +711,8 @@
         "description": "The flight controls computer is typically too complicated to be able to model all of its functionality from scratch. Therefore a rehost of the actual aircraft software is preferred. The engineering model used by the aircraft OEM may be sufficient if it can be proved to represent the actual aircraft with the required fidelity."
       },
       "createdOn": 1631954908,
-      "name": "Simulated Flight Controls Computer"
+      "name": "Simulated Flight Controls Computer",
+      "tags": ""
     },
     {
       "relationships": [
@@ -698,7 +745,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Simulated Flight Dynamics"
+      "name": "Simulated Flight Dynamics",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -710,7 +758,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Simulated Fuel System"
+      "name": "Simulated Fuel System",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -722,7 +771,8 @@
         "description": "GPS: Global Positioning System"
       },
       "createdOn": 1631954908,
-      "name": "Simulated GPS"
+      "name": "Simulated GPS",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -734,7 +784,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Simulated Hydraulic System"
+      "name": "Simulated Hydraulic System",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -746,7 +797,8 @@
         "description": "IFF: Identification Friend Or Foe The IFF simulation typically includes all transponder modes - including the civil modes 1, 2, and 3A/C and S. IFF describes an electronic, radio based identification system - in this case used between aircraft and ground based radar stations."
       },
       "createdOn": 1631954908,
-      "name": "Simulated IFF"
+      "name": "Simulated IFF",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -780,7 +832,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Simulated Navigation Systems"
+      "name": "Simulated Navigation Systems",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -793,7 +846,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Simulated Powerplant"
+      "name": "Simulated Powerplant",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -805,7 +859,8 @@
         "description": "Simulated navigation radios typically include ADF and ILS. The navigation radio simulation does not include communication radios. The navigation radio simulation does not include the database of navigation aids."
       },
       "createdOn": 1631954908,
-      "name": "Simulated Radio Navigation Systems"
+      "name": "Simulated Radio Navigation Systems",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -817,7 +872,8 @@
         "description": "TCAS: Traffic Collision and Avoidance System"
       },
       "createdOn": 1631954908,
-      "name": "Simulated TCAS"
+      "name": "Simulated TCAS",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -846,7 +902,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Cockpit Interface Computer"
+      "name": "Cockpit Interface Computer",
+      "tags": ""
     },
     {
       "relationships": [
@@ -899,7 +956,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Flight Simulator"
+      "name": "Flight Simulator",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -928,7 +986,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Host Computer"
+      "name": "Host Computer",
+      "tags": ""
     },
     {
       "relationships": [
@@ -946,7 +1005,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Image Generation System"
+      "name": "Image Generation System",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -965,7 +1025,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "IT Infrastructure"
+      "name": "IT Infrastructure",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -1004,7 +1065,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Motion Control Computer"
+      "name": "Motion Control Computer",
+      "tags": ""
     },
     {
       "relationships": [
@@ -1027,7 +1089,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Motion System"
+      "name": "Motion System",
+      "tags": ""
     },
     {
       "relationships": [
@@ -1070,7 +1133,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Ownship Simulation"
+      "name": "Ownship Simulation",
+      "tags": ""
     },
     {
       "relationships": [
@@ -1088,7 +1152,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Projection System"
+      "name": "Projection System",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -1112,7 +1177,8 @@
         "description": "GPWS: Ground Proximity Warning System"
       },
       "createdOn": 1631954908,
-      "name": "Simulated GPWS"
+      "name": "Simulated GPWS",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -1136,7 +1202,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Simulated Navigation Aids"
+      "name": "Simulated Navigation Aids",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -1165,7 +1232,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Simulated Sensor Systems"
+      "name": "Simulated Sensor Systems",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -1239,7 +1307,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Simulator Cockpit"
+      "name": "Simulator Cockpit",
+      "tags": ""
     },
     {
       "relationships": [
@@ -1257,7 +1326,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Simulator Comms System"
+      "name": "Simulator Comms System",
+      "tags": ""
     },
     {
       "relationships": [
@@ -1285,7 +1355,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Simulator Sound System"
+      "name": "Simulator Sound System",
+      "tags": ""
     },
     {
       "relationships": [
@@ -1313,7 +1384,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Visual System"
+      "name": "Visual System",
+      "tags": ""
     },
     {
       "relationships": [
@@ -1331,7 +1403,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "World Simulation"
+      "name": "World Simulation",
+      "tags": ""
     }
   ],
   "milestones": [
@@ -1351,7 +1424,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Cruise"
+      "name": "Cruise",
+      "tags": ""
     },
     {
       "id": "MS.2",
@@ -1369,7 +1443,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Emergencies in Flight"
+      "name": "Emergencies in Flight",
+      "tags": ""
     },
     {
       "id": "MS.3",
@@ -1387,7 +1462,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Emergencies on Ground"
+      "name": "Emergencies on Ground",
+      "tags": ""
     },
     {
       "id": "MS.4",
@@ -1405,7 +1481,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Landing"
+      "name": "Landing",
+      "tags": ""
     },
     {
       "id": "MS.5",
@@ -1417,7 +1494,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Stationary on Ground"
+      "name": "Stationary on Ground",
+      "tags": ""
     },
     {
       "id": "MS.6",
@@ -1435,7 +1513,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Takeoff"
+      "name": "Takeoff",
+      "tags": ""
     },
     {
       "id": "MS.7",
@@ -1453,7 +1532,8 @@
         "description": ""
       },
       "createdOn": 1631954908,
-      "name": "Taxi"
+      "name": "Taxi",
+      "tags": ""
     }
   ],
   "stakeholders": [],

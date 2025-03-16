@@ -1,7 +1,7 @@
 {
   "id": "setm-theoreticalsystem",
   "name": "Theoretical System",
-  "SCHEMA_VERSION": "0.16.0",
+  "SCHEMA_VERSION": "0.17",
   "createdOn": 1631954926,
   "changeLog": [
     {
@@ -68,6 +68,11 @@
       "time": 1732957603,
       "operation": "update",
       "description": "Upgraded model schema from version 0.15 to 0.16"
+    },
+    {
+      "time": 1742143889,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.16 to 0.17"
     }
   ],
   "uidSeeds": {
@@ -117,7 +122,8 @@
         "remarks": ""
       },
       "createdOn": 1658507491,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "AI.6",
@@ -138,7 +144,8 @@
         "remarks": ""
       },
       "createdOn": 1674303571,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "AI.7",
@@ -159,7 +166,8 @@
         "remarks": ""
       },
       "createdOn": 1674303659,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "AS.1",
@@ -186,7 +194,8 @@
         "remarks": ""
       },
       "createdOn": 1658507718,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "L.1",
@@ -207,7 +216,8 @@
         "remarks": ""
       },
       "createdOn": 1663705728,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "O.2",
@@ -234,7 +244,8 @@
         "remarks": ""
       },
       "createdOn": 1658507724,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "R.3",
@@ -271,7 +282,8 @@
         "remarks": "This risk no longer exists."
       },
       "createdOn": 1658507730,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "R.4",
@@ -298,7 +310,8 @@
         "remarks": ""
       },
       "createdOn": 1674303749,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "R.5",
@@ -319,7 +332,8 @@
         "remarks": ""
       },
       "createdOn": 1705650958,
-      "name": ""
+      "name": "",
+      "tags": ""
     }
   ],
   "components": [
@@ -339,7 +353,8 @@
         "description": "A data item."
       },
       "createdOn": 1704214948,
-      "name": "Data"
+      "name": "Data",
+      "tags": ""
     },
     {
       "id": "F.1",
@@ -357,7 +372,8 @@
         "description": "A building or other structure in which a system is housed."
       },
       "createdOn": 1704041418,
-      "name": "Facility"
+      "name": "Facility",
+      "tags": ""
     },
     {
       "relationships": [
@@ -375,7 +391,8 @@
         "description": "A hardware item."
       },
       "createdOn": 1658507566,
-      "name": "Hardware"
+      "name": "Hardware",
+      "tags": ""
     },
     {
       "id": "ORG.1",
@@ -393,7 +410,8 @@
         "description": "A company or other group of people that works together for a particular purpose."
       },
       "createdOn": 1704041428,
-      "name": "Organization"
+      "name": "Organization",
+      "tags": ""
     },
     {
       "relationships": [
@@ -417,7 +435,8 @@
         "description": "A person who performs a function of, and therefore forms a part of, the system of interest."
       },
       "createdOn": 1657979928,
-      "name": "Person"
+      "name": "Person",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -435,7 +454,8 @@
         "description": "An article that is the result of an action or process."
       },
       "createdOn": 1651690458,
-      "name": "Product"
+      "name": "Product",
+      "tags": ""
     },
     {
       "relationships": [
@@ -474,7 +494,8 @@
         "description": "An undertaking with pre-specified objectives, magnitude and duration."
       },
       "createdOn": 1651690465,
-      "name": "Project"
+      "name": "Project",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -486,7 +507,8 @@
         "description": "A service provided by a service provider."
       },
       "createdOn": 1658507555,
-      "name": "Service"
+      "name": "Service",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -498,7 +520,8 @@
         "description": "A software item."
       },
       "createdOn": 1631954926,
-      "name": "Software"
+      "name": "Software",
+      "tags": ""
     },
     {
       "relationships": [
@@ -526,7 +549,8 @@
         "description": ""
       },
       "createdOn": 1631954926,
-      "name": "Subsystem"
+      "name": "Subsystem",
+      "tags": ""
     },
     {
       "relationships": [
@@ -559,7 +583,8 @@
         "description": "A system (either a black box or built from other elements)."
       },
       "createdOn": 1657979928,
-      "name": "System"
+      "name": "System",
+      "tags": ""
     },
     {
       "relationships": [
@@ -588,7 +613,8 @@
         "description": "The system whose life cycle is under consideration."
       },
       "createdOn": 1658507163,
-      "name": "System of Interest"
+      "name": "System of Interest",
+      "tags": ""
     },
     {
       "relationships": [
@@ -617,7 +643,8 @@
         "description": "A collection of task-oriented or dedicated systems that pool their resources and capabilities together to create a new, more complex system which offers more functionality and performance than simply the sum of the constituent systems."
       },
       "createdOn": 1658507201,
-      "name": "System of Systems"
+      "name": "System of Systems",
+      "tags": ""
     }
   ],
   "milestones": [
@@ -647,7 +674,8 @@
         "description": "Progress towards this milestone has not been started."
       },
       "createdOn": 1674303760,
-      "name": "Not Started Milestone"
+      "name": "Not Started Milestone",
+      "tags": ""
     },
     {
       "id": "MS.2",
@@ -691,7 +719,8 @@
         "description": "Progress is being made towards this milestone."
       },
       "createdOn": 1651313619,
-      "name": "In Progress Milestone"
+      "name": "In Progress Milestone",
+      "tags": ""
     },
     {
       "id": "MS.3",
@@ -730,7 +759,8 @@
         "description": "The milestone has been reached."
       },
       "createdOn": 1674303766,
-      "name": "Finished Milestone"
+      "name": "Finished Milestone",
+      "tags": ""
     },
     {
       "id": "MS.4",
@@ -784,7 +814,8 @@
         "description": "Progress towards this milestone has been temporarily stopped."
       },
       "createdOn": 1651313627,
-      "name": "On Hold Milestone"
+      "name": "On Hold Milestone",
+      "tags": ""
     },
     {
       "id": "MS.5",
@@ -843,7 +874,8 @@
         "description": "The milestone cannot be reached until whatever is blocking progress has been resolved."
       },
       "createdOn": 1651313631,
-      "name": "Blocked Milestone"
+      "name": "Blocked Milestone",
+      "tags": ""
     },
     {
       "id": "MS.6",
@@ -907,7 +939,8 @@
         "description": "The milestone will not be reached."
       },
       "createdOn": 1651313621,
-      "name": "Aborted Milestone"
+      "name": "Aborted Milestone",
+      "tags": ""
     }
   ],
   "requirements": [
@@ -939,7 +972,8 @@
         "remarks": ""
       },
       "createdOn": 1704214925,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "REQ.2",
@@ -974,7 +1008,8 @@
         "remarks": ""
       },
       "createdOn": 1704202873,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "REQ.3",
@@ -1009,7 +1044,8 @@
         "remarks": ""
       },
       "createdOn": 1704202873,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "REQ.4",
@@ -1044,7 +1080,8 @@
         "remarks": ""
       },
       "createdOn": 1704202873,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "REQ.5",
@@ -1079,7 +1116,8 @@
         "remarks": ""
       },
       "createdOn": 1704202873,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "REQ.6",
@@ -1109,7 +1147,8 @@
         "remarks": ""
       },
       "createdOn": 1704202873,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "REQ.7",
@@ -1134,7 +1173,8 @@
         "remarks": ""
       },
       "createdOn": 1704202873,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "REQ.8",
@@ -1154,7 +1194,8 @@
         "remarks": ""
       },
       "createdOn": 1705650829,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "REQ.9",
@@ -1174,7 +1215,8 @@
         "remarks": ""
       },
       "createdOn": 1705650829,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "REQ.10",
@@ -1194,7 +1236,8 @@
         "remarks": ""
       },
       "createdOn": 1705650829,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "REQ.11",
@@ -1214,7 +1257,8 @@
         "remarks": ""
       },
       "createdOn": 1705650829,
-      "name": ""
+      "name": "",
+      "tags": ""
     },
     {
       "id": "REQ.12",
@@ -1240,7 +1284,8 @@
         "type": "Functional",
         "verificationMethod": "Demonstration",
         "remarks": ""
-      }
+      },
+      "tags": ""
     },
     {
       "id": "REQ.13",
@@ -1276,7 +1321,8 @@
         "type": "Functional",
         "verificationMethod": "Demonstration",
         "remarks": ""
-      }
+      },
+      "tags": ""
     },
     {
       "id": "REQ.14",
@@ -1307,7 +1353,8 @@
         "type": "Functional",
         "verificationMethod": "Demonstration",
         "remarks": ""
-      }
+      },
+      "tags": ""
     },
     {
       "id": "REQ.15",
@@ -1343,7 +1390,8 @@
         "type": "Performance",
         "verificationMethod": "Test",
         "remarks": ""
-      }
+      },
+      "tags": ""
     },
     {
       "id": "REQ.16",
@@ -1389,7 +1437,8 @@
         "type": "Physical",
         "verificationMethod": "Inspection",
         "remarks": ""
-      }
+      },
+      "tags": ""
     },
     {
       "id": "REQ.17",
@@ -1403,7 +1452,8 @@
         "type": "Design",
         "verificationMethod": "Analysis",
         "remarks": ""
-      }
+      },
+      "tags": ""
     },
     {
       "id": "REQ.18",
@@ -1417,7 +1467,8 @@
         "type": "NotApplicable",
         "verificationMethod": "NotApplicable",
         "remarks": "This is not a requirement."
-      }
+      },
+      "tags": ""
     },
     {
       "id": "REQ.19",
@@ -1431,7 +1482,8 @@
         "type": "Undefined",
         "verificationMethod": "Undefined",
         "remarks": "This requirement cannot be fulfilled."
-      }
+      },
+      "tags": ""
     },
     {
       "id": "REQ.20",
@@ -1445,7 +1497,8 @@
         "type": "Information/Guidance",
         "verificationMethod": "NotApplicable",
         "remarks": "This is not a requirement."
-      }
+      },
+      "tags": ""
     }
   ],
   "stakeholders": [
@@ -1491,7 +1544,8 @@
         "description": ""
       },
       "createdOn": 1652000631,
-      "name": "Stakeholder 1"
+      "name": "Stakeholder 1",
+      "tags": ""
     },
     {
       "id": "SH.2",
@@ -1520,7 +1574,8 @@
         "description": ""
       },
       "createdOn": 1652000695,
-      "name": "Stakeholder 2"
+      "name": "Stakeholder 2",
+      "tags": ""
     }
   ],
   "systemfunctions": []

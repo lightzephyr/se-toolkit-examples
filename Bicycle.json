@@ -1,6 +1,6 @@
 {
   "name": "Bicycle",
-  "SCHEMA_VERSION": "0.16.0",
+  "SCHEMA_VERSION": "0.17",
   "changeLog": [
     {
       "time": 1631954895,
@@ -26,6 +26,11 @@
       "time": 1732957243,
       "operation": "update",
       "description": "Upgraded model schema from version 0.14 to 0.16"
+    },
+    {
+      "time": 1742144226,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.16 to 0.17"
     }
   ],
   "uidSeeds": {
@@ -78,7 +83,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Back Wheel"
+      "name": "Back Wheel",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -97,7 +103,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Brake Disks / Pads / Mounts"
+      "name": "Brake Disks / Pads / Mounts",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -109,7 +116,8 @@
         "description": "Front and back brake handles."
       },
       "createdOn": 1631954895,
-      "name": "Brake Handles"
+      "name": "Brake Handles",
+      "tags": ""
     },
     {
       "relationships": [
@@ -132,7 +140,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Chain"
+      "name": "Chain",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -145,7 +154,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Crank & Pedals"
+      "name": "Crank & Pedals",
+      "tags": ""
     },
     {
       "relationships": [
@@ -168,7 +178,8 @@
         "description": "Forks can be plain forks or shock absorbers."
       },
       "createdOn": 1631954895,
-      "name": "Forks"
+      "name": "Forks",
+      "tags": ""
     },
     {
       "relationships": [
@@ -191,7 +202,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Frame"
+      "name": "Frame",
+      "tags": ""
     },
     {
       "relationships": [
@@ -214,7 +226,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Front Wheel"
+      "name": "Front Wheel",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -233,7 +246,8 @@
         "description": "Front and back gear sprockets."
       },
       "createdOn": 1631954895,
-      "name": "Gears"
+      "name": "Gears",
+      "tags": ""
     },
     {
       "relationships": [],
@@ -245,7 +259,8 @@
         "description": "Front and back shifters. Shifters could be further broken down into levers, cables, and the part that actually moves the chain."
       },
       "createdOn": 1631954895,
-      "name": "Shifters"
+      "name": "Shifters",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -269,7 +284,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Structure"
+      "name": "Structure",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -293,7 +309,8 @@
         "description": "Each wheel could be further broken down into hub, rims, spokes, and tyres."
       },
       "createdOn": 1631954895,
-      "name": "Wheels"
+      "name": "Wheels",
+      "tags": ""
     },
     {
       "relationships": [
@@ -326,7 +343,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Bicycle"
+      "name": "Bicycle",
+      "tags": ""
     },
     {
       "status": "NotStarted",
@@ -345,7 +363,8 @@
         "description": "Hydraulic systems could be further broken down into reservoir, cables, and fluid. Front and back hydraulic systems."
       },
       "createdOn": 1631954895,
-      "name": "Brake Hydraulic Systems"
+      "name": "Brake Hydraulic Systems",
+      "tags": ""
     },
     {
       "relationships": [
@@ -373,7 +392,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Brake System"
+      "name": "Brake System",
+      "tags": ""
     },
     {
       "relationships": [
@@ -406,7 +426,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Drive System"
+      "name": "Drive System",
+      "tags": ""
     }
   ],
   "milestones": [
@@ -426,7 +447,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Bike assembled"
+      "name": "Bike assembled",
+      "tags": ""
     },
     {
       "id": "MS.2",
@@ -444,7 +466,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Bike finished"
+      "name": "Bike finished",
+      "tags": ""
     },
     {
       "id": "MS.3",
@@ -462,7 +485,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Bike tuned"
+      "name": "Bike tuned",
+      "tags": ""
     },
     {
       "id": "MS.4",
@@ -485,7 +509,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Frame assembled"
+      "name": "Frame assembled",
+      "tags": ""
     },
     {
       "id": "MS.5",
@@ -513,7 +538,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Frame painted"
+      "name": "Frame painted",
+      "tags": ""
     },
     {
       "id": "MS.6",
@@ -525,7 +551,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Paint available"
+      "name": "Paint available",
+      "tags": ""
     },
     {
       "id": "MS.7",
@@ -537,7 +564,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Paint booth available"
+      "name": "Paint booth available",
+      "tags": ""
     },
     {
       "id": "MS.8",
@@ -549,7 +577,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "Parts available"
+      "name": "Parts available",
+      "tags": ""
     },
     {
       "id": "MS.9",
@@ -561,7 +590,8 @@
         "description": ""
       },
       "createdOn": 1631954895,
-      "name": "People available"
+      "name": "People available",
+      "tags": ""
     }
   ],
   "stakeholders": [],

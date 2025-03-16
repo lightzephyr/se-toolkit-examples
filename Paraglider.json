@@ -1,6 +1,6 @@
 {
   "name": "Paraglider",
-  "SCHEMA_VERSION": "0.16.0",
+  "SCHEMA_VERSION": "0.17",
   "changeLog": [
     {
       "time": 1631954917,
@@ -21,6 +21,11 @@
       "time": 1732957423,
       "operation": "update",
       "description": "Upgraded model schema from version 0.14 to 0.16"
+    },
+    {
+      "time": 1742144263,
+      "operation": "update",
+      "description": "Upgraded model schema from version 0.16 to 0.17"
     }
   ],
   "uidSeeds": {
@@ -73,7 +78,8 @@
         "description": ""
       },
       "createdOn": 1631954917,
-      "name": "Harness"
+      "name": "Harness",
+      "tags": ""
     },
     {
       "relationships": [
@@ -101,7 +107,8 @@
         "description": ""
       },
       "createdOn": 1631954917,
-      "name": "Lines"
+      "name": "Lines",
+      "tags": ""
     },
     {
       "relationships": [
@@ -119,7 +126,8 @@
         "description": ""
       },
       "createdOn": 1631954917,
-      "name": "Rescue Parachute"
+      "name": "Rescue Parachute",
+      "tags": ""
     },
     {
       "relationships": [
@@ -142,7 +150,8 @@
         "description": ""
       },
       "createdOn": 1631954917,
-      "name": "Risers"
+      "name": "Risers",
+      "tags": ""
     },
     {
       "relationships": [
@@ -160,7 +169,8 @@
         "description": ""
       },
       "createdOn": 1631954917,
-      "name": "Wing"
+      "name": "Wing",
+      "tags": ""
     },
     {
       "relationships": [
@@ -198,7 +208,8 @@
         "description": ""
       },
       "createdOn": 1631954917,
-      "name": "Paraglider"
+      "name": "Paraglider",
+      "tags": ""
     }
   ],
   "milestones": [
@@ -212,7 +223,8 @@
         "description": ""
       },
       "createdOn": 1631954917,
-      "name": "Harness assembled"
+      "name": "Harness assembled",
+      "tags": ""
     },
     {
       "id": "MS.2",
@@ -235,7 +247,8 @@
         "description": ""
       },
       "createdOn": 1631954917,
-      "name": "Lines and risers assembled"
+      "name": "Lines and risers assembled",
+      "tags": ""
     },
     {
       "id": "MS.3",
@@ -258,7 +271,8 @@
         "description": ""
       },
       "createdOn": 1631954917,
-      "name": "Lines connected to wing"
+      "name": "Lines connected to wing",
+      "tags": ""
     },
     {
       "id": "MS.4",
@@ -281,7 +295,8 @@
         "description": ""
       },
       "createdOn": 1631954917,
-      "name": "Paraglider finished"
+      "name": "Paraglider finished",
+      "tags": ""
     },
     {
       "id": "MS.5",
@@ -293,7 +308,8 @@
         "description": ""
       },
       "createdOn": 1631954917,
-      "name": "Parts available"
+      "name": "Parts available",
+      "tags": ""
     },
     {
       "id": "MS.6",
@@ -305,7 +321,8 @@
         "description": ""
       },
       "createdOn": 1631954917,
-      "name": "People available"
+      "name": "People available",
+      "tags": ""
     },
     {
       "id": "MS.7",
@@ -328,7 +345,8 @@
         "description": ""
       },
       "createdOn": 1631954917,
-      "name": "Wing assembled"
+      "name": "Wing assembled",
+      "tags": ""
     }
   ],
   "stakeholders": [],
